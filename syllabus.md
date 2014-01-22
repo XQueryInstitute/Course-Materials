@@ -27,14 +27,16 @@ Exploration of the Folger Library’s digital edition of Julius Caesar (TEI P5)
 Commentary, discussion, questions###Wednesday, June 11
  -  Morning Session I (9:00 a.m. to 10:15 a.m.) – Jonathan RobieIntroduction to XPath; XPath axes (unabbreviated and abbreviated syntax)Readings: Joe Fawcett, Liam Quin, and Danny Ayers, *Beginning XML*, Chapter 7: Extracting Data from XML -  Morning Session II (10:30 a.m. to 11:45 a.m.) – Jonathan Robie 
  
-XPath node tests and predicatesReading: Priscilla Walmsley, *XQuery*, Chapter 4: Navigating Input Documents Using Paths -  Afternoon Session I (1:00 p.m. to 2:15 p.m.) – Jonathan RobieXPath operators and functions -  Afternoon Session II (2:30 p.m. to 3:45 p.m.) – Institute FacultyExploring Julius Ceasar using XPath -  Open session (4:00 p.m. to 5:00 p.m.)Commentary, discussion, questions Thursday, June 12
+XPath node tests and predicatesReading: Priscilla Walmsley, *XQuery*, Chapter 4: Navigating Input Documents Using Paths -  Afternoon Session I (1:00 p.m. to 2:15 p.m.) – Jonathan RobieXPath operators and functions -  Afternoon Session II (2:30 p.m. to 3:45 p.m.) – Institute FacultyExploring Julius Ceasar using XPath -  Open session (4:00 p.m. to 5:00 p.m.)Commentary, discussion, questions 
+
+###Thursday, June 12
  -  Morning Session I (9:00 a.m. to 10:15 a.m.) – Jonathan Robie 
  
-Introduction to XQueryReadings: Ron Hitchens, *Getting Started with XML*, Chapter 4: XQuery, Start your Engine and Chapter 5: Taking the Plunge; Priscilla Walmsley, *XQuery*, Chapter 1: Introduction to XQuery
+Introduction to XQueryReadings: Ron Hitchens, *Getting Started with XQuery*, Chapter 4: XQuery, Start your Engine and Chapter 5: Taking the Plunge; Priscilla Walmsley, *XQuery*, Chapter 1: Introduction to XQuery
  -  Morning Session II (10:30 a.m. to 11:45 a.m.) – Jonathan Robie 
 
 Writing simple XQuery FLWOR expressions
-Readings: Ron Hitchens, *Getting Started with XML*, Chapter 7: The Power of the FLWOR; Priscilla Walmsley, *XQuery*, Chapter 6: Selecting and Joining Using FLWORs -  Afternoon Session I (1:00 p.m. to 2:15 p.m.) – Jonathan RobieThe XQuery type system; atomic types and sequence types; checking and casting typesReadings: Ron Hitchens, *Getting Started with XML*, Chapter 5: Just Typical; Priscilla Walmsley, *XQuery*, Chapter 2: XQuery Foundations -  Afternoon Session II (2:30 p.m. to 3:45 p.m.) – Institute Faculty Querying 
+Readings: Ron Hitchens, *Getting Started with XQuery*, Chapter 7: The Power of the FLWOR; Priscilla Walmsley, *XQuery*, Chapter 6: Selecting and Joining Using FLWORs -  Afternoon Session I (1:00 p.m. to 2:15 p.m.) – Jonathan RobieThe XQuery type system; atomic types and sequence types; checking and casting typesReadings: Ron Hitchens, *Getting Started with XQuery*, Chapter 5: Just Typical; Priscilla Walmsley, *XQuery*, Chapter 2: XQuery Foundations -  Afternoon Session II (2:30 p.m. to 3:45 p.m.) – Institute Faculty Querying 
 
 Shakespeare’s corpus using XQuery FLWOR expressions -  Open session (4:00 p.m. to 5:00 p.m.) Commentary, discussion, questions###Friday, June 13 
  -  Morning Session I (9:00 a.m. to 10:15 a.m.) – Jonathan Robie 
@@ -51,10 +53,10 @@ Combining eXist’s extension functions with FLWOR expressions -  Afternoon Se
  -  Open session (4:00 p.m. to 5:00 p.m. Participant presentation###Tuesday, June 17 
  -  Morning Session I (9:00 a.m. to 10:15 a.m.) – Winona Salesky 
  
-Writing user defined functions; function signatures; checking typesReading: Ron Hitchens, *Getting Started with XML*, Chapter 9: Functionality; Priscilla Walmsley, *XQuery*, Chapter 8: Functions -  Morning Session II (10:30 a.m. to 11:45 a.m.) – Clifford AndersonHandling errors in XQuery; try...catch; strategies for diagnosing and preventing errorsReading: [Try-Catch Expressions](http://atomic.exist-db.org/HowTo/XQuery3/Try- CatchExpression) -  Afternoon Session I (1:00 p.m. to 2:15 p.m.) – Winona Salesky 
+Writing user defined functions; function signatures; checking typesReading: Ron Hitchens, *Getting Started with XQuery*, Chapter 9: Functionality; Priscilla Walmsley, *XQuery*, Chapter 8: Functions -  Morning Session II (10:30 a.m. to 11:45 a.m.) – Clifford AndersonHandling errors in XQuery; try...catch; strategies for diagnosing and preventing errorsReading: [Try-Catch Expressions](http://atomic.exist-db.org/HowTo/XQuery3/Try- CatchExpression) -  Afternoon Session I (1:00 p.m. to 2:15 p.m.) – Winona Salesky 
  
 Developing modules of user defined functions in eXist
- Reading: Ron Hitchens, *Getting Started with XML*, Chapter 8: Modulation; Priscilla Walmsley, *XQuery*, Chapter 12: Queries, Prologs, and Modules
+ Reading: Ron Hitchens, *Getting Started with XQuery*, Chapter 8: Modulation; Priscilla Walmsley, *XQuery*, Chapter 12: Queries, Prologs, and Modules
  -  Afternoon Session II (2:30 p.m. to 3:45 p.m.) – Institute  Faculty 
  
 Rewriting our search expressions as custom functions and modules -  Open session (4:00 p.m. to 5:00 p.m.) 
