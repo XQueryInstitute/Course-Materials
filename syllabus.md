@@ -36,9 +36,9 @@ Introduction to XQueryReadings: Ron Hitchens, *Getting Started with XQuery*, C
  -  Morning Session II (10:30 a.m. to 11:45 a.m.) – Jonathan Robie 
 
 Writing simple XQuery FLWOR expressions
-Readings: Ron Hitchens, *Getting Started with XQuery*, Chapter 7: The Power of the FLWOR; Priscilla Walmsley, *XQuery*, Chapter 6: Selecting and Joining Using FLWORs -  Afternoon Session I (1:00 p.m. to 2:15 p.m.) – Jonathan RobieThe XQuery type system; atomic types and sequence types; checking and casting typesReadings: Ron Hitchens, *Getting Started with XQuery*, Chapter 5: Just Typical; Priscilla Walmsley, *XQuery*, Chapter 2: XQuery Foundations -  Afternoon Session II (2:30 p.m. to 3:45 p.m.) – Institute Faculty Querying 
-
-Shakespeare’s corpus using XQuery FLWOR expressions -  Open session (4:00 p.m. to 5:00 p.m.) Commentary, discussion, questions###Friday, June 13 
+Readings: Ron Hitchens, *Getting Started with XQuery*, Chapter 7: The Power of the FLWOR; Priscilla Walmsley, *XQuery*, Chapter 6: Selecting and Joining Using FLWORs -  Afternoon Session I (1:00 p.m. to 2:15 p.m.) – Jonathan RobieThe XQuery type system; atomic types and sequence types; checking and casting typesReadings: Ron Hitchens, *Getting Started with XQuery*, Chapter 5: Just Typical; Priscilla Walmsley, *XQuery*, Chapter 2: XQuery Foundations -  Afternoon Session II (2:30 p.m. to 3:45 p.m.) – Institute Faculty 
+ 
+Querying Shakespeare’s corpus using XQuery FLWOR expressions -  Open session (4:00 p.m. to 5:00 p.m.) Commentary, discussion, questions###Friday, June 13 
  -  Morning Session I (9:00 a.m. to 10:15 a.m.) – Jonathan Robie 
  
 Using built-in functions in XQuery: sequence functionsReading: Priscilla Walmsley, *XQuery*, Chapter 11: A Closer Look at Types -  Morning Session II (10:30 a.m. to 11:45 a.m.) – Jonathan RobieUsing built-in functions in XQuery: string functionsReading: Priscilla Walmsley, *XQuery*, Chapter 17: Working with Strings -  Afternoon Session I (1:00 p.m. to 2:15 p.m.) – Jonathan RobieOther XQuery control structures: if...then...else; switch expressions; group byReading: Priscilla Walmsley, *XQuery*, Chapter 3: XQuery Building Blocks -  Afternoon Session II (2:30 p.m. to 3:45 p.m.) – Institute FacultyUsing built-in functions with FLWOR expressions to render Shakespeare as XHTML -  Open session (4:00 p.m. to 5:00 p.m.) Commentary, discussion, questions###Monday, June 16 
