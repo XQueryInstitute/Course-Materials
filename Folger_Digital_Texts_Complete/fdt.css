@@ -1,0 +1,103 @@
+@media print { .noprint { display:none; }}
+body { font-family: 'Times New Roman'; font-size:13pt; margin:10px 0px; padding:0px;}
+br { clear:both; }
+
+.hidden {display:none;}
+.pageBlock { width:500px; padding:10px; margin-left:60px; border:1px solid black;}
+.textBlock { position:relative; width:480px; padding:10px;}
+.pageBorder { width:480px; height:1px; margin-top:50px; }
+.pageHeading { width:420px; padding:10px; padding-top:30px; margin: 20px 0px; border-bottom:3px solid black; font-style:normal; font-weight: normal; color:black; page-break-before:always; }
+.pageNbr { float:left; width:75px; text-align:left; }
+.pageTitle { float:left; width:240px; text-align:center; font-style:italic; font-size:14pt; }
+.pageDesc { float:right; text-align:right; font-size:8pt; font-variant:small-caps; }
+.actFooter { width:430px; text-align:center; padding-top:5px; font-style:normal; }
+.titleImg { width: 400px; padding: 0px 20px; }
+
+.div1 { text-align:left; width:100%; }
+.frontHeader { position:relative; width:480px; text-align:center; font-weight:bold; font-size:16pt; margin-bottom:50px; margin-top:10px;}
+.castDiv { position:relative; float:left; }
+.castHeadDiv { float:left;display:table; }
+.castHead { font-style:italic; display:table-cell; vertical-align:middle; }
+.bracketDiv { position:relative; float:left; padding:0px 5px; width:5px;}
+.castName { font-size:10pt; text-transform:uppercase; font-variant:small-caps; }
+.actHeader { position:relative; width:430px; text-align:center; font-style:italic; font-weight:bold; font-size:16pt; border-bottom:5px solid black; padding-bottom:5px; margin-bottom:50px; margin-top:100px;}
+.sceneHeader { position:relative; width:430px; text-align:center; }
+.blankHeader { position:relative; width:430px; margin-top:100px;}
+.page { page-break-before:always; }
+.credits { position:relative;padding-top:200px;width:480px;text-align:center; }
+.signed { display:block; float:right; text-align:right; width:auto; padding-right:00px; }
+
+
+.emendation { font-style:normal; font-weight:normal; }
+.lineNbr { position:absolute; left:475px; top:auto; width:auto; font-style:normal; font-weight:normal; font-size:12pt; line-height:20px;  }
+.ftln { color:gray; position:absolute; left:-68px; top:auto; width:auto; font-style:normal; font-weight:normal; font-size:8pt; line-height:20px; }
+.alignment {}
+
+.centered { display:inline-block; text-align:center; width:430px; }
+.centred { display:inline-block; text-align:center; width:430px; }
+.right { display:inline-block; float:right; text-align:right; width:auto; padding-right:60px; }
+.indentProse { padding-left:30px; }
+.indentVerse { padding-left:15px; }
+.indentRunOn { padding-left:30px; }
+.indentSplit { padding-left:00px; }
+.indentInline { padding-left:10px; }
+.indentClosing { padding-left:50px; }
+.indent { padding-left:8px; }
+.inline { padding-left:0px; }
+.indentTest { padding-left:50px; }
+.closing { display:inline-block; padding-left:30px;  }
+.closingSig { display:inline-block; float:right; text-align:right; width:auto;}
+.closingSig { display:inline-block; padding-left:20px; float:right; text-align:left; width:auto; }
+.signature { display:inline-block; float:right; text-align:left; width:auto; padding-right:60px; }
+
+.speaker { clear:both; float:left; font-style:normal; font-variant:small-caps; font-size:10pt; line-height:20px; }
+.speakerName { font-style:normal; font-variant:small-caps; font-size:10pt; line-height:20px;}
+
+
+.stage { font-style:italic; }
+
+.imgEmend { position:relative; height:16px; }
+.imgTextX { position:relative; top:3px; height:16px; width:6px; }
+
+.w { border: 1px solid blue; }
+.pc { border: 1px solid green; }
+.c { background-color: red; }
+
+
+.docTitle {text-align:center; font-style:italic; font-size:40px;}
+.titlePage { text-align: center; width: 100% }
+.head { text-align: center; width: 100% }
+.runningHeader { float:left;text-align:center;width:100%; padding: 15px 0px;}
+.trailer { text-align: center; width: 100%; }
+
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
+.roman { font-style: normal; }
+.underlined { text-decoration: underline; }
+.underlining { text-decoration: underline; }
+.superscript { vertical-align: super; }
+.indented { padding-left: 60px; }
+
+.gap { color:red; }
+.add { color:blue; }
+.del { color:black; }
+.note { color:gray; }
+
+.red { color:red; }
+.blue { color:blue; }
+.black { color:black; }
+.gray { color:gray; }
+.bckblue { background-color:blue; }
+
+.speech { clear:both; float:left; padding:0 0px; background-color: white; font-family:times new roman; }
+.line { float:left; background-color:transparent; padding: 0 15px; width:auto; }
+.indented { padding-left: 60px; }
+.turnunder { padding-left: 30px; }
+.right-justified { text-align: justify; }
+.prose { border: 0px solid blue; }
+.proseIndent { padding-left: 30px; }
+.song { font-style:italic; padding-left:60px; }
+.poem { padding-left:60px; }
+.lgIndent { padding-left:80px; }
+.indent { padding-left:15px; }
+.lg { width: 300px; padding-left: 60px; }
