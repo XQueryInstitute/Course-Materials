@@ -44,7 +44,7 @@ Instructor: Jonathan Robie
  
 * XPath node tests and predicatesReading: Priscilla Walmsley, *XQuery*, Chapter 4: Navigating Input Documents Using Paths###Afternoon Session I (1:00 p.m. to 2:15 p.m.) 
 Instructor: Jonathan Robie* XPath operators and functions###Afternoon Session II (2:30 p.m. to 3:45 p.m.)
-Institute FacultyExploring Julius Caesar using XPath###Open session (4:00 p.m. to 5:00 p.m.)Commentary, discussion, questions 
+Institute Faculty* Exploring Julius Caesar using XPath###Open session (4:00 p.m. to 5:00 p.m.)* Commentary, discussion, questions 
 
 ##Thursday, June 12
 ###Morning Session I (9:00 a.m. to 10:15 a.m.)
@@ -56,7 +56,7 @@ Instructor: Jonathan Robie
 
 * XQuery FLWOR expressions
 Readings: Priscilla Walmsley, *XQuery*, Chapter 6: Selecting and Joining Using FLWORs###Afternoon Session I (1:00 p.m. to 2:15 p.m.)
-Instructor: Jonathan Robie- (The XQuery data model)[http://www.w3.org/TR/xpath-datamodel/]
+Instructor: Jonathan Robie- [The XQuery data model](http://www.w3.org/TR/xpath-datamodel/)
 - Atomic types and node types
 - Checking and casting typesReadings: Priscilla Walmsley, *XQuery*, Chapter 2: XQuery Foundations###Afternoon Session II (2:30 p.m. to 3:45 p.m.) 
 Institute Faculty 
@@ -81,7 +81,7 @@ Instructor: Winona Salesky
 Exploring [eXist](http://exist-db.org/) - An Open Source XML DatabaseReading: Joe Fawcett, Liam Quin, and Danny Ayers, *Beginning XML*, Chapter 10: XML and Databases###Morning Session II (10:30 a.m. to 11:45 a.m.)
 Instructor: Winona Salesky 
  
-Combining eXist’s extension functions with FLWOR expressions###Afternoon Session I (1:00 p.m. to 2:15 p.m.)
+- Combining eXist’s extension functions with FLWOR expressions###Afternoon Session I (1:00 p.m. to 2:15 p.m.)
 Instructor: Winona Salesky- Exploring eXist's indexing options
 ###Afternoon Session II (2:30 p.m. to 3:45 p.m.) 
 Institute Faculty
@@ -138,6 +138,7 @@ Instructor: Winona Salesky
 Institute Faculty
  - Building a simple web search engine for the Shakespeare corpus – Part One
 ###Afternoon Session II (2:30 p.m. to 3:45 p.m.) – Institute Faculty
+Institute Faculty
  - Building a simple web search engine for the Shakespeare corpus – Part Two
 ###Open session (4:00 p.m. to 5:00 p.m.) 
 
