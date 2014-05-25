@@ -111,7 +111,7 @@ Instructor: Winona Salesky
 Instructor: Clifford Anderson- Handling errors in XQuery
 - Strategies for diagnosing and preventing errors
 	- [XQLint](https://github.com/wcandillon/xqlint)
-	- [XQDoc](http://xqdoc.org/)Reading: [Try-Catch Expressions](http://atomic.exist-db.org/HowTo/XQuery3/Try- CatchExpression)###Afternoon Session I (1:00 p.m. to 2:15 p.m.)
+	- [XQDoc](http://xqdoc.org/)###Afternoon Session I (1:00 p.m. to 2:15 p.m.)
 Instructor: Winona Salesky 
  
 - Developing modules of user defined functions in eXist
