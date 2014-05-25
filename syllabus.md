@@ -55,6 +55,9 @@ Instructor: Jonathan Robie
 Instructor: Jonathan Robie 
 
 * [Functions and Operators](http://www.w3.org/TR/2014/REC-xpath-functions-30-20140408/)
+	- Partial function application
+	- Inline functions
+	- A brief at second order functions
 Readings: Priscilla Walmsley, *XQuery*, Chapter 6: Selecting and Joining Using FLWORs###Afternoon Session I (1:00 p.m. to 2:15 p.m.)
 Instructor: Jonathan Robie- Grouping Readings: Priscilla Walmsley, *XQuery*, Chapter 2: XQuery Foundations###Afternoon Session II (2:30 p.m. to 3:45 p.m.) 
 Institute Faculty 
@@ -64,12 +67,17 @@ Institute Faculty
 ###Morning Session I (9:00 a.m. to 10:15 a.m.)
 Instructor: Jonathan Robie 
  
-- Using built-in functions in XQuery: Sequence functionsReading: Priscilla Walmsley, *XQuery*, Chapter 11: A Closer Look at Types###Morning Session II (10:30 a.m. to 11:45 a.m.)
-Instructor: Jonathan Robie- Using built-in functions in XQuery: String functionsReading: Priscilla Walmsley, *XQuery*, Chapter 17: Working with Strings###Afternoon Session I (1:00 p.m. to 2:15 p.m.)
-Instructor: Jonathan Robie- Other XQuery control structures:
-	- if...then...else
+- WindowingReading: Priscilla Walmsley, *XQuery*, Chapter 11: A Closer Look at Types###Morning Session II (10:30 a.m. to 11:45 a.m.)
+Instructor: Jonathan Robie- XQuery Spare Change
+	- if..then..else
+	- effective boolean values
+	- try..catch
 	- switch expressions
-	- group byReading: Priscilla Walmsley, *XQuery*, Chapter 3: XQuery Building Blocks###Afternoon Session II (2:30 p.m. to 3:45 p.m.)
+	- typeswitch
+	- quantifiers
+	- mapping operator
+	- string concatenation operatorsReading: Priscilla Walmsley, *XQuery*, Chapter 17: Working with Strings###Afternoon Session I (1:00 p.m. to 2:15 p.m.)
+Instructor: Jonathan Robie- Recursion & Avoiding RecursionReading: Priscilla Walmsley, *XQuery*, Chapter 3: XQuery Building Blocks###Afternoon Session II (2:30 p.m. to 3:45 p.m.)
 Institute Faculty- Using built-in functions with FLWOR expressions to render Shakespeare as XHTML###Open session (4:00 p.m. to 5:00 p.m.) 
 
 - Commentary, discussion, questions##Monday, June 16 
