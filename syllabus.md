@@ -38,30 +38,28 @@ Institute Faculty- Questions that we would like to ask across the corpus of th
 
 - Commentary, discussion, questions##Wednesday, June 11
 ###Morning Session I (9:00 a.m. to 10:15 a.m.)
-Instructor: Jonathan Robie- Introduction to XPath
-- XPath axes (unabbreviated and abbreviated syntax)Readings: Joe Fawcett, Liam Quin, and Danny Ayers, *Beginning XML*, Chapter 7: Extracting Data from XML###Morning Session II (10:30 a.m. to 11:45 a.m.)
+Instructor: Jonathan Robie* Introduction to XQuery
+	Readings: Joe Fawcett, Liam Quin, and Danny Ayers, *Beginning XML*, Chapter 7: Extracting Data from XML###Morning Session II (10:30 a.m. to 11:45 a.m.)
 Instructor: Jonathan Robie 
  
-* XPath node tests and predicatesReading: Priscilla Walmsley, *XQuery*, Chapter 4: Navigating Input Documents Using Paths###Afternoon Session I (1:00 p.m. to 2:15 p.m.) 
-Instructor: Jonathan Robie* XPath operators and functions###Afternoon Session II (2:30 p.m. to 3:45 p.m.)
-Institute Faculty* Exploring Julius Caesar using XPath###Open session (4:00 p.m. to 5:00 p.m.)* Commentary, discussion, questions 
+* Path ExpressionsReading: Priscilla Walmsley, *XQuery*, Chapter 4: Navigating Input Documents Using Paths###Afternoon Session I (1:00 p.m. to 2:15 p.m.) 
+Instructor: Jonathan Robie* FLWOR Expressions###Afternoon Session II (2:30 p.m. to 3:45 p.m.)
+Instructor: Jonathan Robie* Constructors###Open session (4:00 p.m. to 5:00 p.m.)* Exploring Participants' Data Sets
 
 ##Thursday, June 12
 ###Morning Session I (9:00 a.m. to 10:15 a.m.)
 Instructor: Jonathan Robie 
  
-- Introduction to XQueryReadings: Priscilla Walmsley, *XQuery*, Chapter 1: Introduction to XQuery
+* Functions and ModulesReadings: Priscilla Walmsley, *XQuery*, Chapter 1: Introduction to XQuery
 ###Morning Session II (10:30 a.m. to 11:45 a.m.)
 Instructor: Jonathan Robie 
 
-* XQuery FLWOR expressions
+* [Functions and Operators](http://www.w3.org/TR/2014/REC-xpath-functions-30-20140408/)
 Readings: Priscilla Walmsley, *XQuery*, Chapter 6: Selecting and Joining Using FLWORs###Afternoon Session I (1:00 p.m. to 2:15 p.m.)
-Instructor: Jonathan Robie- [The XQuery data model](http://www.w3.org/TR/xpath-datamodel/)
-- Atomic types and node types
-- Checking and casting typesReadings: Priscilla Walmsley, *XQuery*, Chapter 2: XQuery Foundations###Afternoon Session II (2:30 p.m. to 3:45 p.m.) 
+Instructor: Jonathan Robie- Grouping Readings: Priscilla Walmsley, *XQuery*, Chapter 2: XQuery Foundations###Afternoon Session II (2:30 p.m. to 3:45 p.m.) 
 Institute Faculty 
  
-- Querying Shakespeare’s corpus using XQuery FLWOR expressions###Open session (4:00 p.m. to 5:00 p.m.) 
+- Exploring Participants' Data Sets###Open session (4:00 p.m. to 5:00 p.m.) 
 - Commentary, discussion, questions##Friday, June 13 
 ###Morning Session I (9:00 a.m. to 10:15 a.m.)
 Instructor: Jonathan Robie 
@@ -137,7 +135,7 @@ Instructor: Winona Salesky
 - Introduction to eXist's [XQuery Update Extension](http://exist-db.org/exist/apps/doc/update_ext.xml)###Afternoon Session I (1:00 p.m. to 2:15 p.m.)
 Institute Faculty
  - Building a simple web search engine for the Shakespeare corpus – Part One
-###Afternoon Session II (2:30 p.m. to 3:45 p.m.) – Institute Faculty
+###Afternoon Session II (2:30 p.m. to 3:45 p.m.)
 Institute Faculty
  - Building a simple web search engine for the Shakespeare corpus – Part Two
 ###Open session (4:00 p.m. to 5:00 p.m.) 
