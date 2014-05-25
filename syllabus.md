@@ -39,36 +39,41 @@ Institute Faculty- Questions that we would like to ask across the corpus of th
 - Commentary, discussion, questions##Wednesday, June 11
 ###Morning Session I (9:00 a.m. to 10:15 a.m.)
 Instructor: Jonathan Robie* Introduction to XQuery
-	Readings: Joe Fawcett, Liam Quin, and Danny Ayers, *Beginning XML*, Chapter 7: Extracting Data from XML###Morning Session II (10:30 a.m. to 11:45 a.m.)
+	Readings: Joe Fawcett, Liam Quin, and Danny Ayers, *Beginning XML*, Chapter 7: Extracting Data from XML; Priscilla Walmsley, *XQuery*, Chapter 1: Introduction to XQuery and Chapter 2: XQuery Foundations###Morning Session II (10:30 a.m. to 11:45 a.m.)
 Instructor: Jonathan Robie 
  
-* Path ExpressionsReading: Priscilla Walmsley, *XQuery*, Chapter 4: Navigating Input Documents Using Paths###Afternoon Session I (1:00 p.m. to 2:15 p.m.) 
-Instructor: Jonathan Robie* FLWOR Expressions###Afternoon Session II (2:30 p.m. to 3:45 p.m.)
-Instructor: Jonathan Robie* Constructors###Open session (4:00 p.m. to 5:00 p.m.)* Exploring Participants' Data Sets
+* Path expressionsReading: Priscilla Walmsley, *XQuery*, Chapter 4: Navigating Input Documents Using Paths###Afternoon Session I (1:00 p.m. to 2:15 p.m.) 
+Instructor: Jonathan Robie* FLWOR expressions
+
+Reading: Priscilla Walmsley, *XQuery*, Chapter 6: Selecting and Joining Using FLWORs
+###Afternoon Session II (2:30 p.m. to 3:45 p.m.)
+Instructor: Jonathan Robie* Constructors
+
+Reading: Priscilla Walmsley, *XQuery*, Chapter 5: Adding Elements and Attributes to Results###Open session (4:00 p.m. to 5:00 p.m.)* Exploring participants' datasets
 
 ##Thursday, June 12
 ###Morning Session I (9:00 a.m. to 10:15 a.m.)
 Instructor: Jonathan Robie 
  
-* Functions and ModulesReadings: Priscilla Walmsley, *XQuery*, Chapter 1: Introduction to XQuery
-###Morning Session II (10:30 a.m. to 11:45 a.m.)
+* Functions and modules###Morning Session II (10:30 a.m. to 11:45 a.m.)
 Instructor: Jonathan Robie 
 
-* [Functions and Operators](http://www.w3.org/TR/2014/REC-xpath-functions-30-20140408/)
-	- Partial function application
+* [Functions and operators](http://www.w3.org/TR/2014/REC-xpath-functions-30-20140408/)
+	- partial function application
 	- Inline functions
 	- A brief at second order functions
-Readings: Priscilla Walmsley, *XQuery*, Chapter 6: Selecting and Joining Using FLWORs###Afternoon Session I (1:00 p.m. to 2:15 p.m.)
-Instructor: Jonathan Robie- Grouping Readings: Priscilla Walmsley, *XQuery*, Chapter 2: XQuery Foundations###Afternoon Session II (2:30 p.m. to 3:45 p.m.) 
+###Afternoon Session I (1:00 p.m. to 2:15 p.m.)
+Instructor: Jonathan Robie- Grouping ###Afternoon Session II (2:30 p.m. to 3:45 p.m.) 
 Institute Faculty 
  
-- Exploring Participants' Data Sets###Open session (4:00 p.m. to 5:00 p.m.) 
+- Exploring participants' datasets###Open session (4:00 p.m. to 5:00 p.m.) 
+
 - Commentary, discussion, questions##Friday, June 13 
 ###Morning Session I (9:00 a.m. to 10:15 a.m.)
 Instructor: Jonathan Robie 
  
-- WindowingReading: Priscilla Walmsley, *XQuery*, Chapter 11: A Closer Look at Types###Morning Session II (10:30 a.m. to 11:45 a.m.)
-Instructor: Jonathan Robie- XQuery Spare Change
+- Windowing###Morning Session II (10:30 a.m. to 11:45 a.m.)
+Instructor: Jonathan Robie- XQuery spare change
 	- if..then..else
 	- effective boolean values
 	- try..catch
@@ -76,9 +81,11 @@ Instructor: Jonathan Robie- XQuery Spare Change
 	- typeswitch
 	- quantifiers
 	- mapping operator
-	- string concatenation operatorsReading: Priscilla Walmsley, *XQuery*, Chapter 17: Working with Strings###Afternoon Session I (1:00 p.m. to 2:15 p.m.)
-Instructor: Jonathan Robie- Recursion & Avoiding RecursionReading: Priscilla Walmsley, *XQuery*, Chapter 3: XQuery Building Blocks###Afternoon Session II (2:30 p.m. to 3:45 p.m.)
-Institute Faculty- Using built-in functions with FLWOR expressions to render Shakespeare as XHTML###Open session (4:00 p.m. to 5:00 p.m.) 
+	- string concatenation operators
+	
+Reading: Priscilla Walmsley, *XQuery*, Chapter 3: XQuery Building Blocks###Afternoon Session I (1:00 p.m. to 2:15 p.m.)
+Instructor: Jonathan Robie- Recursion & avoiding recursion###Afternoon Session II (2:30 p.m. to 3:45 p.m.)
+Institute Faculty- Using [typeswitch transformations](http://en.wikibooks.org/wiki/XQuery/Typeswitch_Transformations) to render Shakespeare as XHTML###Open session (4:00 p.m. to 5:00 p.m.) 
 
 - Commentary, discussion, questions##Monday, June 16 
 ###Morning Session I (9:00 a.m. to 10:15 a.m.)
@@ -102,8 +109,9 @@ Instructor: Winona Salesky
 - function signatures
 - checking typesReading: Priscilla Walmsley, *XQuery*, Chapter 8: Functions###Morning Session II (10:30 a.m. to 11:45 a.m.)
 Instructor: Clifford Anderson- Handling errors in XQuery
-- try...catch
-- strategies for diagnosing and preventing errorsReading: [Try-Catch Expressions](http://atomic.exist-db.org/HowTo/XQuery3/Try- CatchExpression)###Afternoon Session I (1:00 p.m. to 2:15 p.m.)
+- Strategies for diagnosing and preventing errors
+	- [XQLint](https://github.com/wcandillon/xqlint)
+	- [XQDoc](http://xqdoc.org/)Reading: [Try-Catch Expressions](http://atomic.exist-db.org/HowTo/XQuery3/Try- CatchExpression)###Afternoon Session I (1:00 p.m. to 2:15 p.m.)
 Instructor: Winona Salesky 
  
 - Developing modules of user defined functions in eXist
@@ -150,7 +158,7 @@ Institute Faculty
 
 - Participant presentation##Friday, June 20
 ###Morning Session I (9:00 a.m. to 10:15 a.m.)
-Instructor: Dale Poulter- Deploying our Shakespeare search engine to the “cloud” using Amazon Web Services – Part One###Morning Session II (10:30 a.m. to 11:45 a.m.)
+Instructor: Dale Poulter- Deploying our Shakespeare search engine to the “cloud” using Amazon Web Services – Part One###Morning Session II (10:30 a.m. to 11:45 a.m.)
 Instructor: Dale Poulter- Deploying our Shakespeare search engine to the “cloud” using Amazon Web Services – Part Two###Afternoon Session I (1:00 p.m. to 2:15 p.m.)
 Instructor: Kevin Clarke 
  
