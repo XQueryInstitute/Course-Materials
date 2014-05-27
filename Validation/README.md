@@ -19,6 +19,8 @@ Schematron is allows you to specify more specific and complex rules for validati
 
 ###Example
 
+N.B. These examples are modified and expanded versions of the corresponding examples in [Beginning XML](http://www.amazon.com/Beginning-XML-5th-Edition-Fawcett/dp/1118162137). 
+
 Let's start with an example XML file for a book:
 
 ```xml
