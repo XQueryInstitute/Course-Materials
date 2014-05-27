@@ -66,9 +66,13 @@ Instructor: Jonathan Robie
 Instructor: Jonathan Robie- Grouping ###Afternoon Session II (2:30 p.m. to 3:45 p.m.) 
 Institute Faculty 
  
-- Exploring participants' datasets###Open session (4:00 p.m. to 5:00 p.m.) 
+- Exploring participants' datasets###Open session (4:00 p.m. to 4:30 p.m.) 
 
-- Commentary, discussion, questions##Friday, June 13 
+- Commentary, discussion, questions
+
+###Reception at the Center for Second Language Studies (4:30 p.m. to 5:30 p.m.)
+
+The [Center for Second Language Studies](http://www.vanderbilt.edu/csls/) at Vanderbilt University will host a reception for the Institute in Furman Hall, Room 001.##Friday, June 13 
 ###Morning Session I (9:00 a.m. to 10:15 a.m.)
 Instructor: Jonathan Robie 
  
@@ -120,9 +124,13 @@ Instructor: Winona Salesky
 Institute  Faculty 
  
 - Creating facets for searches
-###Open session (4:00 p.m. to 5:00 p.m.) 
+###Open session (4:00 p.m. to 4:30 p.m.) 
 
-- Participant presentation##Wednesday, June 18
+- Participant presentation
+
+###Warren Center Reception (4:30 p.m. to 5:30 p.m.)
+
+- The [Robert Penn Warren Center for the Humanities](http://www.vanderbilt.edu/rpw_center/) will host a reception for the Institute at the [Vaughn Home](http://www.vanderbilt.edu/rpw_center/map.php) on the Vanderbilt Campus.##Wednesday, June 18
 ###Morning Session I (9:00 a.m. to 10:15 a.m.)
 Instructor: Kevin Clarke 
  
