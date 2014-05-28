@@ -34,7 +34,10 @@ Skype Conversation with Michael Poston & Rebecca Niles
  
 - Exploration of the Folger Library’s digital edition of Julius Caesar (TEI P5)
 ###Afternoon Session II (2:30 p.m. to 3:45 p.m.)
-Institute Faculty- Questions that we would like to ask across the corpus of the Folger Library’s digital edition of Shakespeare###Open session (4:00 p.m. to 5:00 p.m.) 
+Instructor: Dr. Jay Clayton, William R. Kenan, Jr. Professor, Department of English, Vanderbilt University
+ 
+- Transmediation and the Production of Digital Editions
+###Open session (4:00 p.m. to 5:00 p.m.) 
 
 - Commentary, discussion, questions##Wednesday, June 11
 ###Morning Session I (9:00 a.m. to 10:15 a.m.)
