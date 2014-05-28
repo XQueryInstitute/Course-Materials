@@ -9,6 +9,10 @@ There are multiple ways to validate XML documents:
 
 as well as technologies like Namespace-based Validation Dispatching Language (NVDL) to handle more advanced scenarios.
 
+###Document Type Definitions (DTDs)
+
+
+
 ###RELAX NG
 
 Relax NG stands for "REgular LAnguage for XML Next Generation".
