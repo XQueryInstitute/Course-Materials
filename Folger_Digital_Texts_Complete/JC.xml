@@ -57352,7 +57352,7 @@
       <interpGrp type="line">
         <interp xml:id="verse">all or part of a full metrical line</interp>
         <interp xml:id="prose">all or part of a prose speech</interp>
-        <interp xml:id="short">a short line which cannot cannot be joined with other lines to form a
+        <interp xml:id="short">a short line which cannot be joined with other lines to form a
           full metrical line, or which may not be definitively identified as verse or prose</interp>
       </interpGrp>
       <interpGrp type="emendation">
