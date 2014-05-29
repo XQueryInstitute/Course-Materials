@@ -514,7 +514,7 @@
      <span class="speaker {$class}"><xsl:apply-templates/></span>
   </xsl:template>
 
-  <xsl:template match="tei:w|tei:c|tei:pc|tei:w/tei:seg|tei:anchor">
+  <xsl:template match="tei:w|tei:pc|tei:w/tei:seg|tei:anchor">
     <xsl:variable name="class" select="translate(@rend,',',' ')" />
     <span id="{@xml:id}" title="{@n}" class="{$class}">
       <xsl:call-template name="openWordMarks"/>
@@ -806,10 +806,10 @@
     </xsl:choose>
   </xsl:template>
 
-  <xsl:template match="tei:stage//tei:stage">
+  <!--<xsl:template match="tei:stage//tei:stage">
     <xsl:variable name="class" select="translate(@rend,',',' ')" />
     <span class="stage {$class}"><xsl:apply-templates/></span>
-  </xsl:template>
+  </xsl:template>-->
 
   <xsl:template match="tei:stage[@rend='inline']//tei:lb">
     <br/><span class="alignment indentProse">&#160;</span>
@@ -820,12 +820,12 @@
   <xsl:template match="tei:sp/tei:stage//tei:lb">
     <br/><span class="alignment indentProse">&#160;</span>
   </xsl:template>
-
-
-  <xsl:template match="tei:seg[@type][contains('song,verse,letter',@type)]">
+  
+  <!--<xsl:template match="tei:seg[@type][contains('song,verse,letter',@type)]">
     <xsl:variable name="class" select="translate(@rend,',',' ')" />
     <span id="{@xml:id}" class="italic {$class}"><xsl:apply-templates/></span>
-  </xsl:template>
+  </xsl:template>-->
+  
   <xsl:template match="tei:seg[@type='poem']">
     <xsl:variable name="class" select="translate(@rend,',',' ')" />
     <span id="{@xml:id}" class="{$class}"><xsl:apply-templates/></span>
@@ -1039,11 +1039,7 @@
   <xsl:template match="tei:particDesc//tei:p">
       <xsl:apply-templates/>
   </xsl:template>
-  <xsl:template match="tei:ab|tei:p">
-      <span class="indentInline">&#160;</span>
-      <xsl:apply-templates/>
-  </xsl:template>
-
+ 
   <xsl:template match="tei:milestone[@unit='ftln']">
     <xsl:choose>
     <xsl:when test="not(@edRef) or contains(@edRef,$rdg)">
