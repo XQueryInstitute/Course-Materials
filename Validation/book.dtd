@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT book (author*, title, date, genre?, publisher?, price?)>
+<!ATTLIST book isbn CDATA #IMPLIED>
+<!ATTLIST book oclc CDATA #REQUIRED>
+
+<!ELEMENT author (#PCDATA)>
+<!ATTLIST author authorized CDATA #REQUIRED>
+
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title short CDATA #REQUIRED>
+
+<!ELEMENT date (#PCDATA)>
+<!ATTLIST date type CDATA #IMPLIED>
+
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT publisher (name, city?)>
+<!ELEMENT price (#PCDATA)>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
