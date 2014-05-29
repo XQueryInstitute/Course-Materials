@@ -1,5 +1,10 @@
-Validation
-==========
+#Schemas
+
+Our goal in this session is to review the various means to validate an XML document. We'll look at DTDs and XML Schema first and then briefly try out RELAX NG and Schematron. We're not aiming to teach you how to use these technologies--trust me, there are whole books on the subject. Rather, we want you to be aware of the similarities and differences as well as how the technologies compliment one another.
+
+###Validation
+
+We recall from our XML fundamentals the difference between checking whether any given XML document is well-formed and whether it is valid. The first asks whether the document is XML. If a document is not well-formed, then it isn't actually XML--even if it appears to have lots of angle brackets.
 
 There are multiple ways to validate XML documents:
 * DTDs
@@ -9,9 +14,14 @@ There are multiple ways to validate XML documents:
 
 as well as technologies like Namespace-based Validation Dispatching Language (NVDL) to handle more advanced scenarios.
 
+
+
 ###Document Type Definitions (DTDs)
 
 
+###XML SCHEMA
+
+XQuery incorporates the simple types defined in the [XML Schema](http://www.w3.org/TR/xmlschema-2/). This is why atomic types in XQuery use the 'xs' namespace prefix. The 'xs' prefix is a shorthand for 'http://www.w3.org/2001/XMLSchema'.  
 
 ###RELAX NG
 
@@ -19,7 +29,7 @@ Relax NG stands for "REgular LAnguage for XML Next Generation".
 
 ###Schematron
 
-Schematron is allows you to specify more specific and complex rules for validating documents. 
+Schematron allows you to specify more specific and complex rules for validating documents. The key difference between DTDs, XML Schema, and RelaxNG one the one hand, and Schematron on the other is that the former are grammar-based whereas Schematron is rule-based. (See Priscilla Walmsley, [Definitive XML Schema](http://www.worldcat.org/title/definitive-xml-schema/oclc/48362767), second edition, p. 13)
 
 ###Example
 
