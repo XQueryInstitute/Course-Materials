@@ -22,11 +22,11 @@
         <publisher>Folger Shakespeare Library</publisher>
         <idno>JC</idno>
         <address>
-<addrLine>201 East Capitol Street, SE</addrLine>
-<addrLine>Washington, DC 20003</addrLine>
-<addrLine>http://www.folgerdigitaltexts.org</addrLine>
-<addrLine>folgertexts@folger.edu</addrLine>
-</address>
+          <addrLine>201 East Capitol Street, SE</addrLine>
+          <addrLine>Washington, DC 20003</addrLine>
+          <addrLine>http://www.folgerdigitaltexts.org</addrLine>
+          <addrLine>folgertexts@folger.edu</addrLine>
+        </address>
         <availability>
           <licence target="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US">Distributed
             under a Creative Commons Attribution-NonCommercial 3.0 Unported License</licence>
@@ -78,7 +78,7 @@
         <p>The Folger Digital Texts project makes the texts of the Folger Shakespeare Library
           editions freely available for noncommercial use. The primary goal is to represent the
           source text faithfully, as simply as possible within the TEI P5 schema. Lineation and
-          other typographic features from the print edition are reproduced, with he interpretations
+          other typographic features from the print edition are reproduced, with the interpretations
           previously implicit in the print layout now made explicit in the encoding.</p>
         <p>In addition, most elements are assigned a unique identifier. This facilitates our use of
           stand-off markup and provides the means for future works to point very specifically to
