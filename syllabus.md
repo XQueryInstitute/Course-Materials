@@ -16,7 +16,11 @@ Instructor: David A. Michelson
  
 - Review of XML essentials, including namespaces, character entities, and CDATA sections
 
-Readings: Joe Fawcett, Liam Quin, and Danny Ayers, *Beginning XML*, Chapter 1: What is XML?,  Chapter 2: Well-Formed XML, and Chapter 3: XML Namespaces
+Readings: 
+
+- Joe Fawcett, Liam Quin, and Danny Ayers, *Beginning XML*, Chapter 1: What is XML?,  Chapter 2: Well-Formed XML, and Chapter 3: XML Namespaces
+
+- David J. Birnbaum, ["What is XML and why should humanists care? An even gentler introduction to XML."](http://dh.obdurodon.org/what-is-xml.xhtml) 
 
 ###Afternoon Session I (1:00 p.m. to 2:15 p.m.) 
 Instructor: Clifford B. Anderson
@@ -41,13 +45,22 @@ The University Library will host a reception for our Institute in the 2nd Floor 
 Instructor: David A. Michelson
  
 - The challenges of scholarly editing in XML
+
+Readings: 
+
+- *Browse*: Lou Burnard, Katherine O'Brien O'Keeffe, and John Unsworth, eds. [*Electronic Textual Editing*](http://www.tei-c.org/About/Archive_new/ETE/Preview/index.xml)
+
  
 ###Morning Session II (10:30 a.m. to 11:45 a.m.)
 Instructor: David A. Michelson 
  
 - Introduction to the TEI P5 specification
 
-Reading: P5: Guidelines for Electronic Text Encoding and Interchange, [Chapter 3: Elements Available in All TEI Documents](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html)
+Readings: 
+
+- P5: Guidelines for Electronic Text Encoding and Interchange, [Chapter 3: Elements Available in All TEI Documents](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html)
+
+- *Browse*: Lou Burnard, [*What is the Text Encoding Initiative?*](http://books.openedition.org/oep/679)
 
 ###Afternoon Session I (1:00 p.m. to 2:15 p.m.) 
 Skype Conversation with Michael Poston & Rebecca Niles
