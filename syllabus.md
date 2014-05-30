@@ -7,7 +7,7 @@ Instructor: Clifford B. Anderson
 - Discussion of the institute’s goals and anticipated outcomes
 ###Morning Session II (10:30 a.m. to 11:45 a.m.)
 Instructor: David A. Michelson
- - Review of XML essentials, including namespaces, character entities, and CDATA sectionsReadings: Joe Fawcett, Liam Quin, and Danny Ayers, *Beginning XML*, Chapter 1: What is XML? and Chapter 3: XML Namespaces
+ - Review of XML essentials, including namespaces, character entities, and CDATA sectionsReadings: Joe Fawcett, Liam Quin, and Danny Ayers, *Beginning XML*, Chapter 1: What is XML?,  Chapter 2: Well-Formed XML, and Chapter 3: XML Namespaces
 ###Afternoon Session I (1:00 p.m. to 2:15 p.m.) 
 Instructor: Clifford B. Anderson
  - Review of Document Type Definitions (DTDs) and XML Schemas
@@ -16,7 +16,7 @@ Instructor: Clifford B. Anderson
 ###Afternoon Session II (2:30 p.m. to 3:45 p.m.)
 Workshop Format 
  
-- Installing [oXygen](http://www.oxygenxml.com/), [eXist](http://exist-db.org/exist/apps/homepage/index.html), and other tools###Reception (4:00 p.m. to 5:00 p.m.) 
+- Installing [eXist](http://exist-db.org/exist/apps/homepage/index.html), [oXygen](http://www.oxygenxml.com/), [GitHub](https://github.com/) and other tools###Reception (4:00 p.m. to 5:00 p.m.) 
  
 The University Library will host a reception for our Institute in the 2nd Floor Gallery.##Tuesday, June 10
 ###Morning Session I (9:00 a.m. to 10:15 a.m.)
@@ -32,7 +32,7 @@ Skype Conversation with Michael Poston & Rebecca Niles
 
 [Folger Shakespeare Library](http://www.folger.edu/), Washington, D.C.
  
-- Exploration of the Folger Library’s digital edition of Julius Caesar (TEI P5)
+- Exploration of the Folger Library’s digital edition (TEI P5) of [Julius Caesar](http://www.folgerdigitaltexts.org/?chapter=5&play=JC&loc=p7)
 ###Afternoon Session II (2:30 p.m. to 3:45 p.m.)
 Instructor: Dr. Jay Clayton, William R. Kenan, Jr. Professor, Department of English, Vanderbilt University
  
@@ -42,10 +42,10 @@ Instructor: Dr. Jay Clayton, William R. Kenan, Jr. Professor, Department of Engl
 - Commentary, discussion, questions##Wednesday, June 11
 ###Morning Session I (9:00 a.m. to 10:15 a.m.)
 Instructor: Jonathan Robie* Introduction to XQuery
-	Readings: Joe Fawcett, Liam Quin, and Danny Ayers, *Beginning XML*, Chapter 7: Extracting Data from XML; Priscilla Walmsley, *XQuery*, Chapter 1: Introduction to XQuery and Chapter 2: XQuery Foundations###Morning Session II (10:30 a.m. to 11:45 a.m.)
+	Readings: Priscilla Walmsley, *XQuery*, Chapter 1: Introduction to XQuery and Chapter 2: XQuery Foundations###Morning Session II (10:30 a.m. to 11:45 a.m.)
 Instructor: Jonathan Robie 
  
-* Path expressionsReading: Priscilla Walmsley, *XQuery*, Chapter 4: Navigating Input Documents Using Paths###Afternoon Session I (1:00 p.m. to 2:15 p.m.) 
+* Path expressionsReading: Joe Fawcett, Liam Quin, and Danny Ayers, *Beginning XML*, Chapter 7: Extracting Data from XML; Priscilla Walmsley, *XQuery*, Chapter 4: Navigating Input Documents Using Paths###Afternoon Session I (1:00 p.m. to 2:15 p.m.) 
 Instructor: Jonathan Robie* FLWOR expressions
 
 Reading: Priscilla Walmsley, *XQuery*, Chapter 6: Selecting and Joining Using FLWORs
