@@ -184,7 +184,7 @@ start =
 
 ###Schematron
 
-Schematron allows you to specify more specific and complex rules for validating documents. The key difference between DTDs, XML Schema, and RelaxNG one the one hand, and Schematron on the other is that the former are grammar-based whereas Schematron is rule-based. (See Priscilla Walmsley, [Definitive XML Schema](http://www.worldcat.org/title/definitive-xml-schema/oclc/48362767), second edition, p. 13)
+Schematron allows you to specify more specific and complex rules for validating documents. The key difference between DTDs, XML Schema, and RelaxNG on the one hand, and Schematron on the other is that the former are grammar-based whereas Schematron is rule-based. (See Priscilla Walmsley, [Definitive XML Schema](http://www.worldcat.org/title/definitive-xml-schema/oclc/48362767), second edition, p. 13)
 
 here's a Schematron file to perform additional validation on the contents
 
