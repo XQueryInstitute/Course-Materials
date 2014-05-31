@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<check num="001">
+    <name>
+        <last>Smith</last>
+        <first>Jane</first>
+    </name>
+    <address type="personal">
+        <street>1 Banker's Plaza</street>
+        <city>Gotham</city>
+        <state>NY</state>
+        <zip>10000</zip>
+    </address>
+    <!-- See http://en.wikipedia.org/wiki/Routing_transit_number -->
+    <routing type="RTN">111000025</routing>
+    <transaction currency="bitcoin" type="debit">1</transaction>
+    <payee>Acme Corporation</payee>
+</check>
