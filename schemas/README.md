@@ -7,12 +7,12 @@ Our goal in this session is to review the various means to validate an XML docum
 We recall from our XML fundamentals the difference between checking whether any given XML document is well-formed and whether it is valid. The first asks whether the document is XML. If a document is not well-formed, then it isn't actually XML--even if it appears to have lots of angle brackets.
 
 There are multiple ways to validate XML documents:
-* DTDs
-* XML Schema
-* RELAX NG
-* Schematron
+* [DTDs](http://www.w3.org/TR/REC-xml/#dt-doctype)
+* [XML Schema](http://www.w3.org/TR/REC-xml/#dt-doctype)
+* [RELAX NG](http://relaxng.org/)
+* [Schematron](http://www.schematron.com/)
 
-as well as technologies like Namespace-based Validation Dispatching Language (NVDL) to handle more advanced scenarios.
+as well as technologies like Namespace-based Validation Dispatching Language ([NVDL](http://nvdl.org/) to handle more advanced scenarios.
 
 ###Sample Document
 
@@ -39,6 +39,10 @@ Here's a sketch of what such a document might look like:
 
 ###Document Type Definition (DTD)
 
+A document type definition (DTD) is a venerable standard developed to validate Standard Generalized Markup Language ([SGML](http://www.iso.org/iso/catalogue_detail?csnumber=16387)). The standard predates the development of XML and XML-related schema standards like XML Schema.
+
+The benefits of using a Document Type Definition include its simplicity and relative compactness along with its ability to be used internally or externally to XML documents.
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!ELEMENT book (author*, title, date, genre?, publisher?, price?)>
@@ -64,7 +68,15 @@ Here's a sketch of what such a document might look like:
 
 ###XML Schema (XSD)
 
-XQuery incorporates the simple types defined in the [XML Schema](http://www.w3.org/TR/xmlschema-2/). This is why atomic types in XQuery use the 'xs' namespace prefix. The 'xs' prefix is a shorthand for the namespace 'http://www.w3.org/2001/XMLSchema'.
+XML Schema 1.0 is a W3C standard approved in 2001. The current recommendation for [XML Schema 1.1](http://www.w3.org/TR/xmlschema11-1/) dates from 2012.
+
+XML Schema is a more robust standard than Document Type Definitions. Unlike DTDs, XML Schema can perform complex type checking on documents.
+
+In fact, XQuery incorporates the XML Schema types defined in the [XML Schema](http://www.w3.org/TR/xmlschema-2/). This is why atomic types in XQuery use the 'xs' namespace prefix. The 'xs' prefix is a shorthand for the namespace 'http://www.w3.org/2001/XMLSchema'.
+
+A major difference between DTDs and XML Schemas is that the former uses a non-XML Syntax whereas the later uses XML synatx. An advantage of using XML syntax is that XML Schemas can be manipulated by XML-aware tools. A disadvantage is the verbosity of its XML syntax.
+
+XML Schemas have a reputation for being complex and difficult to understand. This arises, I think, from its incorporation of [object-oriented](http://en.wikipedia.org/wiki/Object-oriented_programming) concepts such as encapsulation and inheritance. 
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -176,7 +188,7 @@ Schematron allows you to specify more specific and complex rules for validating 
 
 here's a Schematron file to perform additional validation on the contents
 
-```sch
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <schema schemaVersion="1.5" xmlns="http://www.ascc.net/xml/schematron">
     <ns uri="http://www.w3.org/2001/XMLSchema" prefix="xs"/>
@@ -199,5 +211,4 @@ here's a Schematron file to perform additional validation on the contents
                 <value-of select="./text()"/></diagnostic>
     </diagnostics>
 </schema>
-
 ```
