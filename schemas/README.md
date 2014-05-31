@@ -212,3 +212,29 @@ here's a Schematron file to perform additional validation on the contents
     </diagnostics>
 </schema>
 ```
+
+##Challenge
+
+Working in pairs, write a schema to validate the following (fictitious) check XML document. Select any form of schema (DTD, XSD, RELAX NG, or Schematron) to validate this kind of document.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<check num="001">
+    <name>
+        <last>Smith</last>
+        <first>Jane</first>
+    </name>
+    <address type="personal">
+        <street>1 Banker's Plaza</street>
+        <city>Gotham</city>
+        <state>NY</state>
+        <zip>10000</zip>
+    </address>
+    <!--See http://en.wikipedia.org/wiki/Routing_transit_number-->
+    <routing type="RTN">111000025</routing>
+    <transaction currency="bitcoin" type="debit">1</transaction>
+    <payee>Acme Corporation</payee>
+</check>
+```
+
+Think in particular about what aspects of this instance may vary in other instances. What datatypes would be helpful? Would it be useful to impose constraints on certain attributes?
