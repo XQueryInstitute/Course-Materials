@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" elementFormDefault="qualified">
+    <xs:element name="book" type="bookType"/>
+    <xs:complexType name="bookType">
+        <xs:all>
+            <xs:element name="author" type="authorType"/>
+            <xs:element name="title" type="titleType"/>
+            <xs:element name="date" type="dateType"/>
+            <xs:element name="genre" type="xs:string" xsi:nillable="true"/>
+            <xs:element name="publisher" type="publisherType"/>
+            <xs:element name="price" type="xs:string"/>
+        </xs:all>
+        <xs:attribute name="isbn" type="xs:string"/>
+        <xs:attribute name="oclc" type="xs:integer"/>
+    </xs:complexType>
+    <xs:complexType name="authorType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="authorized" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="titleType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="short" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="dateType">
+        <xs:simpleContent>
+            <xs:extension base="xs:gYear">
+                <xs:attribute name="type" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="priceType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string"/>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="publisherType">
+        <xs:all>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="city" type="xs:string"/>
+        </xs:all>
+    </xs:complexType>
+</xs:schema>
