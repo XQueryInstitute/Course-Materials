@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="book.rnc" type="application/relax-ng-compact-syntax"?>
 <book isbn="0099470438" oclc="50604879">
-    <author authorized="Haddon, Mark">Clifford Anderson</author>
+    <author authorized="Haddon, Mark">Mark Haddon</author>
     <title short="curious incident">The curious incident of the dog in the night-time</title>
     <date type="publication">2003</date>
     <genre/>
