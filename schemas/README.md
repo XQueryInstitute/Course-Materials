@@ -2,7 +2,7 @@
 
 Our goal in this session is to review the various means to validate an XML document. We'll look at DTDs and XML Schema first and then briefly try out RELAX NG and Schematron. We're not aiming to teach you how to use these technologies--trust me, there are whole books on the subject. Rather, we want you to be aware of the similarities and differences as well as how the technologies compliment one another.
 
-###Validation
+##Validation
 
 We recall from our XML fundamentals the difference between checking whether any given XML document is well-formed and whether it is valid. The first asks whether the document is XML. If a document is not well-formed, then it isn't actually XML--even if it appears to have lots of angle brackets.
 
@@ -12,9 +12,9 @@ There are multiple ways to validate XML documents:
 * [RELAX NG](http://relaxng.org/)
 * [Schematron](http://www.schematron.com/)
 
-as well as technologies like Namespace-based Validation Dispatching Language ([NVDL](http://nvdl.org/) to handle more advanced scenarios.
+as well as technologies like Namespace-based Validation Dispatching Language ([NVDL](http://nvdl.org/)) to handle more advanced scenarios.
 
-###Sample Document
+##Sample Document
 
 So let's imagine we're seeking a standardized way of describing books in a bookstore. We'd like to create a standard that contains all the information we need along with some option information that we might have in certain circumstances. We'll use this standard for a few things. It will help to make sure that our employees are all entering information in the same manner. It will flag cases where someone has left out important information. It will also help us to send information about our inventory to publishers and others.
 
@@ -37,11 +37,15 @@ Here's a sketch of what such a document might look like:
 </book>
 ```
 
-###Document Type Definition (DTD)
+##Document Type Definition (DTD)
 
 A document type definition (DTD) is a venerable standard developed to validate Standard Generalized Markup Language ([SGML](http://www.iso.org/iso/catalogue_detail?csnumber=16387)). The standard predates the development of XML and XML-related schema standards like XML Schema.
 
 The benefits of using a Document Type Definition include its simplicity and relative compactness along with its ability to be used internally or externally to XML documents.
+
+###Example DTD for Book.xml
+
+Here is a possible DTD for our sample document:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -66,17 +70,25 @@ The benefits of using a Document Type Definition include its simplicity and rela
 <!ELEMENT city (#PCDATA)>
 ```
 
-###XML Schema (XSD)
+To associate this DTD with our sample XML document, add the following line to the top of the document (right under the XML Declaration)–assuming that the DTD is located in the same directory as the XML document:
+
+```xml
+<!DOCTYPE book SYSTEM "book.dtd">
+```
+
+##XML Schema (XSD)
 
 XML Schema 1.0 is a W3C standard approved in 2001. The current recommendation for [XML Schema 1.1](http://www.w3.org/TR/xmlschema11-1/) dates from 2012.
 
-XML Schema is a more robust standard than Document Type Definitions. Unlike DTDs, XML Schema can perform complex type checking on documents.
+XML Schema is a more robust standard than Document Type Definitions. Unlike DTDs, XML Schema can perform complex type checking on documents. In other words, XML Schema can verify that a date element actually contains a valid gYear.
 
-In fact, XQuery incorporates the XML Schema types defined in the [XML Schema](http://www.w3.org/TR/xmlschema-2/). This is why atomic types in XQuery use the 'xs' namespace prefix. The 'xs' prefix is a shorthand for the namespace 'http://www.w3.org/2001/XMLSchema'.
+In fact, XQuery incorporates the types defined in the [XML Schema](http://www.w3.org/TR/xmlschema-2/). This is why atomic types in XQuery use the 'xs' namespace prefix. The 'xs' prefix is a shorthand for the namespace 'http://www.w3.org/2001/XMLSchema'.
 
-A major difference between DTDs and XML Schemas is that the former uses a non-XML Syntax whereas the later uses XML synatx. An advantage of using XML syntax is that XML Schemas can be manipulated by XML-aware tools. A disadvantage is the verbosity of its XML syntax.
+A major difference between DTDs and XML Schemas is that the former uses a non-XML Syntax whereas the later uses XML syntax. An advantage of using XML syntax is that XML Schemas can be manipulated by XML-aware tools. A disadvantage is the verbosity of its XML syntax.
 
 XML Schemas have a reputation for being complex and difficult to understand. This arises, I think, from its incorporation of [object-oriented](http://en.wikipedia.org/wiki/Object-oriented_programming) concepts such as encapsulation and inheritance. 
+
+##Example XML Schema for Book.xml
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -130,12 +142,26 @@ XML Schemas have a reputation for being complex and difficult to understand. Thi
 </xs:schema>
 ```
 
+You add a reference to an XML Schema by inserting attributes into the document element as follows:
 
-###RELAX NG
+```xml
 
-Relax NG stands for "REgular LAnguage for XML Next Generation".
+<book xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="book.xsd" isbn="0099470438" oclc="50604879">
+ 
+```
 
-Here's a RELAX NG file to validate the book:
+* N.B. that there is no namespace for this schema. We might have defined our schema in a namespace like 'http://xqueryinstitute/book' and targeted this namespace using the ```targetNamespace``` attribute in our XSD. Of course, our document would also have to declare this namespace. In such cases, we would use the attribute ```xsi:schemaLocation``` to identify our namespace and its location. 
+
+##RELAX NG
+
+RELAX NG stands for "REgular LAnguage for XML Next Generation". James Clark, a major figure in the XML world, promoted the development of RELAX NG as a more streamlined alternative to XML Schema. The [RELAX NG](https://www.oasis-open.org/committees/relax-ng/compact-20021121.html) standard is maintained by [OASIS](https://www.oasis-open.org/org). 
+
+Among the [stated goals of RELAX NG](http://relaxng.org/) are being simple and easier to learn. In a way, RELAX NG, especially in its compact syntax, draws on the legacy of DTDs while providing the powerful type checking of XML Schema. 
+
+###Example RELAX NG (compact syntax) for Book.xml
+
+Here's a RELAX NG file using the compact syntax to validate our book document:
 
 ```rnc
 author =
@@ -145,7 +171,6 @@ author =
         },
         text
     }
-
 title =
     element title {
         attribute short {
@@ -153,40 +178,43 @@ title =
         },
         text
     }
-
 date =
     element date {
-        attribute type {text},
-        text
+        attribute type { text },
+        xsd:gYear
     }
-genre =
-    element genre {
-        text
-    }
-
+genre = element genre { text }
 publisher =
     element publisher {
         element name { text }
         & element city { text }
     }
-
-price =
-    element price { text }
-
+price = element price { text }
 start =
     element book {
-        attribute isbn {xsd:token} &
-        attribute oclc {xsd:token} &
-        title & author & date & genre & publisher & price
+        attribute isbn { xsd:token }
+        & attribute oclc { xsd:token }
+        & title
+        & author
+        & date
+        & genre
+        & publisher
+        & price
     }
+
 ```
 
+To associate this RELAX NG compact schema with an XML document, use the ```xml-model``` processing instruction as follows: ```<?xml-model href="book.rnc" type="application/relax-ng-compact-syntax"?>
 
-###Schematron
+##Schematron
 
-Schematron allows you to specify more specific and complex rules for validating documents. The key difference between DTDs, XML Schema, and RelaxNG on the one hand, and Schematron on the other is that the former are grammar-based whereas Schematron is rule-based. (See Priscilla Walmsley, [Definitive XML Schema](http://www.worldcat.org/title/definitive-xml-schema/oclc/48362767), second edition, p. 13)
+Schematron allows you to specify more specific and complex rules for validating documents. Like RELAX NG, Schematron is not a W3C recommendation; the Schematron standard is maintained jointly by [ISO and IEC](http://www.standardsinfo.net/info/index.html).
 
-here's a Schematron file to perform additional validation on the contents
+A key difference between DTDs, XML Schema, and RelaxNG on the one hand, and Schematron on the other is that the former are grammar-based whereas Schematron is rule-based. (See Priscilla Walmsley, [Definitive XML Schema](http://www.worldcat.org/title/definitive-xml-schema/oclc/48362767), second edition, p. 13)
+
+###Example Schematron document for Book.xml
+
+Here's a Schematron file to perform additional validation on the contents
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -211,6 +239,13 @@ here's a Schematron file to perform additional validation on the contents
                 <value-of select="./text()"/></diagnostic>
     </diagnostics>
 </schema>
+```
+
+To associate a set of Schematron rules with an XML document, use the ```xml-model``` processing instruction like this ``` 
+<?xml-model href="book.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?> ```. Schematron may be used in conjunction with grammar-based schemas; it's perfectly valid to have two ```xml-model``` instructions–for example,
+```
+<?xml-model href="book.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="book.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 ```
 
 ##Challenge
