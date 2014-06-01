@@ -15,7 +15,7 @@ title =
 date =
     element date {
         attribute type { text },
-        text
+        xsd:gYear
     }
 genre = element genre { text }
 publisher =
