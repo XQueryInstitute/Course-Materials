@@ -69,6 +69,7 @@ Here is a possible DTD for our sample document:
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT city (#PCDATA)>
 ```
+* N.B. PCDATA stands for Parsed Character Data, which is data that will be parsed by the XML interpreter. CDATA stands for Character Data. It will not be parsed as XML, meaning that elements etc. will not be recognized as such. See StackOverflow for a good discussion of the [difference between CDATA and PCDATA](http://stackoverflow.com/questions/918450/difference-between-pcdata-and-cdata-in-dtd).
 
 To associate this DTD with our sample XML document, add the following line to the top of the document (right under the XML Declaration)–assuming that the DTD is located in the same directory as the XML document:
 
@@ -82,11 +83,11 @@ XML Schema 1.0 is a W3C standard approved in 2001. The current recommendation fo
 
 XML Schema is a more robust standard than Document Type Definitions. Unlike DTDs, XML Schema can perform complex type checking on documents. In other words, XML Schema can verify that a date element actually contains a valid gYear.
 
-In fact, XQuery incorporates the types defined in the [XML Schema](http://www.w3.org/TR/xmlschema-2/). This is why atomic types in XQuery use the 'xs' namespace prefix. The 'xs' prefix is a shorthand for the namespace 'http://www.w3.org/2001/XMLSchema'.
+In fact, XQuery incorporates the types defined in the [XML Schema](http://www.w3.org/TR/xmlschema-2/). This is why atomic types in XQuery use the 'xs' namespace prefix. The 'xs' prefix is a common shorthand for the namespace 'http://www.w3.org/2001/XMLSchema'.
 
 A major difference between DTDs and XML Schemas is that the former uses a non-XML Syntax whereas the later uses XML syntax. An advantage of using XML syntax is that XML Schemas can be manipulated by XML-aware tools. A disadvantage is the verbosity of its XML syntax.
 
-XML Schemas have a reputation for being complex and difficult to understand. This arises, I think, from its incorporation of [object-oriented](http://en.wikipedia.org/wiki/Object-oriented_programming) concepts such as encapsulation and inheritance. 
+XML Schema has a reputation for being complex and difficult to understand. This arises, I think, from its incorporation of [object-oriented](http://en.wikipedia.org/wiki/Object-oriented_programming) concepts such as encapsulation and inheritance. 
 
 ##Example XML Schema for Book.xml
 
@@ -157,7 +158,7 @@ You add a reference to an XML Schema by inserting attributes into the document e
 
 RELAX NG stands for "REgular LAnguage for XML Next Generation". James Clark, a major figure in the XML world, promoted the development of RELAX NG as a more streamlined alternative to XML Schema. The [RELAX NG](https://www.oasis-open.org/committees/relax-ng/compact-20021121.html) standard is maintained by [OASIS](https://www.oasis-open.org/org). 
 
-Among the [stated goals of RELAX NG](http://relaxng.org/) are being simple and easier to learn. In a way, RELAX NG, especially in its compact syntax, draws on the legacy of DTDs while providing the powerful type checking of XML Schema. 
+Among the [stated goals of RELAX NG](http://relaxng.org/) are being simple and easy to learn. In a way, RELAX NG, especially in its compact syntax, draws on the legacy of DTDs while providing the powerful type checking of XML Schema. 
 
 ###Example RELAX NG (compact syntax) for Book.xml
 
