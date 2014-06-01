@@ -1,8 +1,16 @@
 #XQuery Summer Institute
 
-##Detailed Curriculum: Schedule and Readings
+##Detailed Curriculum
+
+##Sunday, June 8
+
+###Check-in (4 p.m. and 9 p.m.)
+[Lewis House, Highland Quadrangle](https://goo.gl/maps/VTBiV)
+on the Vanderbilt University campus
 
 ##Monday, June 9
+
+*Breakfast (8:00 a.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))*
 
 ###Morning Session I (9:00 a.m. to 10:15 a.m.) 
 Instructor: Clifford B. Anderson
@@ -18,9 +26,11 @@ Instructor: David A. Michelson
 
 Readings: 
 
-- Joe Fawcett, Liam Quin, and Danny Ayers, *Beginning XML*, Chapter 1: What is XML?,  Chapter 2: Well-Formed XML, and Chapter 3: XML Namespaces
+- Joe Fawcett, Liam Quin, and Danny Ayers, *Beginning XML*, Chapter 1: What is XML?, Chapter 2: Well-Formed XML, and Chapter 3: XML Namespaces
 
 - David J. Birnbaum, ["What is XML and why should humanists care? An even gentler introduction to XML."](http://dh.obdurodon.org/what-is-xml.xhtml) 
+
+*Lunch (11:45 a.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))*
 
 ###Afternoon Session I (1:00 p.m. to 2:15 p.m.) 
 Instructor: Clifford B. Anderson
@@ -39,7 +49,11 @@ Workshop Format
  
 The University Library will host a reception for our Institute in the 2nd Floor Gallery.
 
+*Dinner (5:45 p.m. at [The Commons](https://goo.gl/maps/9FcaG))*
+
 ##Tuesday, June 10
+
+*Breakfast (8:00 a.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))*
 
 ###Morning Session I (9:00 a.m. to 10:15 a.m.)
 Instructor: David A. Michelson
@@ -50,7 +64,6 @@ Readings:
 
 - *Browse*: Lou Burnard, Katherine O'Brien O'Keeffe, and John Unsworth, eds. [*Electronic Textual Editing*](http://www.tei-c.org/About/Archive_new/ETE/Preview/index.xml)
 
- 
 ###Morning Session II (10:30 a.m. to 11:45 a.m.)
 Instructor: David A. Michelson 
  
@@ -61,6 +74,8 @@ Readings:
 - P5: Guidelines for Electronic Text Encoding and Interchange, [Chapter 3: Elements Available in All TEI Documents](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html)
 
 - *Browse*: Lou Burnard, [*What is the Text Encoding Initiative?*](http://books.openedition.org/oep/679)
+
+*Lunch (11:45 a.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))*
 
 ###Afternoon Session I (1:00 p.m. to 2:15 p.m.) 
 Skype Conversation with Michael Poston & Rebecca Niles
@@ -78,7 +93,11 @@ Instructor: Dr. Jay Clayton, William R. Kenan, Jr. Professor, Department of Engl
 
 - Hopes, aspirations, and collective goals for XQuery
 
+*Dinner (5:45 p.m. at [The Commons](https://goo.gl/maps/9FcaG))*
+
 ##Wednesday, June 11
+
+*Breakfast (8:00 a.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))*
 
 ###Morning Session I (9:00 a.m. to 10:15 a.m.)
 Instructor: Jonathan Robie
@@ -93,6 +112,8 @@ Instructor: Jonathan Robie
 * Path expressions
 
 Reading: Joe Fawcett, Liam Quin, and Danny Ayers, *Beginning XML*, Chapter 7: Extracting Data from XML; Priscilla Walmsley, *XQuery*, Chapter 4: Navigating Input Documents Using Paths
+
+*Lunch (11:45 a.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))*
 
 ###Afternoon Session I (1:00 p.m. to 2:15 p.m.) 
 Instructor: Jonathan Robie
@@ -110,9 +131,13 @@ Reading: Priscilla Walmsley, *XQuery*, Chapter 5: Adding Elements and Attributes
 
 ###Open session (4:00 p.m. to 5:00 p.m.)
 
+*Dinner (5:45 p.m. at [The Commons](https://goo.gl/maps/9FcaG))*
+
 * Exploring participants' datasets
 
 ##Thursday, June 12
+
+*Breakfast (8:00 a.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))*
 
 ###Morning Session I (9:00 a.m. to 10:15 a.m.)
 Instructor: Jonathan Robie 
@@ -126,6 +151,8 @@ Instructor: Jonathan Robie
 	- partial function application
 	- Inline functions
 	- A brief at second order functions
+
+*Lunch (11:45 a.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))*
 
 ###Afternoon Session I (1:00 p.m. to 2:15 p.m.)
 Instructor: Jonathan Robie
@@ -141,7 +168,11 @@ Institute Faculty
 
 - Commentary, discussion, questions
 
+*Dinner (5:45 p.m. at [The Commons](https://goo.gl/maps/9FcaG))*
+
 ##Friday, June 13
+
+*Breakfast (8:00 a.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))*
  
 ###Morning Session I (9:00 a.m. to 10:15 a.m.)
 Instructor: Jonathan Robie 
@@ -163,6 +194,8 @@ Instructor: Jonathan Robie
 	
 Reading: Priscilla Walmsley, *XQuery*, Chapter 3: XQuery Building Blocks
 
+*Lunch (11:45 a.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))*
+
 ###Afternoon Session I (1:00 p.m. to 2:15 p.m.)
 Instructor: Jonathan Robie
 
@@ -178,6 +211,8 @@ Institute Faculty
 - Commentary, discussion, questions
 
 ##Monday, June 16
+
+*Breakfast (8:00 a.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))*
  
 ###Morning Session I (9:00 a.m. to 10:15 a.m.)
 Instructor: Winona Salesky 
@@ -190,6 +225,8 @@ Reading: Joe Fawcett, Liam Quin, and Danny Ayers, *Beginning XML*, Chapter 10: X
 Instructor: Winona Salesky 
  
 - Combining eXist’s extension functions with FLWOR expressions
+
+*Lunch (11:45 a.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))*
 
 ###Afternoon Session I (1:00 p.m. to 2:15 p.m.)
 Instructor: Winona Salesky
@@ -205,7 +242,11 @@ Institute Faculty
 
 - Participant presentation
 
+*Dinner (5:45 p.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))*
+
 ##Tuesday, June 17
+
+*Breakfast (8:00 a.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))*
  
 ###Morning Session I (9:00 a.m. to 10:15 a.m.)
 Instructor: Winona Salesky 
@@ -224,6 +265,8 @@ Instructor: Clifford Anderson
 	- [XQLint](https://github.com/wcandillon/xqlint)
 	- [XQDoc](http://xqdoc.org/)
 
+*Lunch (11:45 a.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))*
+
 ###Afternoon Session I (1:00 p.m. to 2:15 p.m.)
 Instructor: Winona Salesky 
  
@@ -240,8 +283,11 @@ Institute  Faculty
 
 - Participant presentation
 
+*Dinner (5:45 p.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))*
 
 ##Wednesday, June 18
+
+*Breakfast (8:00 a.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))*
 
 ###Morning Session I (9:00 a.m. to 10:15 a.m.)
 Instructor: Kevin Clarke 
@@ -255,7 +301,9 @@ Reading: Cornelia Davis, “[What if the web were not RESTful?](http://ws-rest.o
 Instructor: Winona Salesky 
  
 - Introduction to [eXist’s httpclient extension functions](http://exist-db.org/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/httpclient&location=java:org.exist.xquery.modules.httpclient.HTTPClientModule)
- 
+
+*Lunch (11:45 a.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))* 
+
 ###Afternoon Session I (1:00 p.m. to 2:15 p.m.)
 Institute Faculty 
  
@@ -276,7 +324,11 @@ Instructor: Dale Poulter
 
 - The [Robert Penn Warren Center for the Humanities](http://www.vanderbilt.edu/rpw_center/) will host a reception for the Institute at the [Vaughn Home](http://www.vanderbilt.edu/rpw_center/map.php) on the Vanderbilt Campus.
 
+*Dinner (5:45 p.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))*
+
 ##Thursday, June 19
+
+*Breakfast (8:00 a.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))*
 
 ###Morning Session I (9:00 a.m. to 10:15 a.m.)
 Instructor: Kevin Clarke
@@ -284,11 +336,12 @@ Instructor: Kevin Clarke
 - Architectural patterns for building larger applications
 - Introduction to the Model-View-Controller pattern
 
-
 ###Morning Session II (10:30 a.m. to 11:45 a.m.)
 Instructor: Winona Salesky 
 
 - Introduction to eXist's [XQuery Update Extension](http://exist-db.org/exist/apps/doc/update_ext.xml)
+
+*Lunch (11:45 a.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))*
 
 ###Afternoon Session I (1:00 p.m. to 2:15 p.m.)
 Institute Faculty
@@ -304,7 +357,11 @@ Institute Faculty
 
 - Participant presentation
 
+*Dinner (5:45 p.m. at [The Commons](https://goo.gl/maps/9FcaG))*
+
 ##Friday, June 20
+
+*Breakfast (8:00 a.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))*
 
 ###Morning Session I (9:00 a.m. to 10:15 a.m.)
 Instructor: Dale Poulter
@@ -315,6 +372,8 @@ Instructor: Dale Poulter
 Instructor: Dale Poulter
 
 - Deploying our Shakespeare search engine to the “cloud” using Amazon Web Services – Part Two
+
+*Lunch (11:45 a.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))*
 
 ###Afternoon Session I (1:00 p.m. to 2:15 p.m.)
 Instructor: Kevin Clarke 
@@ -332,3 +391,5 @@ Instructor: Clifford B. Anderson
 - Institute wrap up
 - survey
 - recommendations for developing a stronger community of XQuery experts in the digital humanities
+
+*Dinner (5:45 p.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))*
