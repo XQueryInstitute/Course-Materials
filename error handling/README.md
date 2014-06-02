@@ -79,7 +79,42 @@ Here we need to read another W3C Document called the [XQuery and XPath Functions
 
 The implementation tells us a little more about why this error occurred. We see that implementation tells us that we cannot add an xs:integer and an xs:string together. 
 
-The implementation also provides a line and column number for the error. This may not always accurately reflect where we think the error needs to be remedied. For example, in this case, the implementation identifies column 1 or ```3``` as the source of the problem. This is, of course, the xs:integer we tried to add to an xs:string. To fix this problem, we'd probably want to change the xs:string in column 6 to an xs:integer.  
+The implementation also provides a line and column number for the error. This may not always accurately reflect where we think the error needs to be remedied. For example, in this case, the implementation identifies column 1 or ```3``` as the source of the problem. This is, of course, the xs:integer we tried to add to an xs:string. To fix this problem, we'd probably want to change the xs:string in column 6 to an xs:integer.
+
+##Defensive Programming
+
+A leading idea of defensive programming is to make as few implicit assumptions about your code and data as practically possible. For instance, it is better not to assume that the input to a function will always have the expected type. Rather, try to make your assumptions explicit by checking the types of your function arguments and return values. Also, write code to test for and handle common error conditions.
+
+compare the difference between
+
+```xquery
+xquery version "3.0";
+
+declare function local:divide($num1, $num2)
+{
+  $num1 div $num2
+};
+
+local:divide(2,"a")
+```
+
+and
+
+```xquery
+xquery version "3.0";
+
+declare function local:divide($num1 as xs:double, $num2 as xs:double) as xs:double
+{
+  if ($num2 != 0) then $num1 div $num2
+  else fn:error(xs:QName("FOAR0001"), "Hey, you're trying to divide by zero!")
+};
+
+local:divide(2,"a")
+```
+
+[Try it!](http://try.zorba.io/queries/xquery/fCwpDjLwAaQgxal0auMkoeDR4tY%3D)
+
+In the first example, we do not check the type of our arguments and thus allow problematic arguments (like xs:string types) be passed in to our function. We also do not check for common error conditions such as division by zero. The second example handles error conditions more robustly by guarding against inappropriate function arguments and gracefully handling division by zero errors.
 
 ##Try/Catch Expressions
 
@@ -102,7 +137,7 @@ catch * {
 
 [Try it!](http://try.zorba.io/queries/xquery/6ekWWgACzClLrdXCf5gyv%2FBiirs%3D)
 
-The ```*``` after the catch keyword indicates that we'd like to catch all errors. We could specify the kind(s) of error(s) by substituting the error identifier(s) for ```*```. We might do this if we want to catch some errors, but leave others unhandled. For example,
+The ```*``` after the catch keyword indicates that we'd like to catch all errors. We could specify the kind(s) of error(s) by substituting a corresponding error identifier(s) for ```*```. We might do this if we want to catch some errors, but leave others unhandled. For example,
 
 ```xquery
 xquery version "3.0";
@@ -115,9 +150,9 @@ catch XPTY0004 {
 }
 ```
 
-This try/catch expression only handles type errors. If we attempt to an xs:integer by zero, we'll get an unhandled ```[FOAR0001] division by zero``` error, which won't be caught and which will halt our program.
+This try/catch expression only handles type errors. If we attempt to 3 by zero, we'll get a ```[FOAR0001] division by zero``` error, which won't be caught and which will halt our program.
 
 Deciding when to use try/catch expressions can be tricky. Obviously, try/catch expressions can be useful when you don't want your program to crash in the event of an error. For example, you might include a try/catch expression in your controller when writing a web application to handle unexpected errors in a graceful way rather than displaying cryptic error messages to your user. On the other hand, try/catch expressions can themselves become sources of "bugs," especially if you handle errors in logic which should have been fixed prior to the execution of your program.
 
 The art of using try/catch expressions is [much debated](http://programmers.stackexchange.com/questions/64180/good-use-of-try-catch-blocks). A good rule of thumb is to use try/catch expressions when dealing with an external environment. For example, if you write an expression to get a string from a user and open a file on the file system with a name correspond to that string, you should probably enclose that expression in a try/catch expression to handle potential I/O errors gracefully.
- 
+
