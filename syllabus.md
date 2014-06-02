@@ -8,6 +8,8 @@
 [Lewis House, Highland Quadrangle](https://goo.gl/maps/VTBiV)
 on the Vanderbilt University campus
 
+*N.B. If you arrive after check-in hours, please call (615) 343-8699 for assistance.*
+
 ##Monday, June 9
 
 *Breakfast (8:00 a.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))*
@@ -131,9 +133,9 @@ Reading: Priscilla Walmsley, *XQuery*, Chapter 5: Adding Elements and Attributes
 
 ###Open session (4:00 p.m. to 5:00 p.m.)
 
-*Dinner (5:45 p.m. at [The Commons](https://goo.gl/maps/9FcaG))*
-
 * Exploring participants' datasets
+
+*Dinner (5:45 p.m. at [The Commons](https://goo.gl/maps/9FcaG))*
 
 ##Thursday, June 12
 
