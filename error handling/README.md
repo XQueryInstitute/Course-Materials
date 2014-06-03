@@ -83,7 +83,7 @@ The implementation also provides a line and column number for the error. This ma
 
 ##Defensive Programming
 
-A leading idea of defensive programming is to make as few implicit assumptions about your code and data as practically possible. For instance, it is better not to assume that the input to a function will always have the expected type. Rather, try to make your assumptions explicit by checking the types of your function arguments and return values. Also, write code to test for and handle common error conditions.
+A leading idea of [defensive programming](http://en.wikipedia.org/wiki/Defensive_programming) is to make as few implicit assumptions about your code and data as practically possible. For instance, it is better not to assume that the input to a function will always have the expected type. Rather, try to make your assumptions explicit by checking the types of your function arguments and return values. Also, write code to test for and handle common error conditions.
 
 compare the difference between
 
@@ -156,3 +156,55 @@ Deciding when to use try/catch expressions can be tricky. Obviously, try/catch e
 
 The art of using try/catch expressions is [much debated](http://programmers.stackexchange.com/questions/64180/good-use-of-try-catch-blocks). A good rule of thumb is to use try/catch expressions when dealing with an external environment. For example, if you write an expression to get a string from a user and open a file on the file system with a name correspond to that string, you should probably enclose that expression in a try/catch expression to handle potential I/O errors gracefully.
 
+##XUnit Annotations
+
+##XQLint
+
+##XQDoc
+
+[XQDoc](http://xqdoc.org/) creates XQuery documentation from comments in your source file. While documentation is not strictly speaking a matter of error handling, good documentation can frequently prevent inadvertent errors. Good documentation also promotes code reuse. By commenting your code well and by producing readable documentation, you may be able to help others avoid making mistakes when using their code.
+
+Let's consider an example of undocumented code:
+
+```xquery
+xquery version "1.0";
+
+declare function local:pow($number as xs:integer, $power as xs:integer) as xs:integer {
+  if ($power = 0) then 1
+  else $number * local:pow($number, $power - 1)
+};
+
+local:pow(2,3)
+```
+
+To understand this function, we need to read through the code. Of course, it is easy enough to read through this small function. But things get complicated with larger functions.
+
+We're also missing information about its author. We don't know that this function was adapted from an example provided by Michael Kay on [Stackoverflow](http://stackoverflow.com/a/15369640).
+
+Let's look at the same example with XQDoc comments:
+
+```xquery
+xquery version "3.0";
+ 
+(:~ The purpose of this main module is to demontrate the use of a recursive function.
+:   @author Clifford Anderson
+:   @version 1.0
+:)
+ 
+(:~ This function raises a given integer by a given power. 
+:   @author Clifford Anderson
+    @version 1.0
+    @see http://stackoverflow.com/a/15369640;;Adapted from Michael Kay's example on Stackoverflow.
+    @param $number An integer to be raised by a power
+    @param $power An integer indicating the power to be raised
+    @return An integer
+:)
+declare function local:pow($number as xs:integer, $power as xs:integer) as xs:integer {
+  if ($power = 0) then 1
+  else $number * local:pow($number, $power - 1)
+};
+ 
+local:pow(2,3)
+```
+
+##Conclusion
