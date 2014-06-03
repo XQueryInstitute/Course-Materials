@@ -158,7 +158,46 @@ The art of using try/catch expressions is [much debated](http://programmers.stac
 
 ##XUnit Annotations
 
+XQuery 3.0 introduced the concept of [annotations](http://www.w3.org/TR/2014/REC-xquery-30-20140408/#id-annotations) to the language. Annotations offer a mechanism for associating metadata with functions. For example, an annotation might indicate that a function is private–i.e., cannot be called from a function external to its module. Annotations provide an adaptable means to implement functionality orthogonal to functions.
+
+[XQSuite](http://exist-db.org/exist/apps/doc/xqsuite.xml) provides the ability to conduct unit tests within XQuery.
+
+```xquery
+xquery version "3.0";
+
+(: imports the test module :)
+import module namespace test="http://exist-db.org/xquery/xqsuite" at "resource:org/exist/xquery/lib/xqsuite/xqsuite.xql";
+
+(: annotations come between the declare keyword and the function keyword :)
+declare
+    %test:name("cube")
+    %test:args(2, 3)
+    %test:assertEquals(8)
+    function local:pow($number as xs:integer, $power as xs:integer) as xs:integer {
+        if ($power = 0) then 1
+        else $number * local:pow($number, $power - 1)
+};
+
+(: pass the function name & arity (i.e. number of arguments) into the test:suite function :)
+test:suite(local:pow#2)
+```
+
+The annotations describing the test are located between the ```declare``` keyword and the ```function``` keyword. The ```%``` symbol indicates that the line is an annotation. In this case, we use three annotations to name the test, provide representative arguments, and the assert the value of the function. We call this test by passing the name of the function along with its arity (i.e., the number of arguments) to the ```test:suite``` function.
+
+The result looks like this:
+```xquery
+<testsuites>
+	<testsuite package="http://www.w3.org/2005/xquery-local-functions" timestamp="2014-06-03T13:10:39.603-05:00"  failures="0"  tests="1"  time="PT0.004S">
+		<testcase name="cube"  class="local:pow"/>
+	</testsuite>
+</testsuites>
+```
+
+For more on XQSuite, see the [XUnit Annotations](http://en.wikibooks.org/wiki/XQuery/XUnit_Annotations) in the [XQuery WikiBook](http://en.wikibooks.org/wiki/XQuery).
+
 ##XQLint
+
+
 
 ##XQDoc
 
@@ -186,7 +225,7 @@ Let's look at the same example with XQDoc comments:
 ```xquery
 xquery version "3.0";
  
-(:~ The purpose of this main module is to demontrate the use of a recursive function.
+(:~ The purpose of this main module is to demonstrate the use of a recursive function.
 :   @author Clifford Anderson
 :   @version 1.0
 :)
