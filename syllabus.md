@@ -1,6 +1,6 @@
 #XQuery Summer Institute
 
-##Detailed Curriculum
+##Detailed Scheduule and Curriculum
 
 ##Sunday, June 8
 
