@@ -326,7 +326,7 @@ Instructor: Dale Poulter
 
 - The [Robert Penn Warren Center for the Humanities](http://www.vanderbilt.edu/rpw_center/) will host a reception for the Institute at the [Vaughn Home](http://www.vanderbilt.edu/rpw_center/map.php) on the Vanderbilt Campus.
 
-*Dinner (5:45 p.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))*
+*Dinner (5:45 p.m. at [The Commons](https://goo.gl/maps/9FcaG))*
 
 ##Thursday, June 19
 
