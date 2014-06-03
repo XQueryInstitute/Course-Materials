@@ -207,4 +207,8 @@ declare function local:pow($number as xs:integer, $power as xs:integer) as xs:in
 local:pow(2,3)
 ```
 
+Note the additional tilde at the opening of an XQuery comment: ```(:~```. This indicates that the comment block should be processed by XQDoc. XQDoc provides a number of metadata attributes to capture information: ```@author``` for the author(s); ```@version``` for the version number; ```@see``` for cross references; ```@param``` for description of the function arguments;  and ```@return``` for description of the return value, among others.
+
+Applying XQDoc to this module produces a nicely-formatted documentation page in [HTML](pow.xquery.html).
+
 ##Conclusion

@@ -1,0 +1,177 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xml:space="preserve"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>xqDoc -- Module</title><script language="JavaScript"><!--
+        function popUp(URL) {
+                 day = new Date();
+                 id = day.getTime();
+                 eval("page = window.open(URL, 'xqdoccode', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=600,height=400,left = 412,top = 334');")
+                 page.focus();
+        }
+      --></script><script language="JavaScript"><!--
+	    function litePopUp(str) {    
+  		  OpenWindow=window.open('', 'xqdoccode', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=600,height=400,left = 412,top = 334');
+  		  OpenWindow.document.write('<html xmlspace="preserve">');
+  		  OpenWindow.document.write('<head>');
+  		  OpenWindow.document.write('<title>xqDoc - Code Sample</title>');
+  		  OpenWindow.document.write('</head>');  		    		    		  
+  		  OpenWindow.document.write('<body xml:space="preserve">');
+  		  OpenWindow.document.write('<pre>');
+ 		  OpenWindow.document.write(str);
+ 		  OpenWindow.document.write('</pre>');
+  		  OpenWindow.document.write('</body>');
+  		  OpenWindow.document.write('</html>');
+  		  OpenWindow.document.close();
+  		  page.focus();
+        }
+      --></script><style><!--
+body		{
+		font: 80% Verdana;
+		}
+table		{
+		font-size: 100%;
+		}
+h1, h2, h3, h4, h5, h6
+		{
+		clear: both;
+		float: none;
+		}
+h1		{
+		font-size: 100%;
+		margin: 0em;
+		}
+h2		{
+		font-size: 180%;
+		margin-bottom: -1em;
+		margin-top: .3em;
+		}
+h3		{
+		font-size: 150%;
+		}	
+h4		{
+		font-size: 140%;
+		background-color: #ccf;
+		border-bottom: 1px solid #99f;
+		width: 100%;
+		}
+h5		{
+		margin: 1em 0em 0em 0em;
+		font-size: 120%;
+		}
+h6		{
+		margin: 0em 0em 0em 3em;
+		font-style: italic;
+		font: bold italic;
+		font-size: 100%;
+		}
+#variables, #methods, #methoddetail
+		{
+		padding-left: 3em;
+		margin-bottom: 1.4em;
+		clear: both;
+		float: none;
+		}
+#methods ul.method, #variables ul.method
+		{
+		margin: 1em 0em 0em;
+		}
+#methoddetail ul.method
+		{
+		margin: 0em;
+		}
+div.inexternal
+		{
+		padding-left: 2em;
+		margin-bottom: 1em;
+		}
+div.methoddetail p
+		{
+		float: none;
+		clear: both;
+		padding-left: 2em;
+		margin-bottom: 1em;
+		}
+div.methoddetail{
+		padding-bottom: 1em;
+		}
+div.methoddetail li
+		{
+		list-style-type: none;
+		font-weight: bold;
+		}
+div.methoddetail li li
+		{
+		list-style-type: circle;
+		font-weight: normal;
+		}
+div.methoddetail li ul
+		{
+		padding-bottom: 0.5em;
+		font-weight: normal;
+		}
+table.inexternal{
+		clear: both;
+		float: none;
+		width: 80%;
+		margin-left: 3em;
+		padding: 0em;
+		
+		}
+table.inexternal th
+		{
+		background-color:#dedede;
+		width: 50%;
+		}			
+td		{
+		vertical-align: top;
+		}
+div.description {
+		margin-top: .5em;
+		font-weight: normal;
+		padding-left: 1em;
+		}
+ul.method	{
+		clear: both;
+		float: none;
+		width: 90%;
+		list-style-type: none;
+		border-top: 1px solid #ccc;
+		}
+ul.method li.left
+		{
+		float: left;
+		clear: none;
+		width: 40%;
+		font-weight: bold;
+		margin-bottom: 2em;
+		}
+ul.method li.right
+		{
+		position: relative;
+            top: 0em;
+		float: left;
+            width: 55%;
+		margin-bottom: 2em;
+		padding-left: 2em;
+		}
+div.home 	{
+		width: 60%;
+		float: left;
+		margin-right: 1%;
+		border: 1px
+		}
+div.home h4	{
+		font-size: 120%;
+		background-color: #fff;
+		border-bottom: 1px solid #99f;
+		width: 100%;
+		margin-bottom: -1em;
+		}
+div.overview p {
+               width: 60%;
+               }
+     
+ --></style></head><body><h4>Module URI</h4><h1>pow.xquery</h1><h4>Module Description</h4><p> The purpose of this main module is to demontrate the use of a recursive function.</p><ul><li><strong>Author:&nbsp;</strong> Clifford Anderson</li><li><strong>Version:&nbsp;</strong> 1.0</li></ul>&nbsp; &nbsp;<h4>Function Summary</h4><div id="methods"><a name="methods"></a><ul class="method"><li class="left"><a href="#pow">pow</a><div class="description"> This function raises a given integer by a given power.</div></li><li class="right">( $number as xs:integer ,<br>&nbsp; $power as xs:integer) as xs:integer<br><br></li></ul><ul class="method"><li class="left"><a href="#xqDoc-main">xqDoc-main</a><div class="description"></div></li><li class="right"></li></ul></div>&nbsp;<h4>Function Detail</h4><div id="methoddetail"><div id="pow" class="methoddetail"><h5><a name="pow"></a>pow</h5><ul class="method"><li class="left"><a href="javascript:litePopUp('declare function local:pow($number as xs:integer, $power as xs:integer) as xs:integer{<br/&gt;  if ($power = 0) then 1<br/&gt;  else $number * local:pow($number, $power - 1)<br/&gt;};<br/&gt;')">
+         view code
+      </a></li><li class="right">( $number as xs:integer ,<br>&nbsp; $power as xs:integer) as xs:integer<br><br></li></ul><p> This function raises a given integer by a given power. </p><ul><li>Parameters:</li><ul><li>$number - An integer to be raised by a power<br></li><li>$power - An integer indicating the power to be raised<br></li></ul><li>Return:</li><ul><li> An integer</li></ul><li>See:</li><ul><li><a href="http://stackoverflow.com/a/15369640">Adapted from Michael Kay's example on Stackoverflow.</a></li></ul></ul></div>&nbsp;<div id="xqDoc-main" class="methoddetail"><h5><a name="xqDoc-main"></a>xqDoc-main</h5><ul class="method"><li class="left"><a href="javascript:litePopUp('local:pow(2,3)<br/&gt;')">
+         view code
+      </a></li><li class="right"></li></ul><ul></ul></div>&nbsp;</div>&nbsp;<div align="left"><i>Created by xqDoc-Lite version 1.0 on Tue Jun 03 05:36:40 CDT 2014</i></div></body></html>
