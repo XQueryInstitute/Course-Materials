@@ -8,7 +8,7 @@
 [Lewis House, Highland Quadrangle](https://goo.gl/maps/VTBiV)
 on the Vanderbilt University campus
 
-*N.B. If you arrive after check-in hours, please call (615) 343-8699 for assistance.*
+*N.B. The Lewis House reception desk will be open until 12 a.m. If you arrive after midnight, please call (615) 343-8699 for assistance.*
 
 ##Monday, June 9
 
