@@ -2,7 +2,7 @@
 
 ##Course Materials
 
-Course Materials for the XQuery Summer Institute at Vanderbilt University.
+Course Materials for the XQuery Summer Institute at Vanderbilt University
 
 ###Housekeeping Notes
 
