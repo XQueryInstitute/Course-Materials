@@ -4,9 +4,13 @@
 
 Course Materials for the XQuery Summer Institute at Vanderbilt University.
 
+###Housekeeping Notes
+
+[Practical information](housekeeping.md) about the XQuery Summer Institute, including information about parking, residence halls, and reimbursements
+
 ###Syllabus
 
-The [detailed syllabus](syllabus.md) for our XQuery Summer Institute, including reading assignments, session topics, and meal schedule.
+The [detailed syllabus](syllabus.md) for our XQuery Summer Institute, including reading assignments, session topics, and meal schedule
 
 ###Folger Digital Texts
 
