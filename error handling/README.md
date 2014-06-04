@@ -1,4 +1,4 @@
-#Error Handling & Prevention
+#Handling & Preventing Erros
 
 Learning how to diagnose, interpret, and prevent errors constitutes a major part of learning to program in any language. What follows is a whirlwind tour of errors in XQuery as well as some tools to prevent them from cropping up in the first place.
 
@@ -275,3 +275,7 @@ Note the additional tilde at the opening of an XQuery comment: ```(:~```. This i
 Applying XQDoc to this module produces a nicely-formatted documentation page in [HTML](http://htmlpreview.github.io/?https://raw.githubusercontent.com/XQueryInstitute/Course-Materials/master/error%20handling/pow.xquery.html).
 
 ##Conclusion
+
+We now understand how to interpret XQuery error codes, how to throw errors, and how to catch errors gracefully. We've also seen a range of tools that can help to prevent errors such as XQSuite, XQDoc, and XQLint. In the end, avoiding and diagnosing errors is as much an art as a science. You'll inevitably make many mistakes when you begin coding in any language. Tracking down the sources of your errors generally turns you into a better program over time. The tools can aid you in this process but you'll also develop your own "intuition" about where things may have gone wrong in your code and why.
+
+
