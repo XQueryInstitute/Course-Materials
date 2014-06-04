@@ -12,17 +12,17 @@ There are essentially three kinds of error in XQuery: static errors, dynamic err
 
 Static errors are the most common form of mistakes, especially when you are beginning to program. If you make a syntax mistake, such as using ```=``` for assignment rather than ```:=``` or forgetting to include a matching parenthesis/bracket, you have committed a static error. This is a static error because an XQuery interpreter will catch it before your program even runs (technically, it gets caught during the static analysis phase).  
 
-* Dynamics Errors
+* Dynamic Errors
 
 >[Definition: A dynamic error is an error that must be detected during the dynamic evaluation phase and may be detected during the static analysis phase.] Numeric overflow is an example of a dynamic error.
 
-A dynamic error, by contrast, may not be caught before your program runs. You may have gotten the syntax right but still have gone awry with your program logic. For example, you may have written a recursive function that does not specify properly a base case. If so, the function will continue to call itself until it runs out of space on the stack, resulting in a [stack overflow](http://en.wikipedia.org/wiki/Stack_overflow). This error may not be detectable until the program executes (technically, until the dynamic evaluation phase). This is the kind of "bug" that crashes your program after it begins running. In general, these kinds of "bugs" are harder to diagnose and resolve.
+A dynamic error, by contrast, may not be caught before your program runs. You may have gotten the syntax right but still have gone awry with your program logic. For example, you may have written a recursive function that does not specify properly a base case. If so, the function will continue to call itself until it runs out of space on the stack, resulting in a [stack overflow](http://en.wikipedia.org/wiki/Stack_overflow). This error may not be detectable until the program executes (technically, the dynamic evaluation phase). This is the kind of "bug" that crashes your program after it begins running. In general, these kinds of "bugs" are harder to diagnose and resolve.
 
 * Type Errors
 
 >[Definition: A type error may be raised during the static analysis phase or the dynamic evaluation phase. During the static analysis phase, a type error occurs when the static type of an expression does not match the expected type of the context in which the expression occurs. During the dynamic evaluation phase, a type error occurs when the dynamic type of a value does not match the expected type of the context in which the value occurs.]
 
-A common source of errors arises from type mismatches. We've already seen how to write functions that check the types of their inputs and outputs. Sending an argument of the wrong type to a function results in type error. A good example of this mistake is when your program produces a "number" that is actually a xs:string and you send that "number" to a function requiring an xs:integer as input. In order to avoid such an error, you will need first to cast the string to an integer first.
+A common source of errors arises from type mismatches. We've already seen how to write functions that check the types of their inputs and outputs. Sending an argument of the wrong type to a function results in type error. A good example of this mistake is when your code produces a "number" that is actually a xs:string and you send that "number" to a function requiring an xs:integer as input. In order to avoid such an error, you will need first to cast the string to an integer first.
 
 For example, this expression checks if a variable can be cast as an xs:integer and, if not, throws an error.
 
@@ -77,9 +77,9 @@ Using this information, we can decode some of the error identifier. The first tw
 
 Here we need to read another W3C Document called the [XQuery and XPath Functions and Operators Error Codes Namespace Document](http://www.w3.org/2005/xqt-errors/). If we go to that document, we can look up the identifier of our error. It turns out that [XPTY0004](http://www.w3.org/TR/xpath-30/#ERRXPTY0004) is a pretty generic type mismatch error. 
 
-The implementation tells us a little more about why this error occurred. We see that implementation tells us that we cannot add an xs:integer and an xs:string together. 
+The implementation tells us a little more about why this error occurred. We see that the implementation tells us that we cannot add an xs:integer and an xs:string together. 
 
-The implementation also provides a line and column number for the error. This may not always accurately reflect where we think the error needs to be remedied. For example, in this case, the implementation identifies column 1 or ```3``` as the source of the problem. This is, of course, the xs:integer we tried to add to an xs:string. To fix this problem, we'd probably want to change the xs:string in column 6 to an xs:integer.
+The implementation also provides a line and column number for the error. This may not always accurately reflect where the error needs to be remedied. For example, in this case, the implementation identifies column 1 or ```3``` as the source of the problem. This is, of course, the xs:integer we tried to add to an xs:string. To fix this problem, we'd probably want to change the xs:string in column 6 to an xs:integer.
 
 ##Defensive Programming
 
@@ -114,7 +114,7 @@ local:divide(2,"a")
 
 [Try it!](http://try.zorba.io/queries/xquery/fCwpDjLwAaQgxal0auMkoeDR4tY%3D)
 
-In the first example, we do not check the type of our arguments and thus allow problematic arguments (like xs:string types) be passed in to our function. We also do not check for common error conditions such as division by zero. The second example handles error conditions more robustly by guarding against inappropriate function arguments and gracefully handling division by zero errors.
+In the first example, we do not check the type of our arguments and thus allow problematic arguments (like xs:string types) to be passed into our function. We also do not check for common error conditions such as division by zero. The second example handles error conditions more robustly by guarding against inappropriate function arguments and gracefully handling division by zero errors.
 
 ##Try/Catch Expressions
 
@@ -154,9 +154,9 @@ This try/catch expression only handles type errors. If we attempt to 3 by zero, 
 
 Deciding when to use try/catch expressions can be tricky. Obviously, try/catch expressions can be useful when you don't want your program to crash in the event of an error. For example, you might include a try/catch expression in your controller when writing a web application to handle unexpected errors in a graceful way rather than displaying cryptic error messages to your user. On the other hand, try/catch expressions can themselves become sources of "bugs," especially if you handle errors in logic which should have been fixed prior to the execution of your program.
 
-The art of using try/catch expressions is [much debated](http://programmers.stackexchange.com/questions/64180/good-use-of-try-catch-blocks). A good rule of thumb is to use try/catch expressions when dealing with an external environment. For example, if you write an expression to get a string from a user and open a file on the file system with a name correspond to that string, you should probably enclose that expression in a try/catch expression to handle potential I/O errors gracefully.
+The art of using try/catch expressions is [much debated](http://programmers.stackexchange.com/questions/64180/good-use-of-try-catch-blocks). A good rule of thumb is to use try/catch expressions when dealing with an external environment. For example, if you write an expression that takes a string as an argument and opens a file on the file system with a filename corresponding to that string, you should probably enclose it in a try/catch expression to handle potential I/O errors gracefully.
 
-##XUnit Annotations
+##XQSuite
 
 XQuery 3.0 introduced the concept of [annotations](http://www.w3.org/TR/2014/REC-xquery-30-20140408/#id-annotations) to the language. Annotations offer a mechanism for associating metadata with functions. For example, an annotation might indicate that a function is private–i.e., cannot be called from a function external to its module. Annotations provide an adaptable means to implement functionality orthogonal to functions.
 
@@ -182,7 +182,7 @@ declare
 test:suite(local:pow#2)
 ```
 
-The annotations describing the test are located between the ```declare``` keyword and the ```function``` keyword. The ```%``` symbol indicates that the line is an annotation. In this case, we use three annotations to name the test, provide representative arguments, and the assert the value of the function. We call this test by passing the name of the function along with its arity (i.e., the number of arguments) to the ```test:suite``` function.
+The annotations describing the test are located between the ```declare``` keyword and the ```function``` keyword. The ```%``` symbol indicates that the line is an annotation. In this case, we use three annotations to name the test, provide representative arguments, and then assert the value of the function. We call this test by passing the name of the function along with its arity (i.e., the number of arguments) to the ```test:suite``` function.
 
 The result looks like this:
 ```xquery
@@ -193,15 +193,15 @@ The result looks like this:
 </testsuites>
 ```
 
-For more on XQSuite, see the [XUnit Annotations](http://en.wikibooks.org/wiki/XQuery/XUnit_Annotations) in the [XQuery WikiBook](http://en.wikibooks.org/wiki/XQuery).
+For more on XQSuite, see the [XUnit Annotations](http://en.wikibooks.org/wiki/XQuery/XUnit_Annotations) chapter in the [XQuery WikiBook](http://en.wikibooks.org/wiki/XQuery).
 
 ##XQLint
 
-Many programming languages offer a tool for uncovering static errors called "lint." (The name is not an acronym; apparently, it derives from the ["undesirable bits of fiber and fluff found in sheep's wool"](http://en.wikipedia.org/wiki/Lint_(software)#Background).
+Many programming languages offer a tool for uncovering static errors called "lint." (The name is not an acronym; apparently, it derives from the ["undesirable bits of fiber and fluff found in sheep's wool"](http://en.wikipedia.org/wiki/Lint_(software)#Background).)
 
 [William Candillon](https://github.com/wcandillon) has recently released a lint tool for XQuery called [XQLint](https://github.com/wcandillon/xqlint). The tool not only performs static analysis of XQuery code; it can also check for conformity to style guidelines.
 
-To use the tool, you must have [Node.js](http://nodejs.org/) installed on your machine. We won't install Node in this session because the setup time would be too long. However, I'll demonstrate the functionality for you on some sample code.
+To use the tool, you must have [Node.js](http://nodejs.org/) installed on your machine. We won't install Node in this session because the setup time would be too long. However, I'll demonstrate the functionality for you with some sample code.
 
 To run XQLint (on a Mac), open up a bash shell and type ```xqlint lint [NAME_OF_FILE] --style-check yes```. The ```--style-check yes``` flag means that XQLint will not only conduct a static analysis to find errors in your code but also warn you about stylistic problems.
 
@@ -221,11 +221,11 @@ Here are the results from XQLint:
 
 ![XQLint](xqlint.png "XQLint results in bash shell")
 
-XQLint indicates that I've committed two faux-pas in my code. The first two warnings note that I indented my function body with two spaces rather than a single tab. Obviously, this is a stylistic warning. The last three warnings note that I failed to provide types for my function parameters and return value. As we've noted above, it's not an error to omit type checking when writing functions but it's a potential source of type errors. XQLint warns against leaving the types implicit to head off such errors.
+XQLint indicates that I've committed two faux-pas in my code. The first two warnings note that I indented my function body with two spaces rather than a single tab. Obviously, this is a stylistic warning. The last three warnings note that I failed to provide types for my function parameters and return value. As we've noted above, it's not an error to omit type checking when writing functions but it potentially opens the door to type errors. XQLint warns against leaving the types implicit to head off such errors.
 
 ##XQDoc
 
-[XQDoc](http://xqdoc.org/) creates XQuery documentation from comments in your source file. While documentation is not strictly speaking a matter of error handling, good documentation can frequently prevent inadvertent errors. Good documentation also promotes code reuse. By commenting your code well and by producing readable documentation, you may be able to help others avoid making mistakes when using their code.
+[XQDoc](http://xqdoc.org/) creates XQuery documentation from comments in your source file. While documentation is not strictly speaking a matter of error handling, good documentation can frequently prevent inadvertent errors. Good documentation also promotes code reuse. By commenting your code well and by producing readable documentation, you may be able to help others avoid making mistakes when using your code.
 
 Let's consider an example of undocumented code:
 
@@ -240,7 +240,7 @@ declare function local:pow($number as xs:integer, $power as xs:integer) as xs:in
 local:pow(2,3)
 ```
 
-To understand this function, we need to read through the code. Of course, it is easy enough to read through this small function. But things get complicated with larger functions.
+To understand this function, we need to read through the code. Of course, it is easy enough to read through this small function. But things get complicated with larger functions and modules.
 
 We're also missing information about its author. We don't know that this function was adapted from an example provided by Michael Kay on [Stackoverflow](http://stackoverflow.com/a/15369640).
 
@@ -276,6 +276,6 @@ Applying XQDoc to this module produces a nicely-formatted documentation page in 
 
 ##Conclusion
 
-We now understand how to interpret XQuery error codes, how to throw errors, and how to catch errors gracefully. We've also seen a range of tools that can help to prevent errors such as XQSuite, XQDoc, and XQLint. In the end, avoiding and diagnosing errors is as much an art as a science. You'll inevitably make many mistakes when you begin coding in any language. Tracking down the sources of your errors generally turns you into a better program over time. The tools can aid you in this process but you'll also develop your own "intuition" about where things may have gone wrong in your code and why.
+We now understand how to interpret XQuery error codes, to throw errors, and to catch errors gracefully. We've also seen a range of tools that can help to prevent errors such as XQSuite, XQDoc, and XQLint. In the end, avoiding and diagnosing errors is as much an art as a science. You'll inevitably make many mistakes when you begin coding in any language. Tracking down the sources of your errors generally turns you into a better program over time. The tools can aid you in this process but you'll also develop your own "intuition"–experienced programmers claim to detect "code smells"–about where things may have gone wrong in your code and why.
 
 
