@@ -1,6 +1,6 @@
-#Error Handling
+#Error Handling & Prevention
 
-Learning how to diagnose, interpret, and overcome errors constitutes a major part of learning to program in any language.
+Learning how to diagnose, interpret, and prevent errors constitutes a major part of learning to program in any language. What follows is a whirlwind tour of errors in XQuery as well as some tools to prevent them from cropping up in the first place.
 
 ##Three Kinds of Error
 
@@ -197,7 +197,29 @@ For more on XQSuite, see the [XUnit Annotations](http://en.wikibooks.org/wiki/XQ
 
 ##XQLint
 
+Many programming languages offer a tool for uncovering static errors called "lint." (The name is not an acronym; apparently, it derives from the ["undesirable bits of fiber and fluff found in sheep's wool"](http://en.wikipedia.org/wiki/Lint_(software)#Background).
 
+[William Candillon](https://github.com/wcandillon) has recently released a lint tool for XQuery called [XQLint](https://github.com/wcandillon/xqlint). The tool not only performs static analysis of XQuery code; it can also check for conformity to style guidelines.
+
+To use the tool, you must have [Node.js](http://nodejs.org/) installed on your machine. We won't install Node in this session because the setup time would be too long. However, I'll demonstrate the functionality for you on some sample code.
+
+To run XQLint (on a MAC), open up a bash shell and type ```xqlint lint [NAME_OF_FILE] --style-check yes```. The ```--style-check yes``` flag means that XQLint will not only conduct a static analysis to find errors in your code but also warn you about stylistic problems.
+
+Let's see the result of running XQLint over this code snippet:
+```xquery
+xquery version "1.0";
+
+declare function local:pow($number, $power) {
+  if ($power = 0) then 1
+  else $number * local:pow($number, $power - 1)
+};
+
+local:pow(2,3)
+```
+
+Here are the results from XQLint:
+
+![XQLint](xqlint.png "XQLint results in bash shell")
 
 ##XQDoc
 
