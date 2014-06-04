@@ -1,6 +1,6 @@
 #XQuery Summer Institute
 
-##Detailed Scheduule and Curriculum
+#Detailed Schedule and Curriculum
 
 ##Sunday, June 8
 
@@ -17,9 +17,9 @@ on the Vanderbilt University campus
 ###Morning Session I (9:00 a.m. to 10:15 a.m.) 
 Instructor: Clifford B. Anderson
 
-- Introduction to the course and participants
+- Introduction to the institute and participants
 - Discussion of the institute’s goals and anticipated outcomes
-- Assignment of pair programming partnership
+- Assignment of initial pair programming partnerships
 
 ###Morning Session II (10:30 a.m. to 11:45 a.m.)
 Instructor: David A. Michelson
@@ -45,7 +45,7 @@ Readings: Joe Fawcett, Liam Quin, and Danny Ayers, *Beginning XML*, Chapter 4: D
 ###Afternoon Session II (2:30 p.m. to 3:45 p.m.)
 Workshop Format 
  
-- Installing [eXist](http://exist-db.org/exist/apps/homepage/index.html), [oXygen](http://www.oxygenxml.com/), [GitHub](https://github.com/) and other tools
+- Installing [eXist](http://exist-db.org/exist/apps/homepage/index.html), [oXygen](http://www.oxygenxml.com/), [GitHub](https://github.com/) and loading of [Folger Shakespeare Texts](folger shakespeare texts].
 
 ###Reception (4:00 p.m. to 5:00 p.m.) 
  

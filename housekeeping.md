@@ -8,11 +8,17 @@
 
 ###Check-In
 
-- Check-in for the Institute will take place from 4 p.m. and 9 p.m. on Sunday, June 8th at Lewis House (1410 25th Avenue South) in the Highland Quadrangle on the Vanderbilt Campus. If you plan to arrive after check-in hours, please let me know and we’ll make alternative arrangements for you to get into your room. 
+- Check-in for the Institute will take place on Sunday, June 8 at Lewis House (1410 25th Avenue South) in the Highland Quadrangle on the Vanderbilt Campus. Our formal check-in time runs from 4 p.m. to 9 p.m. However, the desk in Lewis House will be staffed until midnight on Sunday evening. If you happen to arrive after midnight due to delays, please call (615) 343-8699 for assistance.
 
 ###Check-Out
 
-- Check-out will take place between 3 p.m. and 6 p.m. on Friday, June 20th. I’m afraid that our contract does not allow us to extend the length of individual stays. If you are planning to stay in Nashville on Friday night, I’d recommend selecting a hotel in the Midtown area—for example, the Nashville Marriott at Vanderbilt University (2555 West End Ave, Nashville, TN 37203). 
+- Check-out will take place between 3 p.m. and 6 p.m. on Friday, June 20th. I’m afraid that our contract does not allow us to extend the length of individual stays. 
+- If you are planning to stay in Nashville on Friday night, I’d recommend selecting a hotel in the Midtown area—for example, the Nashville Marriott at Vanderbilt University (2555 West End Ave, Nashville, TN 37203). 
+
+###Classroom
+
+- We'll be meeting for all our institute sessions in Room 418a of the Central Library. It's a fifteen minute walk so plan accordingly. 
+- I'll plan to be outside Lewis House at 7:30 a.m. on Monday morning if you'd like to walk over to breakfast in Rand and then to our classroom together.
 
 ###International Visitors
 
@@ -27,6 +33,12 @@
 - We also have a classroom license for the oXygen XML Editor in case you do not already have your own personal license. We will provide you with the license key when you arrive.
 
 - Our Institute will be platform agnostic so both Macs and PCs are fine. 
+
+###Meals
+
+- The syllabus is now updated with our meal schedule. In short, our meals will take place in one of two cafeterias on the Vanderbilt campus during the weekdays of the institute. You will receive a meal card with your check-in package. Breakfast will be served in Rand Dining Hall at 8:00 a.m. on Monday, June 9. So definitely plan to have breakfast before our first session.
+
+- There are no meals scheduled for dinner on Friday, June 13; lunch on Saturday, June 14; dinner on Saturday, June 14; breakfast on Sunday, June 15; or lunch on Sunday, June 15. We will reimburse you an amount corresponding to the cafeteria prices for those meals. So take the opportunity to have Sunday breakfast at the Loveless Cafe! 
 
 ###Parking
 
@@ -46,7 +58,7 @@
 
 ###Reimbursements
 
-- Please remember to keep your receipts. We will do our best to process your reimbursements as quickly as possible after the Institute. 
+- Please remember to keep your receipts. *For the reimbursement of meals, our financial office requires itemized receipts.* We will do our best to process your reimbursements as quickly as possible after the Institute. 
 
 ###Residence
 
@@ -57,3 +69,7 @@
 - You will have free access to the Vanderbilt Recreation and Wellness Center during your stay. 
 
 - All our events will take place within easy walking distance so you will not need a car to get around campus.
+
+###Transportation from the Airport
+
+- There are several options for [transportation from the airport](http://www.flynashville.com/ground-transportation/Pages/default.aspx). My recommendation would be take to a cab from the airport to Lewis House (1410 25th Avenue South), where you will check in for the Mayfield Lodges. The cost of the taxi should be approximately $27. Please keep the receipt if you would like the cost to be reimbursed with your other travel expenses.
