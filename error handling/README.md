@@ -203,7 +203,7 @@ Many programming languages offer a tool for uncovering static errors called "lin
 
 To use the tool, you must have [Node.js](http://nodejs.org/) installed on your machine. We won't install Node in this session because the setup time would be too long. However, I'll demonstrate the functionality for you on some sample code.
 
-To run XQLint (on a MAC), open up a bash shell and type ```xqlint lint [NAME_OF_FILE] --style-check yes```. The ```--style-check yes``` flag means that XQLint will not only conduct a static analysis to find errors in your code but also warn you about stylistic problems.
+To run XQLint (on a Mac), open up a bash shell and type ```xqlint lint [NAME_OF_FILE] --style-check yes```. The ```--style-check yes``` flag means that XQLint will not only conduct a static analysis to find errors in your code but also warn you about stylistic problems.
 
 Let's see the result of running XQLint over this code snippet:
 ```xquery
@@ -220,6 +220,8 @@ local:pow(2,3)
 Here are the results from XQLint:
 
 ![XQLint](xqlint.png "XQLint results in bash shell")
+
+XQLint indicates that I've committed two faux-pas in my code. The first two warnings note that I indented my function body with two spaces rather than a single tab. Obviously, this is a stylistic warning. The last three warnings note that I failed to provide types for my function parameters and return value. As we've noted above, it's not an error to omit type checking when writing functions but it's a potential source of type errors. XQLint warns against leaving the types implicit to head off such errors.
 
 ##XQDoc
 
