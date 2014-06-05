@@ -2,9 +2,9 @@
 
 ##Introduction
 
-A common need is to render TEI documents as HTML documents. Generally, XSLT does a good job at these transformation. However, it is perfectly feasible to transform TEI into HTML using XQuery. In fact, the pattern may be even easier to learn and use.
+A common need is to render TEI documents as HTML documents for display on the web. XSLT does a good job at these kinds of transformation. However, there is no need to switch to XSLT for rending TEI as HTML. It is perfectly feasible to transform TEI into HTML using XQuery. In fact, the XQuery pattern may be easier to learn and use.
 
-The following examples are based on the excellent [Typeswitch Transformations](http://en.wikibooks.org/wiki/XQuery/Typeswitch_Transformations) chapter of the [XQuery Wikibook](http://en.wikibooks.org/wiki/XQuery). 
+The following examples are based on the excellent [Typeswitch Transformations](http://en.wikibooks.org/wiki/XQuery/Typeswitch_Transformations) chapter of the [XQuery Wikibook](http://en.wikibooks.org/wiki/XQuery). To understand this pattern, you'll need a working knowledge of [recursion](https://gist.github.com/CliffordAnderson/9745127) and [typeswitch](https://gist.github.com/CliffordAnderson/9604214) expressions. 
 
 ##Recursive Typeswitch Expressions
 
@@ -30,11 +30,11 @@ declare function local:recurse($node) {
 };
 ```
 
-These two functions are recursive, meaning that they call each other until the run out of nodes to transform.
+These two functions are recursive, meaning that they call each other until the run out of nodes to transform. This pattern walks down all the branches of the tree that you pass in, transforming nodes according to the rules that you put in the typeswitch expression. Any node that you wish to transform gets a distinct rule. 
 
 ##Sample Code for Folger Digital TExts
 
-Here is some [sample code](tei-to-html.xqy) to transform any Act of Julius Caesar from TEI to HTML.
+So let's see how this skeletal pattern works in practice. Here is some [sample code](tei-to-html.xqy) to transform any Act of Julius Caesar from TEI to HTML.
 
 ```xquery
 xquery version "3.0";
@@ -74,7 +74,7 @@ declare function local:recurse($node as item()) as item()* {
 local:render((fn:doc("/db/apps/shakespeare/JC.xml")//tei:div1)[1])
 ```
 
-Let's walk through the sections of this code in turn.
+We will walk through each section of this code in turn.
 
 First, we declare the namespaces that we'll be using. We'll be targeting elements in the TEI namespace and transforming them into elements in the XHTML namespace. (It would be perfectly feasible to transform them into elements in the HTML5 namespace too.)
 
@@ -122,6 +122,14 @@ declare function local:render($node as item()) as item()* {
 ```
 The key to this function is the use of ```local:recurse``` to handle the child elements of nodes. By using recursion, this expression can walk down all the branches of the tree, applying the rules in ```local:render``` as it goes.
 
-What is the base case in this recursive expression? As we recall, recursion continues until a base case is reached. If there is no base case, then we'll get a stack overflow error. In this expression, the base case is when a node has no child nodes. When that happens, ```local:recurse``` will return an empty sequence rather than calling ```local:render```. This base case is reached whenever we hit a leaf on our tree and cannot proceed any further. When we hit the last leaf on the last branch of the tree, the expression has no more work to do and returns the transformed tree as its value.
+What is the base case in this recursive expression? As we recall, recursion continues until a base case is reached. If there is no base case, we'll get a stack overflow error. In this expression, the base case occurs when a node passed in as an argument has no child nodes. When that happens, ```local:recurse``` will return the empty sequence rather than calling ```local:render```. This base case is reached whenever we hit a leaf on our tree and cannot proceed any further. When we hit the last leaf on the last branch of the tree, the expression has no more work to do and returns the transformed tree as its value.
+
+The result of this typeswitch transformation is an XHTML div, which can then build into a [respectable webpage](http://htmlpreview.github.io/?.
+
+##Challenge
+
+*	Can you produce a nicely-formatted XHTML webpage using this function?
+*	How would you handle attributes? Can you add attributes to the XHTML?
+*	
 
 
