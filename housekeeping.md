@@ -17,7 +17,7 @@
 
 ###Classroom
 
-- We'll be meeting for all our institute sessions in Room 418a of the Central Library. It's a fifteen minute walk so plan accordingly. 
+- We'll be meeting for all our Institute sessions in Room 418a of the Central Library. It's a fifteen minute walk so plan accordingly. 
 - I'll plan to be outside Lewis House at 7:30 a.m. on Monday morning if you'd like to walk over to breakfast in Rand and then to our classroom together.
 
 ###International Visitors
@@ -28,7 +28,7 @@
 
 ###Laptops & Software
 
-- If you plan to bring your own laptop, great. If not, we will make a laptop available to you during our Institute sessions.If you plan to use a loaner laptop, would you please let me know? We would like to know how many laptops to set up with eXist prior to the beginning of the Institute. 
+- If you plan to bring your own laptop, great. If not, we will make a laptop available to you during our Institute sessions. If you plan to use a loaner laptop, would you please let me know? We would like to know how many laptops to set up with eXist prior to the beginning of the Institute. 
 
 - We also have a classroom license for the oXygen XML Editor in case you do not already have your own personal license. We will provide you with the license key when you arrive.
 
@@ -72,4 +72,4 @@
 
 ###Transportation from the Airport
 
-- There are several options for [transportation from the airport](http://www.flynashville.com/ground-transportation/Pages/default.aspx). My recommendation would be take to a cab from the airport to Lewis House (1410 25th Avenue South), where you will check in for the Mayfield Lodges. The cost of the taxi should be approximately $27. Please keep the receipt if you would like the cost to be reimbursed with your other travel expenses.
+- There are several options for [transportation from the airport](http://www.flynashville.com/ground-transportation/Pages/default.aspx). My recommendation would be to take a cab from the airport to Lewis House (1410 25th Avenue South), where you will check in for the Mayfield Lodges. The cost of the taxi should be approximately $27. Please keep the receipt if you would like the cost to be reimbursed with your other travel expenses.
