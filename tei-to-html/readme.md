@@ -124,12 +124,26 @@ The key to this function is the use of ```local:recurse``` to handle the child e
 
 What is the base case in this recursive expression? As we recall, recursion continues until a base case is reached. If there is no base case, we'll get a stack overflow error. In this expression, the base case occurs when a node passed in as an argument has no child nodes. When that happens, ```local:recurse``` will return the empty sequence rather than calling ```local:render```. This base case is reached whenever we hit a leaf on our tree and cannot proceed any further. When we hit the last leaf on the last branch of the tree, the expression has no more work to do and returns the transformed tree as its value.
 
-The result of this typeswitch transformation is an XHTML div, which can then build into a [respectable webpage](http://htmlpreview.github.io/?.
+If your rules start becoming complicated, you may wish to break them out into distinct functions. For example, ```case element(tei:stage) return local:set-stage($node)``` calls a function to apply rules to ```tei:stage``` elements.
 
-##Challenge
+```xquery
+declare function local:set-stage($node as element()) as element()* {
+        (<html:b>Stage direction: </html:b>, 
+        <html:i>{fn:normalize-space(fn:string-join(local:recurse($node)))}</html:i>)
+};
+```
 
-*	Can you produce a nicely-formatted XHTML webpage using this function?
-*	How would you handle attributes? Can you add attributes to the XHTML?
-*	
+The result of applying this typeswitch transformation to our TEI div is an XHTML div, which can then build into a (respectable webpage)[http://htmlpreview.github.io/?https://raw.githubusercontent.com/XQueryInstitute/Course-Materials/master/tei-to-html/jc-sc1-act3.html].
+
+##Challenges
+
+*	Are there better ways to render the TEI ```<lb/>``` elements in HTML?
+*	Try to produce a nicely-formatted XHTML webpage using this approach. Make sure to indicate the character encoding. 
+*	Can you incorporate [Bootstrap](http://getbootstrap.com/) to improve the layout and display?
+*	How would you handle TEI attributes? Can you add attributes to the XHTML where appropriate?
+
+##Extra Credit
+
+*	Write an XSLT to accomplish the same transformation and call it using eXist. What is the resulting difference in execution time?
 
 
