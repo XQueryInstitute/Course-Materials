@@ -2,11 +2,14 @@
 
 #Installation Workshop
 
-##Oxygen
+##oXygen
+
 
 
 ##eXist
 
+* Configure Webdav
+* Configure oXygen 
 
 ##GitHub
 
