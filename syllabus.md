@@ -45,7 +45,7 @@ Readings: Joe Fawcett, Liam Quin, and Danny Ayers, *Beginning XML*, Chapter 4: D
 ###Afternoon Session II (2:30 p.m. to 3:45 p.m.)
 Workshop Format 
  
-- Installing [eXist](http://exist-db.org/exist/apps/homepage/index.html), [oXygen](http://www.oxygenxml.com/), [GitHub](https://github.com/) and loading of [Folger Shakespeare Texts](folger shakespeare texts].
+- Installing [eXist](http://exist-db.org/exist/apps/homepage/index.html), [oXygen](http://www.oxygenxml.com/), [GitHub](https://github.com/) and loading of [Folger Shakespeare Texts](folger shakespeare texts).
 
 ###Reception (4:00 p.m. to 5:00 p.m.) 
  
