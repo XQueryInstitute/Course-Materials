@@ -4,7 +4,7 @@
 
 ##Sunday, June 8
 
-###Check-in (4 p.m. and 9 p.m.)
+###Check-in (4 p.m. to 9 p.m.)
 [Lewis House, Highland Quadrangle](https://goo.gl/maps/VTBiV)
 on the Vanderbilt University campus
 
@@ -17,8 +17,8 @@ on the Vanderbilt University campus
 ###Morning Session I (9:00 a.m. to 10:15 a.m.) 
 Instructor: Clifford B. Anderson
 
-- Introduction to the institute and participants
-- Discussion of the institute’s goals and anticipated outcomes
+- Introduction to the Institute and participants
+- Discussion of the Institute’s goals and anticipated outcomes
 - Assignment of initial pair programming partnerships
 
 ###Morning Session II (10:30 a.m. to 11:45 a.m.)
@@ -152,7 +152,7 @@ Instructor: Jonathan Robie
 * [Functions and operators](http://www.w3.org/TR/2014/REC-xpath-functions-30-20140408/)
 	- partial function application
 	- Inline functions
-	- A brief at second order functions
+	- A brief look at second order functions
 
 *Lunch (11:45 a.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))*
 
@@ -201,7 +201,7 @@ Reading: Priscilla Walmsley, *XQuery*, Chapter 3: XQuery Building Blocks
 ###Afternoon Session I (1:00 p.m. to 2:15 p.m.)
 Instructor: Jonathan Robie
 
-- Recursion & avoiding recursion
+- Recursion and avoiding recursion
 
 ###Afternoon Session II (2:30 p.m. to 3:45 p.m.)
 Institute Faculty
@@ -219,7 +219,7 @@ Institute Faculty
 ###Morning Session I (9:00 a.m. to 10:15 a.m.)
 Instructor: Winona Salesky 
  
-Exploring [eXist](http://exist-db.org/) - An Open Source XML Database
+- Exploring [eXist](http://exist-db.org/) - An Open Source XML Database
 
 Reading: Joe Fawcett, Liam Quin, and Danny Ayers, *Beginning XML*, Chapter 10: XML and Databases
 
@@ -254,13 +254,13 @@ Institute Faculty
 Instructor: Winona Salesky 
  
 - Writing user defined functions 
-- function signatures
-- checking types
+- Function signatures
+- Checking types
 
 Reading: Priscilla Walmsley, *XQuery*, Chapter 8: Functions
 
 ###Morning Session II (10:30 a.m. to 11:45 a.m.)
-Instructor: Clifford Anderson
+Instructor: Clifford B. Anderson
 
 - Handling errors in XQuery
 - Strategies for diagnosing and preventing errors
@@ -391,7 +391,7 @@ Instructor: Kevin Clarke
 Instructor: Clifford B. Anderson
  
 - Institute wrap up
-- survey
-- recommendations for developing a stronger community of XQuery experts in the digital humanities
+- Survey
+- Recommendations for developing a stronger community of XQuery experts in the digital humanities
 
 *Dinner (5:45 p.m. in [Rand Hall](https://goo.gl/maps/HY2Vt))*
