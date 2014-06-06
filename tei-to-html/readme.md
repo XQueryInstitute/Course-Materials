@@ -2,13 +2,13 @@
 
 ##Introduction
 
-A common need is to render TEI documents as HTML documents for display on the web. XSLT does a good job at these kinds of transformation. However, there is no need to switch to XSLT for rending TEI as HTML. It is perfectly feasible to transform TEI into HTML using XQuery. In fact, the XQuery pattern may be easier to learn and use.
+There is a common need to render TEI documents as HTML documents for display on the web. XSLT does a good job at these kinds of transformation. However, there is no need to switch to XSLT for rendering TEI as HTML. It is perfectly feasible to transform TEI into HTML using XQuery. In fact, the XQuery pattern may be easier to learn and use.
 
 The following examples are based on the excellent [Typeswitch Transformations](http://en.wikibooks.org/wiki/XQuery/Typeswitch_Transformations) chapter of the [XQuery Wikibook](http://en.wikibooks.org/wiki/XQuery). To understand this pattern, you'll need a working knowledge of [recursion](https://gist.github.com/CliffordAnderson/9745127) and [typeswitch](https://gist.github.com/CliffordAnderson/9604214) expressions. 
 
 ##Recursive Typeswitch Expressions
 
-[Joe Wicentowski](https://github.com/joewiz) has helpfully provided a [gist](https://gist.github.com/joewiz/2331558#file-typeswitch-skeleton-xq) that provides the framework for this approach. I've reproduced his gist below.
+[Joe Wicentowski](https://github.com/joewiz) has helpfully created a [gist](https://gist.github.com/joewiz/2331558#file-typeswitch-skeleton-xq) that provides the framework for this approach. I've reproduced his gist below.
 
 ```xquery
 xquery version "1.0";
@@ -30,11 +30,11 @@ declare function local:recurse($node) {
 };
 ```
 
-These two functions are recursive, meaning that they call each other until the run out of nodes to transform. This pattern walks down all the branches of the tree that you pass in, transforming nodes according to the rules that you put in the typeswitch expression. Any node that you wish to transform gets a distinct rule. 
+These two functions are recursive, meaning that they call each other until they run out of nodes to transform. This pattern walks down all the branches of the tree that you pass in, transforming nodes according to the rules that you put in the typeswitch expression. Any node that you wish to transform gets a distinct rule. 
 
-##Sample Code for Folger Digital TExts
+##Sample Code for Folger Digital Texts
 
-So let's see how this skeletal pattern works in practice. Here is some [sample code](tei-to-html.xqy) to transform any Act of Julius Caesar from TEI to HTML.
+So let's see how this skeletal pattern works in practice. Here is some [sample code](https://github.com/XQueryInstitute/Course-Materials/blob/master/tei-to-html/tei-to-html.xqy) to transform any Act of Julius Caesar from TEI to HTML.
 
 ```xquery
 xquery version "3.0";
@@ -91,7 +91,7 @@ Next, we indicate that we will serialize our results as XHTML rather than simply
 declare option exist:serialize "method=xhtml media-type=text/html indent=yes";
 ```
 
-Skipping down a bit, we see a function called ```local:recurse```, which takes an item as its argument and returns a sequence of items. This function iteratates through all the child nodes of $node and send them to another function ```local:render```. 
+Skipping down a bit, we see a function called ```local:recurse```, which takes an item as its argument and returns a sequence of items. This function iterates through all the child nodes of $node and sends them to another function ```local:render```. 
 
 ```xquery
 declare function local:recurse($node as item()) as item()* {
@@ -133,7 +133,7 @@ declare function local:set-stage($node as element()) as element()* {
 };
 ```
 
-The result of applying this typeswitch transformation to our TEI div is an XHTML div, which can then build into a (respectable webpage)[http://htmlpreview.github.io/?https://raw.githubusercontent.com/XQueryInstitute/Course-Materials/master/tei-to-html/jc-sc1-act3.html].
+The result of applying this typeswitch transformation to our TEI div is an XHTML div, which can then build into a [respectable webpage](http://htmlpreview.github.io/?https://raw.githubusercontent.com/XQueryInstitute/Course-Materials/master/tei-to-html/jc-sc1-act3.html).
 
 ##Challenges
 
