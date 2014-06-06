@@ -2,21 +2,23 @@
 * Enables data to be both human and machine readable
 * Encodes implicit human meaning into explicit machine processable data
 * Facilitates interoperability and exchange of data
-* The XML DOM (Document Object Model) is document-centric and thus similar in some ways to humanists' interest in "*texts*"
-
-Vocabulary:
+* The XML DOM (Document Object Model) is document-centric and thus similar in some ways to humanists' interest in "*texts*
 
 ```
-	DOM Document Object Model: a tree-like hierarchical representation of the data
+DOM Document Object Model: a tree-like hierarchical representation of the data
+```
 
 * Timeline: SGML (1986), HTML application of SGML (1991), XML subset of SGML (1998).
-sads
-	
-	
-	W3C (World Wide Web Consortium) publishes standards for HTML and XML 
 
-* Elements
-* Attributes
+```	
+W3C (World Wide Web Consortium) international doby which sets standards for the Web including HTML and XML. 
+```
+
+#Basic Concepts of XML
+```
+Elements
+Attributes
+```
 * Character Data (CDATA)
 * XML built-in primitive datatypes
 * 3.2 Primitive datatypes
