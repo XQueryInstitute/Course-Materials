@@ -5,9 +5,7 @@
 ##oXygen
 The oXygen XML Editor is a leading integrated development environment (IDE) for XML, XQuery, XSLT and other XML-based standards. We'll be using oXygen as our primary editing and programming environment.
 
-If you do not already have oXygen XML editor, you can purchase an Academic license, download, and install the software from the [oXygen website](http://oxygenxml.com/).
-
-We also have a classroom license you can use during your time at the Institute. Please email [Ed Warga](mailto:ed.warga@vanderbilt.edu) for a copy of the license key. To use the classroom key, [download](http://oxygenxml.com/download_oxygenxml_editor.html) and install oXygen Editor. Run the program, and input the key you received when prompted.
+If you do not already have oXygen installed, we have a classroom license you can use during your time at the Institute. Please email [Ed Warga](mailto:ed.warga@vanderbilt.edu) for a copy of the license key. To use the classroom key, [download](http://oxygenxml.com/download_oxygenxml_editor.html) and install oXygen Editor. Run the program, and input the key you received when prompted.
 
 
 ##eXist-db
