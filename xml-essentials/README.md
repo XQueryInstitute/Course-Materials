@@ -11,7 +11,7 @@ DOM Document Object Model: a tree-like hierarchical representation of the data
 * Timeline: SGML (1986), HTML application of SGML (1991), XML subset of SGML (1998).
 
 ```	
-W3C (World Wide Web Consortium) international doby which sets standards for the Web including HTML and XML. 
+W3C (World Wide Web Consortium): international body which sets standards for the Web including HTML and XML 
 ```
 
 #Basic Concepts of XML
