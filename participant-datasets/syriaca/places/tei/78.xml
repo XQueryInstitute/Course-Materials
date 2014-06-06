@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="en">Edessa — <foreign xml:lang="syr">ܐܘܪܗܝ</foreign>
+                </title>
+                <title level="m" xml:lang="en">The Syriac Gazetteer</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+                <funder>The National Endowment for the Humanities</funder>
+                <funder>The International Balzan Prize Foundation</funder>
+                <principal>David A. Michelson</principal>
+                <editor role="general" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <respStmt>
+                    <resp>Initial Barsoum entry creation by</resp>
+                    <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Data merging, Pleiades and Wikipedia linking, and XML by</resp>
+                    <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Syriac description entry by</resp>
+                    <name ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Arabic description entry by</resp>
+                    <name ref="http://syriaca.org/editors.xml#rakhrass">Dayroyo Roger-Youssef Akhrass</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Wilmshurst index information entry by</resp>
+                    <name ref="http://syriaca.org/editors.xml#adavis">Anthony Davis</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/place/78/tei</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                        <p>This entry incorporates copyrighted material from the following work(s):
+                            <listBibl>
+                                <bibl>
+                                    <ptr target="#bib78-3"/>
+                                </bibl>
+                                <bibl>
+                                    <ptr target="#bib78-4"/>
+                                </bibl>
+                                <bibl>
+                                    <ptr target="#bib78-5"/>
+                                </bibl>
+                            </listBibl>
+                            <note>used under a Creative Commons Attribution license <ref target="http://creativecommons.org/licenses/by/3.0/"/>
+                            </note>
+                        </p>
+                    </licence>
+                </availability>
+                <date>2014-04-10</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>This record created following the Syriaca.org guidelines. Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+                <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+                <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+                <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
+                <p>The <gi>state</gi> element of @type="existence" indicates the period for which this place was in use as a place of its indicated type (e.g. an inhabited settlement, a functioning monastery or church, an administrative province).  Natural features always in existence have no <gi>state</gi> element of @type="existence".</p>
+            </editorialDecl>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="syriaca-headword">
+                        <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="syr">Unvocalized Syriac of any variety or period</language>
+                <language ident="syr-Syrj">Vocalized West Syriac</language>
+                <language ident="syr-Syrn">Vocalized East Syriac</language>
+                <language ident="en">English</language>
+                <language ident="ar">Arabic</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2014-04-10">ADDED: markup around Syriac name in attestation event</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2014-03-31">FIXED: date in <gi>relation</gi> was erroneously 363 instead of 641</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2014-03-26">FIXED: URI for confessions.xml needed "documentation/" to be inserted</change>
+            <change who="http://syriaca.org/editors.xml#wsalesky" when="2014-02-10-05:00">ADDED: syriaca-computed-end for elements with when attributes</change>
+            <change who="http://syriaca.org/editors.xml#wsalesky" when="2014-01-14">ADDED: syriaca-computed-start and syriaca-computed-end attributes for searching</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2014-01-04">FIXED: location of quotation marks relative to elements in <gi>location</gi> of type "relative"</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-12-18">ADDED: work URIs to attestation <gi>state</gi> elements</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-12-08">CHANGED: <gi>desc</gi> or <gi>label</gi> within <gi>event</gi> to <gi>p</gi>
+            </change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-11-13">FIXED: renamed "errata" to "incerta" as note type</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-11-12">FIXED: attestation78-6 and attestation78-7 pointed to the wrong confession</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-11-07">ADDED: confession78-6 and bib78-11</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-11-06">ADDED: confession URIs</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-11-06">FIXED: missing attestation 5</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-10-26">ADDED: confession Melkite, attestations 3-7</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-10-26">ADDED: names 8-10, events in 213, 489, 641, 1098, 1144, 1517, 1913-1919, 1924</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-10-02">REMOVED: <gi>relation</gi> to Ephrem (http://syriaca.org/person/13), to be stored in person record</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-09-25">ADDED: name and confession attestations, and Chabot bibl item</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-09-25">FIXED: typo in errata note</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-08-14">ADDED: errata note</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-08-14">ADDED: Barsoum Syriac to <gi>licence</gi>
+            </change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-08-09">ADDED: citation of GEDSH article separate from that of maps</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-07-31">REMOVED: place type from <gi>title</gi>
+            </change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-07-28">ADDED: formattable markup to <gi>title</gi> and <gi>licence</gi>
+            </change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-07-24">FIXED: CBSC entry information and added idno CBSC links</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-07-24">ADDED: License for Barsoum data</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-07-24">FIXED: document titles and source URI</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-07-22">ADDED: CBSC article name and link</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-07-10-04:00">CREATED: place</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listPlace>
+                <place xml:id="place-78" type="settlement">
+                    <placeName xml:id="name78-1" xml:lang="en" syriaca-tags="#syriaca-headword" source="#bib78-2 #bib78-5 #bib78-6 #bib78-7">Edessa</placeName>
+                    <placeName xml:id="name78-2" xml:lang="en" source="#bib78-2 #bib78-5 #bib78-7">Urfa</placeName>
+                    <placeName xml:id="name78-3" xml:lang="syr" syriaca-tags="#syriaca-headword">ܐܘܪܗܝ</placeName>
+                    <placeName xml:id="name78-4" xml:lang="syr-Syrj" source="#bib78-3 #bib78-8">ܐܘܪܗܳܝ</placeName>
+                    <placeName xml:id="name78-5" xml:lang="syr-Syrj" source="#bib78-3">ܐܘܪܦܰܗ̈</placeName>
+                    <placeName xml:id="name78-6" xml:lang="ar" source="#bib78-4">الرها</placeName>
+                    <placeName xml:id="name78-7" xml:lang="ar" source="#bib78-4">اورفه</placeName>
+                    <placeName xml:id="name78-8" xml:lang="en" source="#bib78-1">Adme</placeName>
+                    <placeName xml:id="name78-9" xml:lang="en" source="#bib78-1">Antiochia Kallirhoe</placeName>
+                    <placeName xml:id="name78-10" xml:lang="en" source="#bib78-1">Urhay</placeName>
+                    <desc xml:id="abstract-en-78" xml:lang="en">A city of <placeName ref="http://syriaca.org/place/124">Mesopotamia</placeName>, the capital of the ancient kingdom of <placeName ref="http://syriaca.org/place/145">Osrhoene</placeName>, modern Urfa.</desc>
+                    <desc xml:lang="en">
+                        <quote source="#bib78-1">183. Edessa</quote>
+                    </desc>
+                    <desc xml:lang="syr-Syrj">
+                        <quote source="#bib78-3">ܡܕܺܝܢܬܐ ܗܳܝ ܛܒܝܒܬܳܐ ܠܡܰܕܢܚܳܐ ܕܚܳܠܳܒ ܚܰܡܫܳܐ ܝܰܘܡ̈ܝܢ ܘܡܶܫܬܰܡܗܐ ܝܰܘܡܳܢ ܐܘܪܦܰܗ̈</quote>
+                    </desc>
+                    <desc xml:lang="ar">
+                        <quote source="#bib78-4">مدينة مشهورة خمسة ايام عن حلب شرقا وتسمى اليوم اورفه.</quote>
+                    </desc>
+                    <desc xml:lang="en">
+                        <quote source="#bib78-5">a famous city, five day journey eastward from <placeName ref="http://syriaca.org/place/18">Aleppo</placeName>, now called Urfa.</quote>
+                    </desc>
+                    <location type="gps" source="#bib78-2">
+                        <geo>37.15 38.8</geo>
+                    </location>
+                    <location type="relative" subtype="quote" source="#bib78-5">
+                        <measure unit="days-journey" quantity="5">five day journey</measure>
+                        <offset>eastward from</offset>
+                        <placeName ref="http://syriaca.org/place/18">Aleppo</placeName>
+                    </location>
+                    <event when="-0304" source="#bib78-1">
+                        <p xml:lang="en">Renamed Edessa by Seleucus I Nicator.</p>
+                    </event>
+                    <event when="0201" source="#bib78-1" syriaca-computed-start="0201-01-01" syriaca-computed-end="0201-01-01">
+                        <p xml:lang="en">Flood of the river <placeName ref="http://syriaca.org/place/191">Daiṣan</placeName> destroyed part of city.</p>
+                    </event>
+                    <event when="0213" source="#bib78-1" syriaca-computed-start="0213-01-01" syriaca-computed-end="0213-01-01">
+                        <p xml:lang="en">Full incorporation into the <placeName ref="http://syriaca.org/place/166">Roman Empire</placeName>.</p>
+                    </event>
+                    <event when="0489" source="#bib78-1" syriaca-computed-start="0489-01-01" syriaca-computed-end="0489-01-01">
+                        <p xml:lang="en">Closure of the "School of the Persians."</p>
+                    </event>
+                    <event when="0641" source="#bib78-1" syriaca-computed-start="0641-01-01" syriaca-computed-end="0641-01-01">
+                        <p xml:lang="en">Edessa conquered by the Arabs.</p>
+                    </event>
+                    <event when="1098" source="#bib78-1" syriaca-computed-start="1098-01-01" syriaca-computed-end="1098-01-01">
+                        <p xml:lang="en">Edessa conquered by the Crusaders.</p>
+                    </event>
+                    <event when="1144" source="#bib78-1" syriaca-computed-start="1144-01-01" syriaca-computed-end="1144-01-01">
+                        <p xml:lang="en">Edessa conquered by Zengi of Mosul.</p>
+                    </event>
+                    <event when="1517" source="#bib78-1" syriaca-computed-start="1517-01-01" syriaca-computed-end="1517-01-01">
+                        <p xml:lang="en">Edessa incorporated into the <placeName ref="http://syriaca.org/place/631">Ottoman Empire</placeName>.</p>
+                    </event>
+                    <event notBefore="1913" notAfter="1919" source="#bib78-1" syriaca-computed-end="1919-01-01" syriaca-computed-start="1913-01-01">
+                        <p xml:lang="en">Massacres of some of Armenian and Syriac Christians during World War I.</p>
+                    </event>
+                    <event when="1924" source="#bib78-1" syriaca-computed-start="1924-01-01" syriaca-computed-end="1924-01-01">
+                        <p xml:lang="en">Emigration of remaining Armenian and Syrian Christians to <placeName ref="http://syriaca.org/place/18">Aleppo</placeName>.</p>
+                    </event>
+                    <event type="attestation" xml:id="attestation78-1" notBefore="1146" notAfter="1234" source="#bib78-9" syriaca-computed-end="1234-01-01" syriaca-computed-start="1146-01-01">
+                        <p xml:lang="en">Attestation of name <foreign xml:lang="syr">ܐܘܪܗܝ</foreign> in the anonymous <title ref="http://syriaca.org/work/113">Chronicle of 1234</title>.</p>
+                        <link target="#name78-3 #attestation78-1"/>
+                    </event>
+                    <event type="attestation" xml:id="attestation78-2" when="1146" source="#bib78-9" syriaca-computed-start="1146-01-01" syriaca-computed-end="1146-01-01">
+                        <p xml:lang="en">Attestation of Syrian Orthodox church in Edessa in the anonymous <title ref="http://syriaca.org/work/113">Chronicle of 1234</title>.</p>
+                        <link target="#confession78-1 #attestation78-2"/>
+                    </event>
+                    <event type="attestation" xml:id="attestation78-3" when="0201" source="#bib78-10" syriaca-computed-start="0201-01-01" syriaca-computed-end="0201-01-01">
+                        <p xml:lang="en">Attestation of Christian church in Edessa according to the <title ref="http://syriaca.org/work/119">Chronicle of Edessa</title>.</p>
+                        <link target="#confession78-2 #attestation78-3"/>
+                    </event>
+                    <event type="attestation" xml:id="attestation78-4" notBefore="0540" source="#bib78-10" syriaca-computed-start="0540-01-01">
+                        <p xml:lang="en">Attestation of Chalcedonian author in Edessa according to the <title ref="http://syriaca.org/work/119">Chronicle of Edessa</title>.</p>
+                        <link target="#confession78-3 #attestation78-4"/>
+                    </event>
+                    <event type="attestation" xml:id="attestation78-5" when="0522" source="#bib78-10" syriaca-computed-start="0522-01-01" syriaca-computed-end="0522-01-01">
+                        <p xml:lang="en">Attestation of Chalcedonian bishop in Edessa according to the <title ref="http://syriaca.org/work/119">Chronicle of Edessa</title>.</p>
+                        <link target="#confession78-3 #attestation78-5"/>
+                    </event>
+                    <event type="attestation" xml:id="attestation78-6" when="0520" source="#bib78-10" syriaca-computed-start="0520-01-01" syriaca-computed-end="0520-01-01">
+                        <p xml:lang="en">Attestation of anti-Chalcedonian bishop in Edessa according to the <title ref="http://syriaca.org/work/119">Chronicle of Edessa</title>.</p>
+                        <link target="#confession78-1 #attestation78-6"/>
+                    </event>
+                    <event type="attestation" xml:id="attestation78-7" when="1624" source="#bib78-5" syriaca-computed-start="1624-01-01" syriaca-computed-end="1624-01-01">
+                        <p xml:lang="en">Attestation of Syrian Orthodox metropolitan for Edessa according to <persName ref="http://syriaca.org/person/372">Barsoum</persName>'s <title ref="http://syriaca.org/work/215">Scattered Pearls</title>.</p>
+                        <link target="#confession78-1 #attestation78-7"/>
+                    </event>
+                    <state type="existence" from="-0304"/>
+                    <state type="confession" xml:id="confession78-2" ref="http://syriaca.org/documentation/confessions.xml#christians" from="0030" to="1924" source="#bib78-1" syriaca-computed-end="1924-01-01" syriaca-computed-start="0030-01-01">
+                        <label>Christians</label>
+                    </state>
+                    <state type="confession" xml:id="confession78-1" ref="http://syriaca.org/documentation/confessions.xml#syrian-orthodox" from="0451" to="1924" source="#bib78-1" syriaca-computed-end="1924-01-01" syriaca-computed-start="0451-01-01">
+                        <label>Syrian Orthodox</label>
+                    </state>
+                    <state type="confession" xml:id="confession78-3" ref="http://syriaca.org/documentation/confessions.xml#melkite" from="0451" to="0641" syriaca-computed-end="0641-01-01" syriaca-computed-start="0451-01-01">
+                        <label>Melkite</label>
+                    </state>
+                    <state type="confession" xml:id="confession78-4" ref="http://syriaca.org/documentation/confessions.xml#muslims" from="0641" source="#bib78-1" syriaca-computed-start="0641-01-01">
+                        <label>Muslims</label>
+                    </state>
+                    <state type="confession" xml:id="confession78-5" ref="http://syriaca.org/documentation/confessions.xml#latin" from="1098" to="1144" source="#bib78-1" syriaca-computed-end="1144-01-01" syriaca-computed-start="1098-01-01">
+                        <label>Latin</label>
+                    </state>
+                    <state type="confession" xml:id="confession78-6" ref="http://syriaca.org/documentation/confessions.xml#jews" from="0050" to="0424" source="#bib78-11" syriaca-computed-end="0424-01-01" syriaca-computed-start="0050-01-01">
+                        <label>Jews</label>
+                        <precision match="@from" notAfter="0100" syriaca-computed-end="0100-01-01"/>
+                        <precision match="@to" notBefore="0412" syriaca-computed-start="0412-01-01"/>
+                    </state>
+                    <note type="incerta">GEDSH article identifies its river as the <placeName ref="http://syriaca.org/place/43">Balikh</placeName>, but the identification is contested.</note>
+                    <idno type="URI">http://syriaca.org/place/78</idno>
+                    <idno type="URI">http://pleiades.stoa.org/places/658457</idno>
+                    <idno type="URI">http://en.wikipedia.org/wiki/Edessa</idno>
+                    <idno type="URI">http://en.wikipedia.org/wiki/Şanlıurfa</idno>
+                    <idno type="URI">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=E&amp;sK=Edessa&amp;sT=keywords</idno>
+                    <bibl xml:id="bib78-1">
+                        <author>A. Harrak</author>
+                        <title level="a" xml:lang="en">183. Edessa</title>
+                        <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                        <ptr target="http://syriaca.org/bibl/1"/>
+                        <citedRange unit="pp">138-139</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib78-2">
+                        <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                        <ptr target="http://syriaca.org/bibl/1"/>
+                        <citedRange unit="pp">1, 4, 5–6 (with fig. 1), 9–10, 13, 15–16, 18, 26, 29, 31, 33–34, 36, 37–38, 41, 46, 54, 56, 60, 64, 69, 71, 74, 84, 86, 90, 97–98, 99, 102, 107–108, 126, 127, 128, 132–133, 138–139 (with fig. 47), 145, 153, 155, 162, 163, 164, 178, 191–192, 195–196, 197, 199, 201–202, 209, 213, 220, 229, 237, 249, 252, 260–261, 262, 266, 267, 268, 270, 271–272, 273, 284, 287, 288, 303–304, 314, 316, 317, 322, 327–328, 332, 335, 343, 346, 348, 350, 351, 352, 356, 361, 363, 367, 376, 377, 384, 390, 392, 398, 401, 403, 407, 410–411, 419, 431, 432, 433, 438–439, 444, 446, 448</citedRange>
+                        <citedRange unit="maps">Map I B1, II B1, III</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib78-3">
+                        <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
+                        <ptr target="http://syriaca.org/bibl/3"/>
+                        <citedRange unit="pp">556</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib78-4">
+                        <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
+                        <ptr target="http://syriaca.org/bibl/2"/>
+                        <citedRange unit="pp">516</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib78-5">
+                        <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                        <ptr target="http://syriaca.org/bibl/4"/>
+                        <citedRange unit="pp">553</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib78-6">
+                        <title xml:lang="en">The Comprehensive Bibliography on Syriac Christianity</title>
+                        <ptr target="http://syriaca.org/bibl/5"/>
+                        <citedRange unit="entry" target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=E&amp;sK=Edessa&amp;sT=keywords">Edessa</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib78-7">
+                        <author>David Wilmshurst</author>
+                        <title xml:lang="en">The Ecclesiastical Organisation of the Church of the East, 1318-1913</title>
+                        <citedRange unit="pp">53, 65, 361, 362</citedRange>
+                        <ptr target="http://syriaca.org/bibl/9"/>
+                    </bibl>
+                    <bibl xml:id="bib78-8">
+                        <title xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired since the Year 1838</title>
+                        <ptr target="http://syriaca.org/bibl/8"/>
+                        <citedRange unit="pp">2:912</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib78-9">
+                        <title xml:lang="la">Anonymi auctoris chronicon ad annum Christi 1234 pertinens</title>
+                        <ptr target="http://syriaca.org/bibl/632"/>
+                        <citedRange unit="pp">2:136</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib78-10">
+                        <title xml:lang="la">Chronica minora</title>
+                        <editor>Ignatius Guidi</editor>
+                        <ptr target="http://syriaca.org/bibl/633"/>
+                        <citedRange unit="pp">1:2, 11, 13</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib78-11">
+                        <title xml:lang="en" level="a">Jews and Christians at Edessa</title>
+                        <author>Han J. W. Drijvers</author>
+                        <ptr target="http://syriaca.org/bibl/634"/>
+                        <citedRange unit="pp">90, 102</citedRange>
+                    </bibl>
+                </place>
+                <relation name="contained" active="http://syriaca.org/place/145 http://syriaca.org/place/166" passive="#place-78" source="#bib78-1" to="0641"/>
+            </listPlace>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:syriaca="http://syriaca.org" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="en">Mor Barṣawmo
+                                        — <foreign xml:lang="syr">ܕܝܪܐ ܕܡܪܝ ܒܪܨܘܡܐ</foreign>
+                </title>
+                <title level="m" xml:lang="en">The Syriac Gazetteer</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+                <funder>The National Endowment for the Humanities</funder>
+                <funder>The International Balzan Prize Foundation</funder>
+                <principal>David A. Michelson</principal>
+                <editor role="general" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <respStmt>
+                    <resp>Initial Barsoum entry creation by</resp>
+                    <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Data merging, Pleiades and Wikipedia linking, and XML by</resp>
+                    <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Syriac description entry by</resp>
+                    <name ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/place/224/tei</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                        <p>This entry incorporates copyrighted material from the following work(s):
+                                                <listBibl>
+                                <bibl>
+                                    <ptr target="#bib224-3"/>
+                                </bibl>
+                                <bibl>
+                                    <ptr target="#bib224-4"/>
+                                </bibl>
+                                <bibl>
+                                    <ptr target="#bib224-5"/>
+                                </bibl>
+                            </listBibl>
+                            <note>used under a Creative Commons Attribution license <ref target="http://creativecommons.org/licenses/by/3.0/"/>
+                            </note>
+                        </p>
+                    </licence>
+                </availability>
+                <date>2014-01-14-05:00</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>This record created following the Syriaca.org guidelines. Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+                <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+                <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+                <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
+                <p>The <gi>state</gi> element of @type="existence" indicates the period for which this place was in use as a place of its indicated type (e.g. an inhabited settlement, a functioning monastery or church, an administrative province).  Natural features always in existence have no <gi>state</gi> element of @type="existence".</p>
+            </editorialDecl>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="syriaca-headword">
+                        <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="syr">Unvocalized Syriac of any variety or period</language>
+                <language ident="syr-Syrj">Vocalized West Syriac</language>
+                <language ident="syr-Syrn">Vocalized East Syriac</language>
+                <language ident="en">English</language>
+                <language ident="ar">Arabic</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change who="http://syriaca.org/editors.xml#wsalesky" when="2014-01-14">ADDED: syriaca-computed-start and syriaca-computed-end attributes for searching</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-12-18-05:00">CREATED: place</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listPlace>
+                <place xml:id="place-224" type="monastery">
+                    <placeName xml:id="name224-1" xml:lang="en" syriaca-tags="#syriaca-headword" source="#bib224-2">Mor Barṣawmo</placeName>
+                    <placeName xml:id="name224-2" xml:lang="syr" syriaca-tags="#syriaca-headword">ܕܝܪܐ ܕܡܪܝ ܒܪܨܘܡܐ</placeName>
+                    <placeName xml:id="name224-3" xml:lang="syr-Syrj" source="#bib224-3">ܕܰܝܪܐ ܕܡܳܪܝ ܒܰܪܨܘܡܐ</placeName>
+                    <placeName xml:id="name224-4" xml:lang="ar" source="#bib224-4">دير مار برصوم</placeName>
+                    <placeName xml:id="name224-5" xml:lang="en" source="#bib224-5">Barṣoum Monastery</placeName>
+                    <placeName xml:id="name224-6" xml:lang="en" source="#bib224-6">monastery of Mar Barsauma</placeName>
+                    <desc xml:id="abstract-en-224" xml:lang="en">
+                        <quote source="#bib224-1">The monastery, situated in the mountains to the southeast of Melitene and named after the 5th-cent. ascetic Barṣawmo, rose to prominence as the regular residence of Syr. Orth. Patriarchs in the 11th-13th cent., the period often referred to as the Syriac Renaissance.</quote>
+                    </desc>
+                    <desc xml:lang="en">
+                        <quote source="#bib224-1">81. Barṣawmo, Dayro d-Mor</quote>
+                    </desc>
+                    <desc xml:lang="syr-Syrj">
+                        <quote source="#bib224-3">ܕܡܽܘܬ ܩܶܠܥܳܐ ܥܰܠ ܪܝܫ ܛܘܪܐ. ܥܰܠܗܳܝ ܫܰܡܗܘܗܝ ܐܢܳܫܝ̈ܢ ܕܰܝܪܳܐ ܕܰܫܩܝܦܳܐ ܒܩܘܪܒܳܐ ܕܡܝܺܠܝܛܝܺܢܝ ܥܗܺܝܕ ܒܡܰܟܬܰܒܙܰܒܢ̈ܐ ܥܺܕܬܳܢܳܝ̈ܐ ܫܢܰܬ  790  ܘܰܗܘܳܐ ܟܘܪܣܝܳܐ ܦܰܛܪܝܰܪܟܳܝܳܐ ܒܕܳܪܳܐ ܕܰܚܕܰܥܣܪ ܥܕܰܡܐ ܠܰܬܠܳܬܰܥܣܪ ܘܕܰܝܪܳܐ ܪܒܐ ܗܘܐ ܣܡܟ ܠܥܺܕܬܳܐ ܒܚܰܡܫܳܐ ܦܰܛܪܝܰܪ̈ܟܐ  ܘ:  34  ܡܺܝܛܪ̈ܘܦܘܠܝܛܶܐ ܘܥܰܡܝܪ ܗܘܐ ܥܕܰܡܳܐ ܠܡܶܨܥܳܝ̈ܬܗ ܕܕܳܪܐ ܕܰܫܒܰܥܣܪ. ܠܚܰܪܬܐ ܥܰܠܥܶܠ ܙܰܒܢܳܐ ܐܢܳܫܘ̈ܗܝ.</quote>
+                    </desc>
+                    <desc xml:lang="ar">
+                        <quote source="#bib224-4">على رأس جبل يشبه القلعة ولذلك سماه بعضهم دير الكهف بقرب ملطية ذكر في التاريخ الكنسي سنة 790 وصار كرسيا بطريركياً  في القرن الحادي عشر حتى اواخر الثالث عشر، وكان ديرا عظيماً دعم اللكنيسة  بخمسة بطاركة واربعة وثلاثين مطراناً، وظلّ عامراً آهلاً حتى اواسط القرن السابع عشر ثم عصف الدهر باهله</quote>
+                    </desc>
+                    <desc xml:lang="en">
+                        <quote source="#bib224-5">built on top of a mountain near Melitene, it looks like a citadel, a fact which has led some writers to call it the Monastery of the Cave. It was first mentioned in church history in 790. It was the Patriarchal see from the eleventh century until the thirteenth century. A great monastery, it produced five patriarchs and forty-three metropolitans. It remained populated until the middle of the seventeenth century, when it was abandoned.</quote>
+                    </desc>
+                    <state type="existence" from="0790" to="1675" syriaca-computed-end="1675-01-01" syriaca-computed-start="0790-01-01">
+                        <precision match="@from" notAfter="0790" notBefore="0300" syriaca-computed-end="0790-01-01" syriaca-computed-start="0300-01-01"/>
+                        <precision match="@to" notBefore="1675" syriaca-computed-start="1675-01-01"/>
+                    </state>
+                    <idno type="URI">http://syriaca.org/place/224</idno>
+                    <idno type="URI">
+                                            http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=m&amp;sK=monastery of Mar Barsauma&amp;sT=keywords
+                                        </idno>
+                    <bibl xml:id="bib224-1">
+                        <author>H. Takahashi</author>
+                        <title level="a" xml:lang="en">81. Barṣawmo, Dayro d-Mor</title>
+                        <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                        <ptr target="http://syriaca.org/bibl/1"/>
+                        <citedRange unit="pp">60-61</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib224-2">
+                        <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                        <ptr target="http://syriaca.org/bibl/1"/>
+                        <citedRange unit="pp">35, 59, 60–61, 66, 97, 142, 178, 201, 287, 290, 373, 406</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib224-3">
+                        <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
+                        <ptr target="http://syriaca.org/bibl/3"/>
+                        <citedRange unit="pp">543-544</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib224-4">
+                        <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
+                        <ptr target="http://syriaca.org/bibl/2"/>
+                        <citedRange unit="pp">509</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib224-5">
+                        <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                        <ptr target="http://syriaca.org/bibl/4"/>
+                        <citedRange unit="pp">562</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib224-6">
+                        <title xml:lang="en">The Comprehensive Bibliography on Syriac Christianity</title>
+                        <ptr target="http://syriaca.org/bibl/5"/>
+                        <citedRange unit="entry" target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=m&amp;sK=monastery of Mar Barsauma&amp;sT=keywords">monastery of Mar Barsauma</citedRange>
+                    </bibl>
+                </place>
+            </listPlace>
+        </body>
+    </text>
+</TEI>

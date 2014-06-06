@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:syriaca="http://syriaca.org" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="en">Ṭur ʿAbdin
+                                        — <foreign xml:lang="syr">ܛܘܪܥܒܕܝܢ</foreign>
+                </title>
+                <title level="m" xml:lang="en">The Syriac Gazetteer</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+                <funder>The National Endowment for the Humanities</funder>
+                <funder>The International Balzan Prize Foundation</funder>
+                <principal>David A. Michelson</principal>
+                <editor role="general" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <respStmt>
+                    <resp>Initial Barsoum entry creation by</resp>
+                    <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Data merging, Pleiades and Wikipedia linking, and XML by</resp>
+                    <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Syriac description entry by</resp>
+                    <name ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Arabic description entry by</resp>
+                    <name ref="http://syriaca.org/editors.xml#rakhrass">Dayroyo Roger-Youssef Akhrass</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Wilmshurst index information entry by</resp>
+                    <name ref="http://syriaca.org/editors.xml#adavis">Anthony Davis</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/place/221/tei</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                        <p>This entry incorporates copyrighted material from the following work(s):
+                                                <listBibl>
+                                <bibl>
+                                    <ptr target="#bib221-3"/>
+                                </bibl>
+                                <bibl>
+                                    <ptr target="#bib221-4"/>
+                                </bibl>
+                                <bibl>
+                                    <ptr target="#bib221-5"/>
+                                </bibl>
+                            </listBibl>
+                            <note>used under a Creative Commons Attribution license <ref target="http://creativecommons.org/licenses/by/3.0/"/>
+                            </note>
+                        </p>
+                    </licence>
+                </availability>
+                <date>2014-01-14-05:00</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>This record created following the Syriaca.org guidelines. Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+                <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+                <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+                <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
+                <p>The <gi>state</gi> element of @type="existence" indicates the period for which this place was in use as a place of its indicated type (e.g. an inhabited settlement, a functioning monastery or church, an administrative province).  Natural features always in existence have no <gi>state</gi> element of @type="existence".</p>
+            </editorialDecl>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="syriaca-headword">
+                        <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="syr">Unvocalized Syriac of any variety or period</language>
+                <language ident="syr-Syrj">Vocalized West Syriac</language>
+                <language ident="syr-Syrn">Vocalized East Syriac</language>
+                <language ident="en">English</language>
+                <language ident="ar">Arabic</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change who="http://syriaca.org/editors.xml#wsalesky" when="2014-01-14">ADDED: latitude and longitude from Pleiades</change>
+            <change who="http://syriaca.org/editors.xml#wsalesky" when="2014-01-14">ADDED: syriaca-computed-start and syriaca-computed-end attributes for searching</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-12-18-05:00">CREATED: place</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listPlace>
+                <place xml:id="place-221" type="region">
+                    <placeName xml:id="name221-1" xml:lang="en" syriaca-tags="#syriaca-headword" source="#bib221-2">Ṭur ʿAbdin</placeName>
+                    <placeName xml:id="name221-2" xml:lang="syr" syriaca-tags="#syriaca-headword">ܛܘܪܥܒܕܝܢ</placeName>
+                    <placeName xml:id="name221-3" xml:lang="syr-Syrj" source="#bib221-3">ܛܘܪܥܰܒܕܝܢ</placeName>
+                    <placeName xml:id="name221-4" xml:lang="ar" source="#bib221-4">طورعبدين</placeName>
+                    <placeName xml:id="name221-5" xml:lang="en" source="#bib221-5">Tur ʿAbdin</placeName>
+                    <placeName xml:id="name221-6" xml:lang="en" source="#bib221-6">Tur Abdin</placeName>
+                    <placeName xml:id="name221-7" xml:lang="en" source="#bib221-7">Ṭūr ʿAbdīn</placeName>
+                    <desc xml:id="abstract-en-221" xml:lang="en">
+                        <quote source="#bib221-1">Properly speaking, Ṭur ʿAbdin (‘Mountain of the servants’) does not include the whole province of Mardin in Turkey, but only the limestone plateau in the eastern part of it, between the river Tigris and Nisibis."</quote>
+                    </desc>
+                    <desc xml:lang="en">
+                        <quote source="#bib221-1">565. Ṭur ʿAbdin</quote>
+                    </desc>
+                    <desc xml:lang="syr-Syrj">
+                        <quote source="#bib221-3">ܛܘܪܐ ܗܘ ܕܡܶܬܚܰܝܕ ܒܛܘܪܳܐ ܕܐܝܙܠܳܐ. ܗܰܘ ܕܚܳܐܪ ܠܰܢܨܝܒܝܢ ܘܟܘܪܰܐ ܗܘ ܕܣܰܓ̈ܝܐܝܳܢ ܕܰܝܪ̈ܳܬܗ ܘܟܘܪ̈ܚܰܘܗܝ. ܘܐܶܡܳܐ ܕܰܡܕܺܝܢ̈ܬܗ ܐܰܬܪܐ ܕܡܶܕܝܰܕ ܕܚܳܕܪܝܢ ܠܗ ܝܰܬܝܪ ܡܶܢ ܚܰܡܫܝܢ ܩܘܪ̈ܝܳܐ ܕܰܬܪܝܢ ܬܘ̈ܠܬܐ ܡܫܝܚ̈ܝܐ ܣܘܪ̈ܝܳܝܐ ܘܰܕܫܰܪܟܐ ܛܰܝܳܝ̈ܐ ܘܝ̣ܺܙ݂ܝܼܕܳܝ̈ܐ. ܘܗܳܠܝܢ ܐܶܢܘܢ ܫܡܳܗ̈ܐ ܕܩܘܪ̈ܝܳܐ ܕܰܕܟܝܪܝܢ ܒܰܟܬܳܒܰܢ ܠܡܰܕܢܚܳܐ ܐܰܢܚܠ. ܦܳܦܝܰܬ. ܩܰܪܛܰܡܝܢ ܠܡܰܥܪܒܳܐ: ܒ̈ܬܶܐ. ܚܰܒܣܢܰܐܣ ܨܰܠܚ ܥܰܪܢܰܐܣ ܥܰܝܢܘܪܕ ܟܰܦܪܳܐ ܟܦܰܪܙܗ ܟܦܰܪܣܠܛܐ. ܟܦܰܪܫܳܡܥ ـ  ܟܰܢܕܝܪܝܒ. ܠܓܰܪܒܝܐ: ܒܶܝܬ ܩܶܣܝܳܢܳܐ. ܚܰܐܚ. ܚܰܣܢ ܟܺܐܦܳܐ. ܕܰܝܪܳܐ ܕܰܨܠܝܒܐ. ܙܰܐܙ ܟܦܰܪܒܘܪܰܐܢ. ܠܬܰܝܡܢܐ: ܐܰܪܒܳܐ ܒܶܝܬܕܶܒ̈ܐ ܒܶܝܬ ܣܒܝܪܝܢܳܐ ܒܶܝܬ ܡܰܢܥܡ ܬܰܡܰܪܙ ܚܒܳܒ. ܣܰܐܪܗ ܐܘ ܐܶܣܬܝܪ ܥܰܪܒܰܐܢ ܡܝܕܘܢ ܘܩܘܪ̈ܝܳܐ ܕܚܰܪ̈ܝܒܳܢ ܘܰܕܠܐ ܝܕܝ̈ܥܳܢ ܕܘܟܝ̈ܬܗܶܝܢ ܚܰܠܚ. ܙܰܒܕܝܩܐ. ܟܦܪܝܰܗܒ. ܒܠܫܬ.</quote>
+                    </desc>
+                    <desc xml:lang="ar">
+                        <quote source="#bib221-4">جبل متصل بجبل الازل المشرف على نصيبين، وكورة كثيرة الاديار والصوامع قصبتها بلدة مذيات، مكتظة بنيف وخمسين قرية وضيعة ثلثا اهلها مسيحيون سريانيون والبقية مسلمون ويزيدية، وهذه اسماء القرى المذكورة في كتابنا: شرقا، انحل ففياث قرتمين، وغربا باتي حبسناس صلح عرناس عينورد كفرة كفرزي كفرسلطا كفر شامع كنديريب. وشمالا: آلين باقسيات حاج حصن كيفا دير صليب زاز كربوران، وجنوبا: اربو بادبة باسبرينة بانمعم تمرس حباب ساري او ستير عربان مدو. والقرى الخربة المجهولة الموقع، حالح زبديقا كفرياب كلشت.</quote>
+                    </desc>
+                    <desc xml:lang="en">
+                        <quote source="#bib221-5">a mountain connected with the mountain of Izla, which overlooks Nisibin. The territory of the same name harbors a great number of monasteries and cells, as well as some fifty villages large and small. Two-thirds of the inhabitants of these villages are Syrian Christians; the rest are Muslims and Yezidis. The capital of Tur ʿAbdin is Midyat.  Following are the names of the villages mentioned in our book: to the east of Tur ʿAbdin are situated Anḥil, Fifyath and Qarṭmin; to the west are Bāti, Habsnas, Salaḥ, ʿUrnus, ʿAynward, Kafra, Kafarze, Kafrsalta, Kafrshami and Kandarib; to the north are Ālīn, Baqsyan, Ḥaḥ, Ḥiṣn Kifa, Dayr Ṣalib, Zāz and Karburan; to the south are Arbo, Badebe, Basibrina, Banimʿim, Tamars, Ḥbob, Sari Awastir, ʿArban and Meddo.&#160; The ruined villages and those whose location is unknown, are Ḥāliḥ, Zabdīqā, Kafryab and Kalasht.</quote>
+                    </desc>
+                    <location type="gps" source="#bib221-8">
+                        <geo>37.5 41.5</geo>
+                    </location>
+                    <state type="existence" from="0400" to="2013" syriaca-computed-end="2013-01-01" syriaca-computed-start="0400-01-01">
+                        <precision match="@from" notAfter="0400" syriaca-computed-end="0400-01-01"/>
+                        <precision match="@to" notBefore="2013" syriaca-computed-start="2013-01-01"/>
+                    </state>
+                    <idno type="URI">http://syriaca.org/place/221</idno>
+                    <idno type="URI">http://pleiades.stoa.org/places/874477</idno>
+                    <idno type="URI">http://en.wikipedia.org/wiki/Tur_Abdin</idno>
+                    <idno type="URI">http://dbpedia.org/resource/Tur_Abdin</idno>
+                    <idno type="URI">
+                                            http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=T&amp;sK=Tur Abdin&amp;sT=keywords
+                                        </idno>
+                    <bibl xml:id="bib221-1">
+                        <author>A. N. Palmer </author>
+                        <title level="a" xml:lang="en">565. Ṭur ʿAbdin</title>
+                        <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                        <ptr target="http://syriaca.org/bibl/1"/>
+                        <citedRange unit="pp">418-420</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib221-2">
+                        <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                        <ptr target="http://syriaca.org/bibl/1"/>
+                        <citedRange unit="pp">4, 30, 38, 48, 62, 63, 68, 69, 114, 140, 167–168, 178, 183, 187, 210, 215, 220, 226, 244, 245, 247, 262, 264, 267, 272, 279–280, 290, 291, 294 (with fig. 81), 308, 310, 313, 333, 357, 375, 381–382, 414, 418–420 (with fig. 121), 421, 438, 465 (fig. 120c), 466 (fig. 122c), 467 (fig. 123c)</citedRange>
+                        <citedRange unit="maps">Map II B1</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib221-3">
+                        <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
+                        <ptr target="http://syriaca.org/bibl/3"/>
+                        <citedRange unit="pp">557-558, 559</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib221-4">
+                        <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
+                        <ptr target="http://syriaca.org/bibl/2"/>
+                        <citedRange unit="pp">517</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib221-5">
+                        <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                        <ptr target="http://syriaca.org/bibl/4"/>
+                        <citedRange unit="pp">559</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib221-6">
+                        <title xml:lang="en">The Comprehensive Bibliography on Syriac Christianity</title>
+                        <ptr target="http://syriaca.org/bibl/5"/>
+                        <citedRange unit="entry" target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=T&amp;sK=Tur Abdin&amp;sT=keywords">Tur Abdin</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib221-7">
+                        <author>David Wilmshurst</author>
+                        <title xml:lang="en">The Ecclesiastical Organisation of the Church of the East, 1318-1913</title>
+                        <citedRange unit="pp">38, 39, 40, 43, 44, 109</citedRange>
+                        <ptr target="http://syriaca.org/bibl/9"/>
+                    </bibl>
+                    <bibl xml:id="bib221-8">
+                        <title>http://pleiades.stoa.org/places/874477</title>
+                        <ptr target="http://pleiades.stoa.org/places/874477"/>
+                    </bibl>
+                </place>
+            </listPlace>
+        </body>
+    </text>
+</TEI>

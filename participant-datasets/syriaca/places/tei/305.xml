@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:syriaca="http://syriaca.org" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="en">Beth Arsham
+                                        — <foreign xml:lang="syr">ܒܝܬ ܐܪܫܡ</foreign>
+                </title>
+                <title level="m" xml:lang="en">The Syriac Gazetteer</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+                <funder>The National Endowment for the Humanities</funder>
+                <funder>The International Balzan Prize Foundation</funder>
+                <principal>David A. Michelson</principal>
+                <editor role="general" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <respStmt>
+                    <resp>Initial Barsoum entry creation by</resp>
+                    <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Data merging, Pleiades and Wikipedia linking, and XML by</resp>
+                    <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Syriac description entry by</resp>
+                    <name ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/place/305/tei</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                        <p>This entry incorporates copyrighted material from the following work(s):
+                                                <listBibl>
+                                <bibl>
+                                    <ptr target="#bib305-1"/>
+                                </bibl>
+                                <bibl>
+                                    <ptr target="#bib305-2"/>
+                                </bibl>
+                                <bibl>
+                                    <ptr target="#bib305-3"/>
+                                </bibl>
+                            </listBibl>
+                            <note>used under a Creative Commons Attribution license <ref target="http://creativecommons.org/licenses/by/3.0/"/>
+                            </note>
+                        </p>
+                    </licence>
+                </availability>
+                <date>2014-01-14-05:00</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>This record created following the Syriaca.org guidelines. Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+                <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+                <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+                <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
+                <p>The <gi>state</gi> element of @type="existence" indicates the period for which this place was in use as a place of its indicated type (e.g. an inhabited settlement, a functioning monastery or church, an administrative province).  Natural features always in existence have no <gi>state</gi> element of @type="existence".</p>
+            </editorialDecl>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="syriaca-headword">
+                        <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="syr">Unvocalized Syriac of any variety or period</language>
+                <language ident="syr-Syrj">Vocalized West Syriac</language>
+                <language ident="syr-Syrn">Vocalized East Syriac</language>
+                <language ident="en">English</language>
+                <language ident="ar">Arabic</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change who="http://syriaca.org/editors.xml#wsalesky" when="2014-01-14">ADDED: syriaca-computed-start and syriaca-computed-end attributes for searching</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2014-01-10">ADDED: disambiguation note</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-12-18-05:00">CREATED: place</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listPlace>
+                <place xml:id="place-305" type="settlement">
+                    <placeName xml:id="name305-1" xml:lang="en" syriaca-tags="#syriaca-headword" source="#bib305-3">Beth Arsham</placeName>
+                    <placeName xml:id="name305-2" xml:lang="syr" syriaca-tags="#syriaca-headword">ܒܝܬ ܐܪܫܡ</placeName>
+                    <placeName xml:id="name305-3" xml:lang="syr-Syrj" source="#bib305-1">ܒܶܝܬ ܐܰܪܩܡ</placeName>
+                    <placeName xml:id="name305-4" xml:lang="ar" source="#bib305-2">بيث ارشم</placeName>
+                    <desc xml:id="abstract-en-305" xml:lang="en"/>
+                    <desc xml:lang="syr-Syrj">
+                        <quote source="#bib305-1">ܐܰܬܪܐ ܕܩܰܪܝܒ ܠܰܡܕܝܢ̈ܬܐ (ܣܠܝܩ ܘܩܰܛܝܣܦܘܢ) ܠܬܰܝܡܢܗ̇ ܕܒܓܕܕ ܘܠܐ ܝܺܕܝܺܥܐ ܕܘܟܬܗ̇.</quote>
+                    </desc>
+                    <desc xml:lang="ar">
+                        <quote source="#bib305-2">بلد داثر كان بقرب المدائن جنوبي بغداد مجهول موقعه</quote>
+                    </desc>
+                    <desc xml:lang="en">
+                        <quote source="#bib305-3">an extinct town south of Baghdad, near Ctesiphon. Its exact location is unknown.</quote>
+                    </desc>
+                    <state type="existence" from="0505" to="0440" syriaca-computed-end="0440-01-01" syriaca-computed-start="0505-01-01">
+                        <precision match="@from" notAfter="0505" syriaca-computed-end="0505-01-01"/>
+                        <precision match="@to" notAfter="1943" notBefore="0440" syriaca-computed-end="1943-01-01" syriaca-computed-start="0440-01-01"/>
+                    </state>
+                    <note type="disambiguation">Not the same place as <placeName ref="http://syriaca.org/place/925">Arsham</placeName>.</note>
+                    <note type="deprecation" xml:id="name305-3-deprecation">Dolabani's printer misread his shin as a qoph.</note>
+                    <link target="#name305-3 #name305-3-deprecation"/>
+                    <idno type="URI">http://syriaca.org/place/305</idno>
+                    <bibl xml:id="bib305-1">
+                        <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
+                        <ptr target="http://syriaca.org/bibl/3"/>
+                        <citedRange unit="pp">537</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib305-2">
+                        <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
+                        <ptr target="http://syriaca.org/bibl/2"/>
+                        <citedRange unit="pp">505</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib305-3">
+                        <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                        <ptr target="http://syriaca.org/bibl/4"/>
+                        <citedRange unit="pp">552</citedRange>
+                    </bibl>
+                </place>
+            </listPlace>
+        </body>
+    </text>
+</TEI>

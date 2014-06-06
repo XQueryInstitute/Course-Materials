@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:syriaca="http://syriaca.org" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="en">Amida
+                                        — <foreign xml:lang="syr">ܐܡܝܕ</foreign>
+                </title>
+                <title level="m" xml:lang="en">The Syriac Gazetteer</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+                <funder>The National Endowment for the Humanities</funder>
+                <funder>The International Balzan Prize Foundation</funder>
+                <principal>David A. Michelson</principal>
+                <editor role="general" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <respStmt>
+                    <resp>Initial Barsoum entry creation by</resp>
+                    <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Data merging, Pleiades and Wikipedia linking, and XML by</resp>
+                    <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Syriac description entry by</resp>
+                    <name ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Wilmshurst index information entry by</resp>
+                    <name ref="http://syriaca.org/editors.xml#adavis">Anthony Davis</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/place/8/tei</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                        <p>This entry incorporates copyrighted material from the following work(s):
+                                                <listBibl>
+                                <bibl>
+                                    <ptr target="#bib8-3"/>
+                                </bibl>
+                                <bibl>
+                                    <ptr target="#bib8-4"/>
+                                </bibl>
+                                <bibl>
+                                    <ptr target="#bib8-5"/>
+                                </bibl>
+                            </listBibl>
+                            <note>used under a Creative Commons Attribution license <ref target="http://creativecommons.org/licenses/by/3.0/"/>
+                            </note>
+                        </p>
+                    </licence>
+                </availability>
+                <date>2014-01-14-05:00</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>This record created following the Syriaca.org guidelines. Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+                <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+                <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+                <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
+                <p>The <gi>state</gi> element of @type="existence" indicates the period for which this place was in use as a place of its indicated type (e.g. an inhabited settlement, a functioning monastery or church, an administrative province).  Natural features always in existence have no <gi>state</gi> element of @type="existence".</p>
+            </editorialDecl>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="syriaca-headword">
+                        <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="syr">Unvocalized Syriac of any variety or period</language>
+                <language ident="syr-Syrj">Vocalized West Syriac</language>
+                <language ident="syr-Syrn">Vocalized East Syriac</language>
+                <language ident="en">English</language>
+                <language ident="ar">Arabic</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change who="http://syriaca.org/editors.xml#wsalesky" when="2014-01-14">ADDED: syriaca-computed-start and syriaca-computed-end attributes for searching</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-12-18-05:00">CREATED: place</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listPlace>
+                <place xml:id="place-8" type="settlement">
+                    <placeName xml:id="name8-1" xml:lang="en" syriaca-tags="#syriaca-headword" source="#bib8-2 #bib8-6">Amida</placeName>
+                    <placeName xml:id="name8-2" xml:lang="en" source="#bib8-2 #bib8-5">Amid</placeName>
+                    <placeName xml:id="name8-3" xml:lang="en" source="#bib8-2">Diyarbakır</placeName>
+                    <placeName xml:id="name8-4" xml:lang="en" source="#bib8-2">Omid</placeName>
+                    <placeName xml:id="name8-5" xml:lang="syr" syriaca-tags="#syriaca-headword">ܐܡܝܕ</placeName>
+                    <placeName xml:id="name8-6" xml:lang="syr-Syrj" source="#bib8-3">ܐܳܡܝ̣ܕ</placeName>
+                    <placeName xml:id="name8-7" xml:lang="syr-Syrj" source="#bib8-3">ܕܝܰܐܪܒܟܶܪ</placeName>
+                    <placeName xml:id="name8-8" xml:lang="ar" source="#bib8-4">آمد</placeName>
+                    <placeName xml:id="name8-9" xml:lang="ar" source="#bib8-4"> ديار بكر</placeName>
+                    <placeName xml:id="name8-10" xml:lang="en" source="#bib8-5">Diyarbakir</placeName>
+                    <placeName xml:id="name8-11" xml:lang="en" source="#bib8-7">Āmid</placeName>
+                    <placeName xml:id="name8-12" xml:lang="en" source="#bib8-7">Diyārbakr</placeName>
+                    <desc xml:id="abstract-en-8" xml:lang="en">
+                        <quote source="#bib8-1">City in upper Mesopotamia.</quote>
+                    </desc>
+                    <desc xml:lang="en">
+                        <quote source="#bib8-1">32. Amid</quote>
+                    </desc>
+                    <desc xml:lang="syr-Syrj">
+                        <quote source="#bib8-3">ܡܕܺܝܢܬܐ ܚܰܣܝ̣ܢܬܐ ܕܕܶܩܠܰܬ ܚܳܕܰܪ ܠܣܘܓܐܗ̇.</quote>
+                    </desc>
+                    <desc xml:lang="ar">
+                        <quote source="#bib8-4">مدينة قديمة حصينة دجلة محيطة باكثرها</quote>
+                    </desc>
+                    <desc xml:lang="en">
+                        <quote source="#bib8-5">an ancient fortified city, virtually surrounded by the Tigris.</quote>
+                    </desc>
+                    <location type="gps" source="#bib8-2">
+                        <geo>37.981944 40.210556</geo>
+                    </location>
+                    <state type="existence" from="0324" to="2013" syriaca-computed-end="2013-01-01" syriaca-computed-start="0324-01-01">
+                        <precision match="@from" notAfter="0324" syriaca-computed-end="0324-01-01"/>
+                        <precision match="@to" notBefore="2013" syriaca-computed-start="2013-01-01"/>
+                    </state>
+                    <idno type="URI">http://syriaca.org/place/8</idno>
+                    <idno type="URI">http://pleiades.stoa.org/places/874298</idno>
+                    <idno type="URI">http://en.wikipedia.org/wiki/Amida_(Mesopotamia)</idno>
+                    <idno type="URI">http://en.wikipedia.org/wiki/Diyarbakır</idno>
+                    <idno type="URI">
+                                            http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=A&amp;sK=Amida&amp;sT=keywords
+                                        </idno>
+                    <bibl xml:id="bib8-1">
+                        <author>H.Takahashi</author>
+                        <title level="a" xml:lang="en">32. Amid</title>
+                        <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                        <ptr target="http://syriaca.org/bibl/1"/>
+                        <citedRange unit="pp">18-21</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib8-2">
+                        <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                        <ptr target="http://syriaca.org/bibl/1"/>
+                        <citedRange unit="pp">4, 9, 18–20 (with fig. 5), 46, 60, 69, 92, 126, 139, 141, 143, 145, 163, 164–165, 178, 182, 183, 201, 212, 217, 224, 226, 267–268, 280, 283, 308, 343, 367, 370, 375, 379, 397, 406, 408, 418, 426, 429, 435, 438, 443, 444</citedRange>
+                        <citedRange unit="maps">Map I B1, II B1, III</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib8-3">
+                        <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
+                        <ptr target="http://syriaca.org/bibl/3"/>
+                        <citedRange unit="pp">536</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib8-4">
+                        <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
+                        <ptr target="http://syriaca.org/bibl/2"/>
+                        <citedRange unit="pp">504</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib8-5">
+                        <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                        <ptr target="http://syriaca.org/bibl/4"/>
+                        <citedRange unit="pp">551</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib8-6">
+                        <title xml:lang="en">The Comprehensive Bibliography on Syriac Christianity</title>
+                        <ptr target="http://syriaca.org/bibl/5"/>
+                        <citedRange unit="entry" target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=A&amp;sK=Amida&amp;sT=keywords">Amida</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib8-7">
+                        <author>David Wilmshurst</author>
+                        <title xml:lang="en">The Ecclesiastical Organisation of the Church of the East, 1318-1913</title>
+                        <citedRange unit="pp">4, 11, 13, 22, 23, 24, 26, 27, 28, 29, 32, 38, 39, 41, 42, 43, 45, 49, 50, 51, 52, 53, 54-60, 61, 62, 64, 67, 68, 69, 73, 74, 75, 80, 81, 85, 88, 89, 91, 93, 95, 102, 103, 106, 129, 130, 190, 195, 197, 204, 210, 213, 226, 236, 257, 263, 264, 265, 266, 267, 278, 313, 316, 332, 348, 351, 352, 353, 357, 359</citedRange>
+                        <ptr target="http://syriaca.org/bibl/9"/>
+                    </bibl>
+                </place>
+            </listPlace>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:syriaca="http://syriaca.org" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="en">Rabban Hormizd</title>
+                <title level="m" xml:lang="en">The Syriac Gazetteer</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+                <funder>The National Endowment for the Humanities</funder>
+                <funder>The International Balzan Prize Foundation</funder>
+                <principal>David A. Michelson</principal>
+                <editor role="general" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <respStmt>
+                    <resp>Data merging, Pleiades and Wikipedia linking, and XML by</resp>
+                    <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Wilmshurst index information entry by</resp>
+                    <name ref="http://syriaca.org/editors.xml#adavis">Anthony Davis</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/place/168/tei</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                    </licence>
+                </availability>
+                <date>2014-03-26</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>This record created following the Syriaca.org guidelines. Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+                <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+                <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+                <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
+                <p>The <gi>state</gi> element of @type="existence" indicates the period for which this place was in use as a place of its indicated type (e.g. an inhabited settlement, a functioning monastery or church, an administrative province).  Natural features always in existence have no <gi>state</gi> element of @type="existence".</p>
+            </editorialDecl>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="syriaca-headword">
+                        <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="syr">Unvocalized Syriac of any variety or period</language>
+                <language ident="syr-Syrj">Vocalized West Syriac</language>
+                <language ident="syr-Syrn">Vocalized East Syriac</language>
+                <language ident="en">English</language>
+                <language ident="ar">Arabic</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2014-03-26">FIXED: URI for confessions.xml needed "documentation/" to be inserted</change>
+            <change who="http://syriaca.org/editors.xml#wsalesky" when="2014-02-10-05:00">ADDED: syriaca-computed-end for elements with when attributes</change>
+            <change who="http://syriaca.org/editors.xml#wsalesky" when="2014-01-14">ADDED: syriaca-computed-start and syriaca-computed-end attributes for searching</change>
+            <change who="htttp://syriaca.org/editors.xml#tcarlson" when="2014-01-05">ADDED: Vosté's article, events, confessions, and attestations</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-12-18-05:00">CREATED: place</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listPlace>
+                <place xml:id="place-168" type="monastery">
+                    <placeName xml:id="name168-1" xml:lang="en" syriaca-tags="#syriaca-headword" source="#bib168-2">Rabban Hormizd</placeName>
+                    <placeName xml:id="name168-2" xml:lang="en" source="#bib168-3">monastery of Rabban Hormizd</placeName>
+                    <placeName xml:id="name168-3" xml:lang="en" source="#bib168-4">Rabban Hormizd the Persian</placeName>
+                    <desc xml:id="abstract-en-168" xml:lang="en">
+                        <quote source="#bib168-1">The Chaldean monastery of Rabban Hormizd, built upon a mountain ridge northeast of Alqosh in northern Iraq, is famous not only for its magnificent location and impressive buildings, but also for its central role in the history of the transmission of E.-Syr. literature and its importance in the struggles between the Chald. Church and the Ch. of E., to which the monastery originally belonged.</quote>
+                    </desc>
+                    <desc xml:lang="en">
+                        <quote source="#bib168-1">264. Hormizd, Monastery of Rabban</quote>
+                    </desc>
+                    <location type="gps" source="#bib168-2">
+                        <geo>36.749167 43.114444</geo>
+                    </location>
+                    <location type="nested" source="#bib168-4">
+                        <settlement ref="http://syriaca.org/place/19">Alqōsh</settlement>
+                        <region ref="http://syriaca.org/place/722">Mosul region</region>
+                    </location>
+                    <event when="0650" source="#bib168-1" syriaca-computed-start="0650-01-01" syriaca-computed-end="0650-01-01">
+                        <p xml:lang="en">Monastery founded by <persName>Rabban Hormizd</persName> of <placeName ref="http://syriaca.org/place/35">Beth Lapaṭ</placeName>, formerly of the monastery of <placeName ref="http://syriaca.org/place/167">Rabban Bar ʿEdta</placeName>
+                        </p>
+                        <precision match="@when" notAfter="0700" notBefore="0600" syriaca-computed-end="0700-01-01" syriaca-computed-start="0600-01-01"/>
+                    </event>
+                    <event when="1485" source="#bib168-5" syriaca-computed-start="1485-01-01" syriaca-computed-end="1485-01-01">
+                        <p xml:lang="en">Repair of the monastery gate.</p>
+                    </event>
+                    <event when="1508" source="#bib168-1" syriaca-computed-start="1508-01-01" syriaca-computed-end="1508-01-01">
+                        <p xml:lang="en">The monastery was attacked by <persName>Murād Bey</persName>.</p>
+                    </event>
+                    <event when="1706" source="#bib168-1" syriaca-computed-start="1706-01-01" syriaca-computed-end="1706-01-01">
+                        <p xml:lang="en">The monastery was attacked by Kurdish raiders.</p>
+                    </event>
+                    <event when="1717" source="#bib168-1" syriaca-computed-start="1717-01-01" syriaca-computed-end="1717-01-01">
+                        <p xml:lang="en">The monastery was attacked by Kurdish raiders.</p>
+                    </event>
+                    <event when="1743" source="#bib168-1" syriaca-computed-start="1743-01-01" syriaca-computed-end="1743-01-01">
+                        <p xml:lang="en">The monastery was attacked by <persName>Nādir Shāh</persName>.</p>
+                    </event>
+                    <event when="1800" source="#bib168-1 #bib168-5" syriaca-computed-start="1800-01-01" syriaca-computed-end="1800-01-01">
+                        <p xml:lang="en">The monastery was abandoned.</p>
+                        <precision match="@when" notBefore="1773" notAfter="1800" syriaca-computed-end="1800-01-01" syriaca-computed-start="1773-01-01"/>
+                    </event>
+                    <event when="1808" source="#bib168-5" syriaca-computed-start="1808-01-01" syriaca-computed-end="1808-01-01">
+                        <p xml:lang="en">The monastery was re-founded by <persName>Gabriel Dambo</persName>.</p>
+                    </event>
+                    <event when="1842" source="#bib168-1" syriaca-computed-start="1842-01-01" syriaca-computed-end="1842-01-01">
+                        <p xml:lang="en">The monastery was attacked by Kurdish raiders.</p>
+                    </event>
+                    <event when="1850" source="#bib168-1" syriaca-computed-start="1850-01-01" syriaca-computed-end="1850-01-01">
+                        <p xml:lang="en">The monastery was attacked by Kurdish raiders.</p>
+                    </event>
+                    <event type="attestation" xml:id="attestation168-1" when="1497-02-20" source="#bib168-5" syriaca-computed-start="1497-02-20" syriaca-computed-end="1497-02-20">
+                        <p xml:lang="en">Attestation of East Syrian <persName>Catholicos Shemʿon</persName> who died on <date when="1497-02-20" syriaca-computed-start="1497-02-20" syriaca-computed-end="1497-02-20">20 Shebaṭ 1808 A. G. (20 February 1497)</date> according to tomb inscription.</p>
+                        <link target="#confession168-1 #attestation168-1"/>
+                    </event>
+                    <event type="attestation" xml:id="attestation168-2" when="1773" source="#bib168-5" syriaca-computed-start="1773-01-01" syriaca-computed-end="1773-01-01">
+                        <p xml:lang="en">Attestation of death in <date when="1773" syriaca-computed-start="1773-01-01" syriaca-computed-end="1773-01-01">2084 A.G. (1773)</date> of <persName>Deacon Yawsep</persName>, brother of Church of the East <persName>Catholicos Eliya X</persName>, in an inscription</p>
+                        <link target="#confession168-2 #attestation168-2"/>
+                    </event>
+                    <event type="attestation" xml:id="attestation168-3" when="1883" source="#bib168-5" syriaca-computed-start="1883-01-01" syriaca-computed-end="1883-01-01">
+                        <p xml:lang="en">Attestation of inscription with single qnoma confession.</p>
+                        <link target="#confession168-3 #attestation168-3"/>
+                    </event>
+                    <event type="attestation" xml:id="attestation168-4" when="1559" source="#bib168-5" syriaca-computed-start="1559-01-01" syriaca-computed-end="1559-01-01">
+                        <p xml:lang="en">Attestation of allegiance to the traditionalist <persName>Catholicos Eliya VII</persName> in an inscription.</p>
+                        <link target="#confession168-2 #attestation168-4"/>
+                    </event>
+                    <event type="attestation" xml:id="attestation168-5" when="1818" source="#bib168-5" syriaca-computed-start="1818-01-01" syriaca-computed-end="1818-01-01">
+                        <p xml:lang="en">Attestation of allegiance to <persName>Pope Pius VII</persName> in an inscription.</p>
+                        <link target="#confession168-3 #attestation168-5"/>
+                    </event>
+                    <event type="attestation" xml:id="attestation168-6" when="1485" source="#bib168-5" syriaca-computed-start="1485-01-01" syriaca-computed-end="1485-01-01">
+                        <p xml:lang="en">Attestation of allegiance to <persName>Catholicos Shemʿon</persName> in an inscription.</p>
+                        <link target="#confession168-1 #attestation168-6"/>
+                    </event>
+                    <event type="attestation" xml:id="attestation168-7" when="1538-08-05" source="#bib168-5" syriaca-computed-start="1538-08-05" syriaca-computed-end="1538-08-05">
+                        <p xml:lang="en">Attestation of allegiance to <persName>Catholicos Shemʿon</persName> who died <date when="1538-08-05" syriaca-computed-start="1538-08-05" syriaca-computed-end="1538-08-05">5 Ab 1849 A.G. (5 August 1538)</date> in an inscription.</p>
+                        <link target="#confession168-1 #attestation168-7"/>
+                    </event>
+                    <event type="attestation" xml:id="attestation168-8" when="1558-11" source="#bib168-5" syriaca-computed-start="1558-11-01" syriaca-computed-end="1558-11-01">
+                        <p xml:lang="en">Attestation of allegiance to <persName>Catholicos Shemʿon</persName> who died <date when="1558-11" syriaca-computed-start="1558-11-01" syriaca-computed-end="1558-11-01">the start of Tishri I 1570 (November 1558)</date> in an inscription.</p>
+                        <link target="#confession168-2 #attestation168-8"/>
+                    </event>
+                    <state type="existence" from="0700" to="2013" syriaca-computed-end="2013-01-01" syriaca-computed-start="0700-01-01">
+                        <precision match="@from" notAfter="0700" notBefore="0600" syriaca-computed-end="0700-01-01" syriaca-computed-start="0600-01-01"/>
+                        <precision match="@to" notBefore="2013" syriaca-computed-start="2013-01-01"/>
+                    </state>
+                    <state type="confession" xml:id="confession168-1" ref="http://syriaca.org/documentation/confessions.xml#east-syrian" from="0600" source="#bib168-1" syriaca-computed-start="0600-01-01">
+                        <label>East Syrian</label>
+                    </state>
+                    <state type="confession" xml:id="confession168-2" ref="http://syriaca.org/documentation/confessions.xml#church-of-the-east" from="1552" to="1800" source="#bib168-1" syriaca-computed-end="1800-01-01" syriaca-computed-start="1552-01-01">
+                        <label>Church of the East</label>
+                    </state>
+                    <state type="confession" xml:id="confession168-3" ref="http://syriaca.org/documentation/confessions.xml#chaldean-catholic" from="1808" source="#bib168-5" syriaca-computed-start="1808-01-01">
+                        <label>Chaldean Catholic</label>
+                    </state>
+                    <idno type="URI">http://syriaca.org/place/168</idno>
+                    <idno type="URI">http://en.wikipedia.org/wiki/Rabban_Hormizd_Monastery</idno>
+                    <idno type="URI">http://dbpedia.org/resource/Rabban_Hormizd_Monastery</idno>
+                    <idno type="URI">
+                                            http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=m&amp;sK=monastery of Rabban Hormizd&amp;sT=keywords
+                                        </idno>
+                    <bibl xml:id="bib168-1">
+                        <author>H. L. Murre-van den Berg</author>
+                        <title level="a" xml:lang="en">264. Hormizd, Monastery of Rabban</title>
+                        <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                        <ptr target="http://syriaca.org/bibl/1"/>
+                        <citedRange unit="pp">203-205</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib168-2">
+                        <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                        <ptr target="http://syriaca.org/bibl/1"/>
+                        <citedRange unit="pp">17, 113, 203–205 (with fig. 57), 210, 226, 265, 349, 359, 379, 398, 436, 443, 451 (fig. 3c), 456 (fig. 56c)</citedRange>
+                        <citedRange unit="maps">Map II C1, IV</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib168-3">
+                        <title xml:lang="en">The Comprehensive Bibliography on Syriac Christianity</title>
+                        <ptr target="http://syriaca.org/bibl/5"/>
+                        <citedRange unit="entry" target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=m&amp;sK=monastery of Rabban Hormizd&amp;sT=keywords">monastery of Rabban Hormizd</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib168-4">
+                        <author>David Wilmshurst</author>
+                        <title xml:lang="en">The Ecclesiastical Organisation of the Church of the East, 1318-1913</title>
+                        <citedRange unit="pp">6, 8, 10, 12, 13, 14, 21, 22, 24, 26, 28, 30, 31, 32, 33, 34, 35, 42, 47, 59-60, 78, 79, 89, 94, 96, 106, 121, 122, 125, 127, 129, 130, 134, 138, 140, 143, 145, 146, 147, 156, 163, 164, 171, 173, 176, 181, 186, 188, 189, 190, 191, 193, 197, 201, 205, 210, 213, 220, 226, 227, 228, 229, 231, 232, 236, 239, 241, 242, 243, 245, 246, 250, 256, 257, 258-270, 272, 273, 274, 297, 318, 326, 348, 351, 353, 354, 355, 358, 359, 363</citedRange>
+                        <ptr target="http://syriaca.org/bibl/9"/>
+                    </bibl>
+                    <bibl xml:id="bib168-5">
+                        <author>Jacques Marie Vosté</author>
+                        <title level="a" xml:lang="fr">Les inscriptions de Rabban Hormizd et de N.-D. des Semences près d’Alqoš (Iraq)</title>
+                        <citedRange unit="pp">266-268, 271-272, 274-276, 281-284, 286-287</citedRange>
+                        <ptr target="http://syriaca.org/bibl/635"/>
+                    </bibl>
+                </place>
+            </listPlace>
+        </body>
+    </text>
+</TEI>

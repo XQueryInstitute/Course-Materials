@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:syriaca="http://syriaca.org" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="en">Dayr al-Zaʿfarān
+                                        — <foreign xml:lang="syr">ܕܝܪܐ ܕܙܥܦܪܐܢ</foreign>
+                </title>
+                <title level="m" xml:lang="en">The Syriac Gazetteer</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+                <funder>The National Endowment for the Humanities</funder>
+                <funder>The International Balzan Prize Foundation</funder>
+                <principal>David A. Michelson</principal>
+                <editor role="general" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <respStmt>
+                    <resp>Initial Barsoum entry creation by</resp>
+                    <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Data merging, Pleiades and Wikipedia linking, and XML by</resp>
+                    <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Syriac description entry by</resp>
+                    <name ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Wilmshurst index information entry by</resp>
+                    <name ref="http://syriaca.org/editors.xml#adavis">Anthony Davis</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/place/69/tei</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                        <p>This entry incorporates copyrighted material from the following work(s):
+                                                <listBibl>
+                                <bibl>
+                                    <ptr target="#bib69-3"/>
+                                </bibl>
+                                <bibl>
+                                    <ptr target="#bib69-4"/>
+                                </bibl>
+                                <bibl>
+                                    <ptr target="#bib69-5"/>
+                                </bibl>
+                            </listBibl>
+                            <note>used under a Creative Commons Attribution license <ref target="http://creativecommons.org/licenses/by/3.0/"/>
+                            </note>
+                        </p>
+                    </licence>
+                </availability>
+                <date>2014-02-06</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>This record created following the Syriaca.org guidelines. Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+                <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+                <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+                <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
+                <p>The <gi>state</gi> element of @type="existence" indicates the period for which this place was in use as a place of its indicated type (e.g. an inhabited settlement, a functioning monastery or church, an administrative province).  Natural features always in existence have no <gi>state</gi> element of @type="existence".</p>
+            </editorialDecl>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="syriaca-headword">
+                        <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="syr">Unvocalized Syriac of any variety or period</language>
+                <language ident="syr-Syrj">Vocalized West Syriac</language>
+                <language ident="syr-Syrn">Vocalized East Syriac</language>
+                <language ident="en">English</language>
+                <language ident="ar">Arabic</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2014-02-06">ADDED <gi>quote</gi> elements around Syriac text in <gi>note</gi> of type="corrigenda".</change>
+            <change who="http://syriaca.org/editors.xml#wsalesky" when="2014-01-14">ADDED: syriaca-computed-start and syriaca-computed-end attributes for searching</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-12-18-05:00">CREATED: place</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listPlace>
+                <place xml:id="place-69" type="monastery">
+                    <placeName xml:id="name69-1" xml:lang="en" syriaca-tags="#syriaca-headword" source="#bib69-2">Dayr al-Zaʿfarān</placeName>
+                    <placeName xml:id="name69-2" xml:lang="en" source="#bib69-2">Dayro d-Mor Ḥnonyo</placeName>
+                    <placeName xml:id="name69-3" xml:lang="en" source="#bib69-2">Dayr Mār Ḥanānyā</placeName>
+                    <placeName xml:id="name69-4" xml:lang="syr" syriaca-tags="#syriaca-headword">ܕܝܪܐ ܕܙܥܦܪܐܢ</placeName>
+                    <placeName xml:id="name69-5" xml:lang="syr-Syrj" source="#bib69-3">ܕܰܝܪܳܐ ܕܙܰܥܦܰܪܐܢ</placeName>
+                    <placeName xml:id="name69-6" xml:lang="ar" source="#bib69-4">دير الزعفران</placeName>
+                    <placeName xml:id="name69-7" xml:lang="en" source="#bib69-5">Zaʿfaran Monastery</placeName>
+                    <placeName xml:id="name69-8" xml:lang="en" source="#bib69-6">monastery Deir Zafaran</placeName>
+                    <placeName xml:id="name69-9" xml:lang="en" source="#bib69-7">Zaʿfarān (West Syrian)</placeName>
+                    <desc xml:id="abstract-en-69" xml:lang="en">
+                        <quote source="#bib69-1">A Syr. Orth. monastery dedicated to Mar Ḥnonyo (Arab. Ḥanānyā) located outside Mardin, and the seat of the patriarchate from 1293 until after World War I.</quote>
+                    </desc>
+                    <desc xml:lang="en">
+                        <quote source="#bib69-1">620. al-Zaʿfarān, Dayr</quote>
+                    </desc>
+                    <desc xml:lang="syr-Syrj">
+                        <quote source="#bib69-3">ܐܰܘ ܕܰܝܪܳܐ ܕܡܳܪܝ ܚܰܢܰܢܝܳܐ ܐܶܫܬܰܬܰܐܣ ܒܚܰܪܬܗ ܕܕܳܪܳܐ ܪܒܺܝܥܳܝܳܐ )  ܘܫܰܟܠܠܶܗ ܡܳܪܝ ܚܰܢܰܢܝܳܐ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܡܰܪܕܝܢ ܒܶܝܬ  793  -  800  ܒܡܰܕܢܰܚ ܡܶܪܕܳܐ ܫܳܥܬܐ ܡܶܢܳܗ̇. ܕܰܝܪܰܐ ܗܘ ܪܰܒܐ ܕܥܰܡܝܪ ܘܰܡܝܰܬܰܒ ܗܘܳܐ ܒܶܝܬ ܟܘܪܣܝܳܐ ܠܦܰܛܪܝܰܪܟܘܬܐ ܡܶܢ ܫܢܰܬ  1293  -  1933  ܝܰܬܝܪ ܡܶܢ ܫܶܬܡܳܐܐ ܫܢ̈ܝܺܢ. ܘܐܰܦܶܩ ܚܰܕ ܘܥܶܣܪܝܢ ܦܰܛܪܝܰܪ̈ܟܐ ܘܬܶܫܥܳܐ ܡܰܦܪ̈ܝܳܢܐ ܘܡܳܐܐ ܘܥܶܣܪܳܐ ܐܶܦܝܣܩܘ̈ܦܐ. ܘܒܰܫܢܰܬ  1917  ܦܪܰܣܢܰܢ ܡܟܰܬܒܰܙܰܒܢܗ ܕܰܡܫܰܡܠܰܝ ܘܰܪܫܝܺܡ ( ܢܰܙܗܗ̈ ܐܠܐܕܗܰܐܢ )  ܘܚܳܝܪܝܺܢ ܥܠܰܘܗܝ ܠܓܰܪܒܝܳܐ ܬܠܳܬܐ ܕܰܝܪ̈ܐ ܙܥܘܪ̈ܐ ܕܰܝܪܐ ܕܢܶܦܛܳܐ ܘܕܰܝܪܐ ܕܡܳܪܝ ܥܙܳܙܳܐܝܠ ܘܰܡܝܰܬܒ ܗܘܐ ܒܟܶܢܫܳܐ ܕܕܰܝܪ̈ܳܝܶܐ ܒܶܝܬ ܫܢܰܬ  1500  -  1600  ܘܕܰܝܪܳܐ ܕܡܳܪܝ ܝܰܥܩܘܒ ܡܰܠܦܳܢܐ ܕܰܕܟܺܝܪ ܠܰܙܒܰܢܬܐ ܩܰܕܡܳܝܬܐ ܫܢܰܬ  1165  ܘܰܥܕܰܡܳܐ ܠܗܳܫܳܐ ܥܰܡܝܪ ܘܰܚܒܝ̈ܫܳܝܳܬܐ ܕܡܳܪܝ ܒܶܗܢܰܡ ( ܘܡܳܪܝ ܝܰܘܣܦ )  ܕܰܥܡܰܪܘ ܒܗܶܝܢ ܐܢܳܫ̈ܝܢ ܥܢܘ̈ܝܐ ܥܕܰܡܳܐ ܠܡܶܨܥܳܝ̈ܬܗ ܕܕܳܪܐ ܕܰܫܒܰܥܣܪ ܘܐܶܬܢܰܦܰܩܘ ܒܗܶܝܢ ܐܶܦܝܣܩܘ̈ܦܐ.</quote>
+                    </desc>
+                    <desc xml:lang="ar">
+                        <quote source="#bib69-4">او دير مار حنانيا وهو مطران ماردين الذي وطّد اركانه سنة 793-800 على انقاض قلعة ودير قديم شرقي ماردين مسير ساعة عنها. وهو دير كبير عامر آهل، صار كرسياً للبطاركة من سنة 1293 نيفاً وستمائة سنة، انجب واحداً وعشرين بطريركاً وتسعة مفارنة ومئة وعشرة اساقفة. وسنة 1917 عملنا ونشرنا تاريخه الضافي الموسوم "بنزهة الاذهان" ويطل عليه شمالاً ثلاثة اديار صغيرة متجاورة وهي دير مار عززائيل وكان آهلاً برهط من الرهبان بين سنة 1500-1600 ودير مار يعقوب الملفان وذكر لأول مرة سنة 1165 ولا يزال عامراً، وصومعة مار بهنام وقطنها نفر من النساك حتى اواسط القرن السابع عشر وتخرج في كل منها نفر من الاساقفة</quote>
+                    </desc>
+                    <desc xml:lang="en">
+                        <quote source="#bib69-5">or St. Ḥananya Monastery, was built by Ḥananya, metropolitan of Mardin, between 793 and 800 on the site of an old monastery north of Mardin. This great and populous monastery in 1293 became the Patriarchal see for some six hundred years. It claims twenty-one Patriarchs, nine Maphryonos and 110 bishops. In 1917 we published its detailed history, entitled Nuzhat al-Adhhān (The Excursion of Minds). In its immediate neighborhood there are three small monasteries close together:</quote>
+                    </desc>
+                    <location type="nested" source="#bib69-7">
+                        <region ref="http://syriaca.org/place/719">Mardīn region</region>
+                    </location>
+                    <state type="existence" from="0800" to="2013" syriaca-computed-end="2013-01-01" syriaca-computed-start="0800-01-01">
+                        <precision match="@from" notAfter="0800" notBefore="0793" syriaca-computed-end="0800-01-01" syriaca-computed-start="0793-01-01"/>
+                        <precision match="@to" notBefore="2013" syriaca-computed-start="2013-01-01"/>
+                    </state>
+                    <note type="corrigenda">In Dolabani's translation of Barsoum's description <quote xml:lang="syr-Syrj">ܘܐܰܦܩ</quote> and <quote xml:lang="syr-Syrj">ܡܟܰܬܒܰܙܰܒܢܗ</quote> 
+                        should read <quote xml:lang="syr-Syrj">ܘܰܐܦܩ</quote> and <quote xml:lang="syr-Syrj">ܡܰܟܬܰܒܙܰܒܢܗ</quote> respectively.</note>
+                    <note type="corrigenda">Matti Moosa's English translation of Barsoum's description is incomplete, and it says "north" when it should be "east."</note>
+                    <idno type="URI">http://syriaca.org/place/69</idno>
+                    <idno type="URI">http://en.wikipedia.org/wiki/Mor_Hananyo_Monastery</idno>
+                    <idno type="URI">http://dbpedia.org/resource/Mor_Hananyo_Monastery</idno>
+                    <idno type="URI">
+                                            http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=m&amp;sK=monastery Deir Zafaran&amp;sT=keywords
+                                        </idno>
+                    <bibl xml:id="bib69-1">
+                        <author>G. A. Kiraz</author>
+                        <title level="a" xml:lang="en">620. al-Zaʿfarān, Dayr</title>
+                        <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                        <ptr target="http://syriaca.org/bibl/1"/>
+                        <citedRange unit="pp">449</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib69-2">
+                        <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                        <ptr target="http://syriaca.org/bibl/1"/>
+                        <citedRange unit="pp">4, 5, 9, 38, 46, 48, 60, 62, 64, 77, 100, 103, 117, 129–130 (with fig. 43), 141, 165, 178, 183, 224, 226, 244, 245, 265, 267, 270, 308, 343, 346, 375, 381, 393, 438, 446, 449, 468 (fig. 129c), 469 (fig. 130c), 470 (fig. 131c)</citedRange>
+                        <citedRange unit="maps">Map III</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib69-3">
+                        <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
+                        <ptr target="http://syriaca.org/bibl/3"/>
+                        <citedRange unit="pp">545-546</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib69-4">
+                        <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
+                        <ptr target="http://syriaca.org/bibl/2"/>
+                        <citedRange unit="pp">510</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib69-5">
+                        <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                        <ptr target="http://syriaca.org/bibl/4"/>
+                        <citedRange unit="pp">570</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib69-6">
+                        <title xml:lang="en">The Comprehensive Bibliography on Syriac Christianity</title>
+                        <ptr target="http://syriaca.org/bibl/5"/>
+                        <citedRange unit="entry" target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=m&amp;sK=monastery Deir Zafaran&amp;sT=keywords">monastery Deir Zafaran</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib69-7">
+                        <author>David Wilmshurst</author>
+                        <title xml:lang="en">The Ecclesiastical Organisation of the Church of the East, 1318-1913</title>
+                        <citedRange unit="pp">38, 95</citedRange>
+                        <ptr target="http://syriaca.org/bibl/9"/>
+                    </bibl>
+                </place>
+            </listPlace>
+        </body>
+    </text>
+</TEI>

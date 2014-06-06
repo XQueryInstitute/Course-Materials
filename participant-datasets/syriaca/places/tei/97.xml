@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:syriaca="http://syriaca.org" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="en">Qalʿa Rumayta
+                                        — <foreign xml:lang="syr">ܩܠܥܐ ܪܘܡܝܬܐ</foreign>
+                </title>
+                <title level="m" xml:lang="en">The Syriac Gazetteer</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+                <funder>The National Endowment for the Humanities</funder>
+                <funder>The International Balzan Prize Foundation</funder>
+                <principal>David A. Michelson</principal>
+                <editor role="general" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <respStmt>
+                    <resp>Initial Barsoum entry creation by</resp>
+                    <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Data merging, Pleiades and Wikipedia linking, and XML by</resp>
+                    <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Syriac description entry by</resp>
+                    <name ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Arabic description entry by</resp>
+                    <name ref="http://syriaca.org/editors.xml#rakhrass">Dayroyo Roger-Youssef Akhrass</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/place/97/tei</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                        <p>This entry incorporates copyrighted material from the following work(s):
+                                                <listBibl>
+                                <bibl>
+                                    <ptr target="#bib97-2"/>
+                                </bibl>
+                                <bibl>
+                                    <ptr target="#bib97-3"/>
+                                </bibl>
+                                <bibl>
+                                    <ptr target="#bib97-4"/>
+                                </bibl>
+                            </listBibl>
+                            <note>used under a Creative Commons Attribution license <ref target="http://creativecommons.org/licenses/by/3.0/"/>
+                            </note>
+                        </p>
+                    </licence>
+                </availability>
+                <date>2014-01-14-05:00</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>This record created following the Syriaca.org guidelines. Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+                <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+                <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+                <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
+                <p>The <gi>state</gi> element of @type="existence" indicates the period for which this place was in use as a place of its indicated type (e.g. an inhabited settlement, a functioning monastery or church, an administrative province).  Natural features always in existence have no <gi>state</gi> element of @type="existence".</p>
+            </editorialDecl>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="syriaca-headword">
+                        <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="syr">Unvocalized Syriac of any variety or period</language>
+                <language ident="syr-Syrj">Vocalized West Syriac</language>
+                <language ident="syr-Syrn">Vocalized East Syriac</language>
+                <language ident="en">English</language>
+                <language ident="ar">Arabic</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change who="http://syriaca.org/editors.xml#wsalesky" when="2014-01-14">ADDED: syriaca-computed-start and syriaca-computed-end attributes for searching</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2014-01-10">ADDED: disambiguation note</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-12-18-05:00">CREATED: place</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listPlace>
+                <place xml:id="place-97" type="settlement">
+                    <placeName xml:id="name97-1" xml:lang="en" syriaca-tags="#syriaca-headword" source="#bib97-1">Qalʿa Rumayta</placeName>
+                    <placeName xml:id="name97-2" xml:lang="en" source="#bib97-1">Hṙomklay</placeName>
+                    <placeName xml:id="name97-3" xml:lang="syr" syriaca-tags="#syriaca-headword">ܩܠܥܐ ܪܘܡܝܬܐ</placeName>
+                    <placeName xml:id="name97-4" xml:lang="syr-Syrj" source="#bib97-2">ܩܶܠܥܳܐ ܪܘܡܳܝܬܐ</placeName>
+                    <placeName xml:id="name97-5" xml:lang="ar" source="#bib97-3">قلعة الروم</placeName>
+                    <placeName xml:id="name97-6" xml:lang="en" source="#bib97-4">Qalʿat al-Rum</placeName>
+                    <desc xml:id="abstract-en-97" xml:lang="en">A city on the <placeName ref="http://syriaca.org/place/82">Euphrates</placeName> west of <placeName ref="http://syriaca.org/place/78">Edessa</placeName> and northeast of <placeName ref="http://syriaca.org/place/222">ʿAintab</placeName>.</desc>
+                    <desc xml:lang="syr-Syrj">
+                        <quote source="#bib97-2">ܩܶܠܥܳܐ ܚܰܣܝܢܬܳܐ ܘܰܐܬܪܐ ܕܰܠܡܰܥܪܰܒ ܦܪܳܬ ܠܘܩܒܰܠ ܒܝܪܬܐ ܠܩܘܪܒܳܐ ܕܰܩܪܝܬܐ ܟ̣ܠܦܬܝ. ܘܡܶܫܬܰܡܗܐ ܗܘܳܬ ܩܶܠܥܳܐ ܕܙܘܓܡܐ. ܘܚܰܪܝܒܐ</quote>
+                    </desc>
+                    <desc xml:lang="ar">
+                        <quote source="#bib97-3">قلعة حصينة وبلد غربي الفرات مقابل البيرة بالقرب من قرية خلفتي وكان اسم القلعة زوغما، خربة.</quote>
+                    </desc>
+                    <desc xml:lang="en">
+                        <quote source="#bib97-4">an ancient fortified citadel and town west of the Euphrates, opposite al-Bīra. The name of the citadel was Zughma.</quote>
+                    </desc>
+                    <location type="gps" source="#bib97-1">
+                        <geo>37.270778 37.837917</geo>
+                    </location>
+                    <state type="existence" from="1203" to="1293" syriaca-computed-end="1293-01-01" syriaca-computed-start="1203-01-01">
+                        <precision match="@from" notAfter="1203" syriaca-computed-end="1203-01-01"/>
+                        <precision match="@to" notAfter="2013" notBefore="1293" syriaca-computed-end="2013-01-01" syriaca-computed-start="1293-01-01"/>
+                    </state>
+                    <note type="errata">Barsoum's description erroneously identifies this place with <placeName ref="http://syriaca.org/place/209">Zeugma</placeName>.</note>
+                    <note type="disambiguation">Not the same place as <placeName ref="http://syriaca.org/place/695">Halfeti</placeName>.</note>
+                    <idno type="URI">http://syriaca.org/place/97</idno>
+                    <idno type="URI">http://en.wikipedia.org/wiki/Rumkale</idno>
+                    <idno type="URI">http://dbpedia.org/resource/Rumkale</idno>
+                    <bibl xml:id="bib97-1">
+                        <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                        <ptr target="http://syriaca.org/bibl/1"/>
+                        <citedRange unit="pp">35</citedRange>
+                        <citedRange unit="maps">Map II B1</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib97-2">
+                        <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
+                        <ptr target="http://syriaca.org/bibl/3"/>
+                        <citedRange unit="pp">558-559</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib97-3">
+                        <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
+                        <ptr target="http://syriaca.org/bibl/2"/>
+                        <citedRange unit="pp">518</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib97-4">
+                        <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                        <ptr target="http://syriaca.org/bibl/4"/>
+                        <citedRange unit="pp">557</citedRange>
+                    </bibl>
+                </place>
+            </listPlace>
+        </body>
+    </text>
+</TEI>

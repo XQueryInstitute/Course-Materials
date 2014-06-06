@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:syriaca="http://syriaca.org" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="en">Mor Matay
+                                        — <foreign xml:lang="syr">ܕܝܪܐ ܕܡܪܝ ܡܬܝ</foreign>
+                </title>
+                <title level="m" xml:lang="en">The Syriac Gazetteer</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+                <funder>The National Endowment for the Humanities</funder>
+                <funder>The International Balzan Prize Foundation</funder>
+                <principal>David A. Michelson</principal>
+                <editor role="general" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <respStmt>
+                    <resp>Initial Barsoum entry creation by</resp>
+                    <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Data merging, Pleiades and Wikipedia linking, and XML by</resp>
+                    <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Syriac description entry by</resp>
+                    <name ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Arabic description entry by</resp>
+                    <name ref="http://syriaca.org/editors.xml#rakhrass">Dayroyo Roger-Youssef Akhrass</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Wilmshurst index information entry by</resp>
+                    <name ref="http://syriaca.org/editors.xml#adavis">Anthony Davis</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/place/227/tei</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                        <p>This entry incorporates copyrighted material from the following work(s):
+                                                <listBibl>
+                                <bibl>
+                                    <ptr target="#bib227-3"/>
+                                </bibl>
+                                <bibl>
+                                    <ptr target="#bib227-4"/>
+                                </bibl>
+                                <bibl>
+                                    <ptr target="#bib227-5"/>
+                                </bibl>
+                            </listBibl>
+                            <note>used under a Creative Commons Attribution license <ref target="http://creativecommons.org/licenses/by/3.0/"/>
+                            </note>
+                        </p>
+                    </licence>
+                </availability>
+                <date>2014-01-14-05:00</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>This record created following the Syriaca.org guidelines. Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+                <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+                <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+                <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
+                <p>The <gi>state</gi> element of @type="existence" indicates the period for which this place was in use as a place of its indicated type (e.g. an inhabited settlement, a functioning monastery or church, an administrative province).  Natural features always in existence have no <gi>state</gi> element of @type="existence".</p>
+            </editorialDecl>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="syriaca-headword">
+                        <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="syr">Unvocalized Syriac of any variety or period</language>
+                <language ident="syr-Syrj">Vocalized West Syriac</language>
+                <language ident="syr-Syrn">Vocalized East Syriac</language>
+                <language ident="en">English</language>
+                <language ident="ar">Arabic</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change who="http://syriaca.org/editors.xml#wsalesky" when="2014-01-14">ADDED: latitude and longitude from Pleiades</change>
+            <change who="http://syriaca.org/editors.xml#wsalesky" when="2014-01-14">ADDED: syriaca-computed-start and syriaca-computed-end attributes for searching</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-12-18-05:00">CREATED: place</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listPlace>
+                <place xml:id="place-227" type="monastery">
+                    <placeName xml:id="name227-1" xml:lang="en" syriaca-tags="#syriaca-headword" source="#bib227-2">Mor Matay</placeName>
+                    <placeName xml:id="name227-2" xml:lang="syr" syriaca-tags="#syriaca-headword">ܕܝܪܐ ܕܡܪܝ ܡܬܝ</placeName>
+                    <placeName xml:id="name227-3" xml:lang="syr-Syrj" source="#bib227-3">ܕܰܝܪܳܐ ܕܡܪܝ ܡܬܝ</placeName>
+                    <placeName xml:id="name227-4" xml:lang="ar" source="#bib227-4">دير مار متى</placeName>
+                    <placeName xml:id="name227-5" xml:lang="en" source="#bib227-5">Matthew Monastery</placeName>
+                    <placeName xml:id="name227-6" xml:lang="en" source="#bib227-6">monastery of Mar Mattay</placeName>
+                    <placeName xml:id="name227-7" xml:lang="en" source="#bib227-7">Mār Mattai</placeName>
+                    <desc xml:id="abstract-en-227" xml:lang="en">
+                        <quote source="#bib227-1">Located on the Alfof Mountain, known in Arabic as Jabal Maqlūb, 35 km. northeast of Mosul, the monastery is mostly known by its Arabic name Dayr Mār Mattā.</quote>
+                    </desc>
+                    <desc xml:lang="en">
+                        <quote source="#bib227-1">364. Matay, Dayro d-Mor</quote>
+                    </desc>
+                    <desc xml:lang="syr-Syrj">
+                        <quote source="#bib227-3">ܕܰܝܪܳܐ ܪܰܒܐ ܐܶܬܒܢܺܝ ܒܰܐܚܪ̈ܳܝܬܗ̇ ܕܡܰܐܬܐ ܪܒܝܥܳܝܬܐ ܘܰܗܘܐ ܟܘܪܣܝܳܐ ܡܝܛܪܘܦܘܠܝܛܳܝܳܐ ܘܗܳܟܰܢ ܗܘ ܥܕܰܡܐ ܠܝܰܘܡܳܢ. ܩܰܒܠ ܒܕܳܪܗ ܩܰܕܡܳܝܐ ܟܶܢܫܳܐ ܣܰܓܝܐܐ ܕܕܰܝܪ̈ܝܐ. ܘܐܶܫܬܰܚܠܰܦܘ ܥܠܘܗܝ ܙܰܒܢ̈ܐ ܥܕܰܡܐ ܕܐܶܬܚܰܕܬ ܫܢܰܬ  1845  ܐܰܦܩ ܬܪܝܢ ܦܰܛܪܝܰܪ̈ܟܐ ܘܫܬܐ ܡܰܦܪ̈ܝܳܢܐ ܘܰܬܠܬܝܢ ܘܰܬܠܬܐ ܐܶܦܝܣܩܘ̈ܦܐ.</quote>
+                    </desc>
+                    <desc xml:lang="ar">
+                        <quote source="#bib227-4">دير عظيم رفع بناؤه اواخر المئة الرابعة وصار كرسيا مطرانيا وهو كذلك الى وقتنا هذا حوى في حقبته الاولى جماً من الرهبان غفيراً وتقلبت به الاحوال حتى جدد عام 1845 انجب بطريركين وستة مفارنة وثلاثة وثلاثين اسقفا.</quote>
+                    </desc>
+                    <desc xml:lang="en">
+                        <quote source="#bib227-5">a large monastery, built at the end of the fourth century, it became a metropolitan see and still holds that honor today. At the beginning it housed a great number of monks. It suffered many changes and calamities until it was renovated in 1845. It produced two Patriarchs, six Maphryonos and thirty bishops.</quote>
+                    </desc>
+                    <location type="gps" source="#bib227-8">
+                        <geo>36.491605 43.392187</geo>
+                    </location>
+                    <location type="nested" source="#bib227-7">
+                        <region ref="http://syriaca.org/place/722">Mosul region</region>
+                    </location>
+                    <state type="existence" from="0628" to="2013" syriaca-computed-end="2013-01-01" syriaca-computed-start="0628-01-01">
+                        <precision match="@from" notAfter="0628" notBefore="0300" syriaca-computed-end="0628-01-01" syriaca-computed-start="0300-01-01"/>
+                        <precision match="@to" notBefore="2013" syriaca-computed-start="2013-01-01"/>
+                    </state>
+                    <idno type="URI">http://syriaca.org/place/227</idno>
+                    <idno type="URI">http://pleiades.stoa.org/places/874581</idno>
+                    <idno type="URI">http://en.wikipedia.org/wiki/Mar_Mattai_monastery</idno>
+                    <idno type="URI">http://dbpedia.org/resource/Mar_Mattai_monastery</idno>
+                    <idno type="URI">
+                                            http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=m&amp;sK=monastery of Mar Mattay&amp;sT=keywords
+                                        </idno>
+                    <bibl xml:id="bib227-1">
+                        <author>G. A. Kiraz </author>
+                        <title level="a" xml:lang="en">364. Matay, Dayro d-Mor</title>
+                        <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                        <ptr target="http://syriaca.org/bibl/1"/>
+                        <citedRange unit="pp">280-281</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib227-2">
+                        <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                        <ptr target="http://syriaca.org/bibl/1"/>
+                        <citedRange unit="pp">24, 39, 45, 55, 61 (with fig. 20), 63, 66, 141, 178, 208, 217, 224, 264, 273, 280–281 (with fig. 73, 74), 294, 309, 343–344, 347, 357, 372, 375, 430</citedRange>
+                        <citedRange unit="maps">Map II C1</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib227-3">
+                        <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
+                        <ptr target="http://syriaca.org/bibl/3"/>
+                        <citedRange unit="pp">552</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib227-4">
+                        <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
+                        <ptr target="http://syriaca.org/bibl/2"/>
+                        <citedRange unit="pp">514</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib227-5">
+                        <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                        <ptr target="http://syriaca.org/bibl/4"/>
+                        <citedRange unit="pp">566</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib227-6">
+                        <title xml:lang="en">The Comprehensive Bibliography on Syriac Christianity</title>
+                        <ptr target="http://syriaca.org/bibl/5"/>
+                        <citedRange unit="entry" target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=m&amp;sK=monastery of Mar Mattay&amp;sT=keywords">monastery of Mar Mattay</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib227-7">
+                        <author>David Wilmshurst</author>
+                        <title xml:lang="en">The Ecclesiastical Organisation of the Church of the East, 1318-1913</title>
+                        <citedRange unit="pp">188, 200, 201, 202, 258</citedRange>
+                        <ptr target="http://syriaca.org/bibl/9"/>
+                    </bibl>
+                    <bibl xml:id="bib227-8">
+                        <title>http://pleiades.stoa.org/places/874581</title>
+                        <ptr target="http://pleiades.stoa.org/places/874581"/>
+                    </bibl>
+                </place>
+            </listPlace>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:syriaca="http://syriaca.org" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="en">Alqosh</title>
+                <title level="m" xml:lang="en">The Syriac Gazetteer</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+                <funder>The National Endowment for the Humanities</funder>
+                <funder>The International Balzan Prize Foundation</funder>
+                <principal>David A. Michelson</principal>
+                <editor role="general" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <respStmt>
+                    <resp>Data merging, Pleiades and Wikipedia linking, and XML by</resp>
+                    <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Wilmshurst index information entry by</resp>
+                    <name ref="http://syriaca.org/editors.xml#adavis">Anthony Davis</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/place/19/tei</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                    </licence>
+                </availability>
+                <date>2014-01-14-05:00</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>This record created following the Syriaca.org guidelines. Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+                <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+                <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+                <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
+                <p>The <gi>state</gi> element of @type="existence" indicates the period for which this place was in use as a place of its indicated type (e.g. an inhabited settlement, a functioning monastery or church, an administrative province).  Natural features always in existence have no <gi>state</gi> element of @type="existence".</p>
+            </editorialDecl>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="syriaca-headword">
+                        <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="syr">Unvocalized Syriac of any variety or period</language>
+                <language ident="syr-Syrj">Vocalized West Syriac</language>
+                <language ident="syr-Syrn">Vocalized East Syriac</language>
+                <language ident="en">English</language>
+                <language ident="ar">Arabic</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change who="http://syriaca.org/editors.xml#wsalesky" when="2014-01-14">ADDED: relation element with shares-name-with attribute for all place headwords that share names</change>
+            <change who="http://syriaca.org/editors.xml#wsalesky" when="2014-01-14">ADDED: syriaca-computed-start and syriaca-computed-end attributes for searching</change>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-12-18-05:00">CREATED: place</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listPlace>
+                <place xml:id="place-19" type="settlement">
+                    <placeName xml:id="name19-1" xml:lang="en" syriaca-tags="#syriaca-headword" source="#bib19-2 #bib19-3">Alqosh</placeName>
+                    <placeName xml:id="name19-2" xml:lang="en" source="#bib19-4">Alqōsh</placeName>
+                    <desc xml:id="abstract-en-19" xml:lang="en">
+                        <quote source="#bib19-1">Town 40 km. north of Mosul in Iraq.</quote>
+                    </desc>
+                    <desc xml:lang="en">
+                        <quote source="#bib19-1">30. Alqosh</quote>
+                    </desc>
+                    <location type="gps" source="#bib19-2">
+                        <geo>36.735278 43.096389</geo>
+                    </location>
+                    <location type="nested" source="#bib19-4">
+                        <region ref="http://syriaca.org/place/722">Mosul region</region>
+                    </location>
+                    <state type="existence" from="-0750" to="2013" syriaca-computed-end="2013-01-01">
+                        <precision match="@from" notAfter="-0750"/>
+                        <precision match="@to" notBefore="2013" syriaca-computed-start="2013-01-01"/>
+                    </state>
+                    <idno type="URI">http://syriaca.org/place/19</idno>
+                    <idno type="URI">http://en.wikipedia.org/wiki/Alqosh</idno>
+                    <idno type="URI">http://dbpedia.org/resource/Alqosh</idno>
+                    <idno type="URI">
+                                            http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=A&amp;sK=Alqosh&amp;sT=keywords
+                                        </idno>
+                    <bibl xml:id="bib19-1">
+                        <author>A. Mengozzi</author>
+                        <title level="a" xml:lang="en">30. Alqosh</title>
+                        <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                        <ptr target="http://syriaca.org/bibl/1"/>
+                        <citedRange unit="pp">17</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib19-2">
+                        <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                        <ptr target="http://syriaca.org/bibl/1"/>
+                        <citedRange unit="pp">17 (with fig. 4), 18, 29, 47, 51, 69, 74, 86–87, 92, 113, 203–204 (with fig. 57), 210, 224, 226, 235, 262, 265, 346, 349, 359, 363, 385, 443, 451 (fig. 3c), 456 (fig. 56c)</citedRange>
+                        <citedRange unit="maps">Map IV</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib19-3">
+                        <title xml:lang="en">The Comprehensive Bibliography on Syriac Christianity</title>
+                        <ptr target="http://syriaca.org/bibl/5"/>
+                        <citedRange unit="entry" target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=A&amp;sK=Alqosh&amp;sT=keywords">Alqosh</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib19-4">
+                        <author>David Wilmshurst</author>
+                        <title xml:lang="en">The Ecclesiastical Organisation of the Church of the East, 1318-1913</title>
+                        <citedRange unit="pp">9, 10, 12, 13, 14, 15, 21, 24, 28, 29, 31, 32, 35, 40, 42, 47, 48, 56, 57, 59, 70, 71, 72, 75, 77, 79, 89, 100, 108, 113, 114, 117, 118, 120, 121, 123, 128, 129, 130, 134, 135, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 151, 158, 159, 162, 163, 165, 169, 171, 179, 180, 182, 185, 186, 188, 189, 190, 192, 197, 198, 199, 200, 201, 203, 204, 205, 209, 210, 212, 217, 219, 220, 221, 222, 223, 224, 225, 226, 230, 232, 233, 235, 236, 237, 238, 239, 240, 241-258, 259, 260, 26, 262, 263, 264, 265, 266, 267, 269, 271, 272, 273, 288, 290, 292, 298, 318, 326, 338, 349, 350, 354, 355, 366</citedRange>
+                        <ptr target="http://syriaca.org/bibl/9"/>
+                    </bibl>
+                </place>
+                <relation name="share-a-name" mutual="#place-19  http://syriaca.org/place/2247"/>
+            </listPlace>
+        </body>
+    </text>
+</TEI>
