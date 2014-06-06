@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="syr">ܟܬ̣ܵܒ̣ܵܐ ܕܡܸܬ̣ܩܪܸܐ ܡܪܓܢܝܬ̣ܐ ܕܥܲܠ ܫܪܵܪܵܐ ܕܲܟ̣ܪܸܣܛܝܵܢܘܼܬ̣ܵܐ</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+                <funder>The National Endowment for the Humanities</funder>
+                <funder>The International Balzan Prize Foundation</funder>
+                <principal>David A. Michelson</principal>
+                <editor role="general" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <respStmt>
+                    <resp>XML coded by</resp>
+                    <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/bibl/6/source</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        Distributed under a Creative Commons Attribution 3.0 Unported License
+                    </licence>
+                </availability>
+                <date>2013-07-07</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change when="2013-07-07" who="http://syriaca.org/editors.xml#tcarlson">CREATED: bibliographic entry</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <biblStruct>
+                <monogr>
+                    <author ref="http://syriaca.org/person/310">
+                        <persName xml:lang="en">
+                            <forename>ʿAbdishoʿ</forename>
+                            <addName type="family">bar Brikha</addName>
+                        </persName>
+                        <persName xml:lang="syr">
+                            <forename>ܥܲܒܕܝܼܫܘܿܥ</forename>
+                            <addName type="title">ܕܨܘܿܒܵܐ</addName>
+                        </persName>
+                    </author>
+                    <title xml:lang="syr" level="m">ܟܬ̣ܵܒ̣ܵܐ ܕܡܸܬ̣ܩܪܸܐ ܡܪܓܢܝܬ̣ܐ ܕܥܲܠ ܫܪܵܪܵܐ ܕܲܟ̣ܪܸܣܛܝܵܢܘܼܬ̣ܵܐ</title>
+                    <title xml:lang="en" level="m" type="parallel">Ktābā d-metqre margānitā d-ʿal šrārā da-kresṭyānutā</title>
+                    <edition xml:lang="syr">ܐܲܨܲܚܬܵܐ ܬܪܲܝܵܢܝܼܬ̣ܵܐ</edition>
+                    <edition xml:lang="en">2nd ed.</edition>
+                    <imprint>
+                        <publisher xml:lang="syr">ܡܛܒܥܬܐ ܐܬܘܪܝܬܐ ܕܥܕܬܐ ܥܬܝܩܬܐ ܕܡܕܢܚܐ</publisher>
+                        <publisher xml:lang="en">Mṭabbaʿtā ātoraytā d-ʿēdtā ʿattiqtā d-madnḥā</publisher>
+                        <pubPlace ref="http://syriaca.org/place/139">Mosul</pubPlace>
+                        <date>1924</date>
+                    </imprint>
+                </monogr>
+                <idno type="URI">http://syriaca.org/bibl/6</idno>
+            </biblStruct>
+        </body>
+    </text>
+</TEI>

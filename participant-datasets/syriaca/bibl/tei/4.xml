@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+                <funder>The National Endowment for the Humanities</funder>
+                <funder>The International Balzan Prize Foundation</funder>
+                <principal>David A. Michelson</principal>
+                <editor role="general" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <respStmt>
+                    <resp>XML coded by</resp>
+                    <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/bibl/4/source</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        Distributed under a Creative Commons Attribution 3.0 Unported License
+                    </licence>
+                </availability>
+                <date>2013-07-25</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change when="2013-07-25" who="http://syriaca.org/editors.xml#tcarlson">ADDED: translator</change>
+            <change when="2013-07-07" who="http://syriaca.org/editors.xml#tcarlson">CREATED: bibliographic entry</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <biblStruct>
+                <monogr>
+                    <author ref="http://syriaca.org/person/372">
+                        <persName xml:lang="en">
+                            <forename>Ignatius</forename>
+                            <forename>Afram</forename>
+                            <surname>Barsoum</surname>
+                        </persName>
+                    </author>
+                    <editor role="translator">
+                        <persName xml:lang="en">
+                            <forename>Matti</forename>
+                            <surname>Moosa</surname>
+                        </persName>
+                    </editor>
+                    <title xml:lang="en" level="m">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                    <edition xml:lang="en">2nd rev. ed.</edition>
+                    <respStmt>
+                        <resp>Copyright<date>2000, 2003</date>
+                        </resp>
+                        <name>Archdiocese of the Syriac Orthodox Church of the Eastern United States</name>
+                    </respStmt>
+                    <imprint>
+                        <publisher xml:lang="en">Gorgias Press</publisher>
+                        <pubPlace ref="http://syriaca.org/place/840">Piscataway, <placeName ref="http://syriaca.org/place/841">NJ</placeName>
+                        </pubPlace>
+                        <date>2003</date>
+                    </imprint>
+                </monogr>
+                <idno type="URI">http://syriaca.org/bibl/4</idno>
+            </biblStruct>
+        </body>
+    </text>
+</TEI>

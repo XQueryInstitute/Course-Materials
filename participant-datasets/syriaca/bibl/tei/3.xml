@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+                <funder>The National Endowment for the Humanities</funder>
+                <funder>The International Balzan Prize Foundation</funder>
+                <principal>David A. Michelson</principal>
+                <editor role="general" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <respStmt>
+                    <resp>XML coded by</resp>
+                    <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/bibl/3/source</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        Distributed under a Creative Commons Attribution 3.0 Unported License
+                    </licence>
+                </availability>
+                <date>2013-07-25</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change when="2013-07-25" who="http://syriaca.org/editors.xml#tcarlson">ADDED: translator</change>
+            <change when="2013-07-07" who="http://syriaca.org/editors.xml#tcarlson">CREATED: bibliographic entry</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <biblStruct>
+                <monogr>
+                    <author ref="http://syriaca.org/person/372">
+                        <persName xml:lang="en">
+                            <forename>Ignatius</forename>
+                            <forename>Afram</forename>
+                            <surname>Barsoum</surname>
+                        </persName>
+                        <persName xml:lang="syr">
+                            <forename>ܐܝܓܢܐܛܝܘܣ</forename>
+                            <forename>ܐܦܪܝܡ</forename>
+                            <addName>ܩܕܡܝܐ</addName>
+                            <surname>ܕܒܝܬ ܒܪܨܘܡ</surname>
+                        </persName>
+                    </author>
+                    <editor role="translator" ref="http://syriaca.org/person/454">
+                        <persName xml:lang="en">
+                            <forename>Philoxenos</forename>
+                            <forename>Yuḥanon</forename>
+                            <surname>Dolabani</surname>
+                        </persName>
+                        <persName xml:lang="syr">
+                            <forename>ܦܝܠܠܘܟܣܝܢܘܣ</forename>
+                            <forename>ܝܘܚܢܢ</forename>
+                            <surname>ܕܘܠܒܐܢܝ</surname>
+                        </persName>
+                    </editor>
+                    <title xml:lang="syr" level="m">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
+                    <title xml:lang="en" level="m" type="parallel">Berule bdire d-ʿal yulpone suryoye hdire</title>
+                    <edition xml:lang="syr">ܚܬܳܡܳܐ ܬܪܰܝܳܢܳܐ</edition>
+                    <edition xml:lang="en">2nd ed.</edition>
+                    <imprint>
+                        <publisher xml:lang="syr">ܡܛܒܥܬܐ ܣܘܪܝܝܬܐ ܕܒܪ ܥܒܪܝܐ</publisher>
+                        <publisher xml:lang="en">Bar Hebraeus Verlag</publisher>
+                        <pubPlace ref="http://syriaca.org/place/842">Holland</pubPlace>
+                        <date>1991</date>
+                    </imprint>
+                </monogr>
+                <idno type="URI">http://syriaca.org/bibl/3</idno>
+            </biblStruct>
+        </body>
+    </text>
+</TEI>

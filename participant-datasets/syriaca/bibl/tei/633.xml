@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="la">Chronica Minora</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+                <funder>The National Endowment for the Humanities</funder>
+                <funder>The International Balzan Prize Foundation</funder>
+                <principal>David A. Michelson</principal>
+                <editor role="general" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <respStmt>
+                    <resp>XML coded by</resp>
+                    <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/bibl/633/source</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        Distributed under a Creative Commons Attribution 3.0 Unported License
+                    </licence>
+                </availability>
+                <date>2013-10-26</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change when="2013-10-26" who="http://syriaca.org/editors.xml#tcarlson">CREATED: bibliographic entry</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <biblStruct>
+                <monogr>
+                    <editor ref="http://syriaca.org/person/517">
+                        <persName xml:lang="la">
+                            <forename>Ignatius</forename>
+                            <surname>Guidi</surname>
+                        </persName>
+                    </editor>
+                    <title xml:lang="la" level="m">Chronica Minora</title>
+                    <imprint>
+                        <publisher xml:lang="la">E Typographeo Reipublicae</publisher>
+                        <pubPlace ref="http://syriaca.org/place/863">Paris</pubPlace>
+                        <date>1903</date>
+                    </imprint>
+                </monogr>
+                <series>
+                    <title xml:lang="la" level="s">Corpus Scriptorum Christianorum Orientalium</title>
+                    <biblScope unit="vol">1-2</biblScope>
+                </series>
+                <series>
+                    <title xml:lang="la" level="s">Scriptores Syri</title>
+                    <biblScope unit="tomus">1-2</biblScope>
+                </series>
+                <idno type="URI">http://syriaca.org/bibl/633</idno>
+            </biblStruct>
+        </body>
+    </text>
+</TEI>

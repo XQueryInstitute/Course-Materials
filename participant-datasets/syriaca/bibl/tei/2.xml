@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+                <funder>The National Endowment for the Humanities</funder>
+                <funder>The International Balzan Prize Foundation</funder>
+                <principal>David A. Michelson</principal>
+                <editor role="general" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <respStmt>
+                    <resp>XML coded by</resp>
+                    <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/bibl/2/source</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        Distributed under a Creative Commons Attribution 3.0 Unported License
+                    </licence>
+                </availability>
+                <date>2013-08-01</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change when="2013-08-01" who="http://syriaca.org/editors.xml#tcarlson">CHANGED: using 4th edition rather than 3rd edition</change>
+            <change when="2013-07-07" who="http://syriaca.org/editors.xml#tcarlson">CREATED: bibliographic entry</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <biblStruct>
+                <monogr>
+                    <author ref="http://syriaca.org/person/372">
+                        <persName xml:lang="en">
+                            <forename>Ignatius</forename>
+                            <forename>Afram</forename>
+                            <surname>Barsoum</surname>
+                        </persName>
+                        <persName xml:lang="ar">
+                            <forename>اغناطيوس</forename>
+                            <forename>افرام</forename>
+                            <addName>الاول</addName>
+                            <surname>برصوم</surname>
+                        </persName>
+                    </author>
+                    <title xml:lang="ar" level="m">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
+                    <title xml:lang="en" level="m" type="parallel">al-Luʼluʼ al-manthūr fī tārīkh al-ʻulūm wa-al-ādāb al-Suryāniyyah</title>
+                    <edition xml:lang="ar">الطبعة الرابعة</edition>
+                    <edition xml:lang="en">4th ed.</edition>
+                    <imprint>
+                        <publisher xml:lang="ar">مطبعة ابن العبري بدير مار افرام السرياني</publisher>
+                        <publisher xml:lang="en">Bar Hebraeus Verlag</publisher>
+                        <pubPlace ref="http://syriaca.org/place/842">Holland</pubPlace>
+                        <date>1987</date>
+                    </imprint>
+                </monogr>
+                <idno type="URI">http://syriaca.org/bibl/2</idno>
+            </biblStruct>
+        </body>
+    </text>
+</TEI>

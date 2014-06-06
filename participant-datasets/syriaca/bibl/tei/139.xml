@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:syriaca="http://syriaca.org" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="en">Christian Palestinian Aramaic</title>
+                <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+                <funder>The National Endowment for the Humanities</funder>
+                <funder>The International Balzan Prize Foundation</funder>
+                <principal>David A. Michelson</principal>
+                <editor role="general" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <respStmt>
+                    <resp>XML coded by</resp>
+                    <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Page numbers entered by</resp>
+                    <name ref="http://syriaca.org/editors.xml#avawter">Alex Vawter</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/bibl/139/tei</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                    </licence>
+                </availability>
+                <date>2013-09-04-04:00</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-09-04-04:00">CREATED: bibl</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <biblStruct>
+                <analytic>
+                    <author>
+                        <forename>S. P.</forename>
+                        <surname>Brock</surname>
+                    </author>
+                    <title level="a" xml:lang="en">Christian Palestinian Aramaic</title>
+                </analytic>
+                <monogr>
+                    <editor>
+                        <persName>
+                            <forename>Sebastian</forename>
+                            <addName type="middle-initial">P.</addName>
+                            <surname>Brock</surname>
+                        </persName>
+                    </editor>
+                    <editor>
+                        <persName>
+                            <forename>Aaron</forename>
+                            <addName type="middle-initial">M.</addName>
+                            <surname>Butts</surname>
+                        </persName>
+                    </editor>
+                    <editor>
+                        <persName>
+                            <forename>George</forename>
+                            <addName type="middle-initial">A.</addName>
+                            <surname>Kiraz</surname>
+                        </persName>
+                    </editor>
+                    <editor>
+                        <persName>
+                            <forename>Lucas</forename>
+                            <surname>Van Rompay</surname>
+                        </persName>
+                    </editor>
+                    <title xml:lang="en" level="m">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                    <idno type="URI">http://syriaca.org/bibl/1</idno>
+                    <imprint>
+                        <publisher>Gorgias Press</publisher>
+                        <pubPlace ref="http://syriaca.org/place/840">Piscataway, <placeName ref="http://syriaca.org/place/841">NJ</placeName>
+                        </pubPlace>
+                        <date>2011</date>
+                    </imprint>
+                    <biblScope type="page">96-97</biblScope>
+                </monogr>
+                <idno type="URI">http://syriaca.org/bibl/139</idno>
+            </biblStruct>
+        </body>
+    </text>
+</TEI>
