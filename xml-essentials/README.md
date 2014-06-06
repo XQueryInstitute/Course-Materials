@@ -6,7 +6,7 @@
 
 Vocabulary:
 
-
+```
 	DOM Document Object Model: a tree-like hierarchical representation of the data
 
 * Timeline: SGML (1986), HTML application of SGML (1991), XML subset of SGML (1998).
