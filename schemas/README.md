@@ -4,7 +4,7 @@ Our goal in this session is to review the various means to validate an XML docum
 
 ##Validation
 
-We recall from our XML fundamentals the difference between checking whether any given XML document is well-formed and whether it is valid. The first asks whether the document is XML. If a document is not well-formed, then it isn't actually XML--even if it appears to have lots of angle brackets. The second... (insert definition of validation as you did for well formed).
+We recall from our XML fundamentals the difference between checking whether any given XML document is well-formed and whether it is valid. The first asks whether the document is XML. If a document is not well-formed, then it isn't actually XML–even if it appears to have lots of angle brackets. The second checks whether the document conforms, as stated, to a particular grammar or set of rules for a specific kind of XML document.
 
 There are multiple ways to validate XML documents:
 
