@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/" xmlns:functx="http://www.functx.com" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="en">Athanasius of Alexandria</title>
+                <title level="m" xml:lang="en">The Syriac Prosopography</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+                <funder>The Andrew W. Mellon Foundation</funder>
+                <funder>The National Endowment for the Humanities</funder>
+                <funder>The International Balzan Prize Foundation</funder>
+                <principal>David A. Michelson</principal>
+                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="general" ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</editor>
+                <editor role="general" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#jwalters">James E. Walters</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</editor>
+                <respStmt>
+                    <resp>Editing, document design, proofreading, data entry by</resp>
+                    <name type="person" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Editing, proofreading, data entry by</resp>
+                    <name type="person" ref="http://syriaca.org/editors.xml#jnsaint-laurent">Jeanne-Nicole Saint-Laurent</name>
+                </respStmt>
+                <respStmt>
+                    <resp>English name entry, matching with viaf.org records by</resp>
+                    <name type="person" ref="http://syriaca.org/editors.xml#jwalters">James E. Walters</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Matching with viaf.org records, data entry, data transformation, conversion to XML by</resp>
+                    <name type="person" ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Editing, Syriac name entry, disambiguation research by</resp>
+                    <name type="person" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Syriac name entry by</resp>
+                    <name type="person" ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Arabic name entry by</resp>
+                    <name type="person" ref="http://syriaca.org/editors.xml#pkirlles">Philemon Kirlles</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Arabic name entry by</resp>
+                    <name type="person" ref="http://syriaca.org/editors.xml#jkaado">Jad Kaado</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Normalization, matching with viaf.org records by</resp>
+                    <name type="person" ref="http://syriaca.org/editors.xml#avawter">Alex Vawter</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Date entry by</resp>
+                    <name type="person" ref="http://syriaca.org/editors.xml#rsingh-bischofberger">Ralf Singh-Bischofberger</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Project managament, English text entry, and proofreading by</resp>
+                    <name type="person" ref="http://syriaca.org/editors.xml#cjohnson">Christopher Johnson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>English text entry and proofreading by</resp>
+                    <name type="org" ref="http://syriaca.org/editors.xml#uasyriacresearchgroup">the Syriac Research Group, University of Alabama</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/person/354/source</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                        <p>This entry incorporates copyrighted material from the following work(s):
+                                    <listBibl>
+                                <bibl>
+                                    <ptr target="#bib354-4"/>
+                                </bibl>
+                                <bibl>
+                                    <ptr target="#bib354-3"/>
+                                </bibl>
+                            </listBibl>
+                            <note>used under a Creative Commons Attribution license <ref target="http://creativecommons.org/licenses/by/3.0/"/>
+                            </note>
+                        </p>
+                    </licence>
+                </availability>
+                <date>2013-08-12-04:00</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>This record created following the Syriaca.org guidelines. 
+                        Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+                <interpretation>
+                    <p>Approximate dates described in terms of centuries or partial centuries
+                            have been interpreted as in the following example: 
+                            "4th cent." - notBefore="300" notAfter="399". 
+                            "Early 4th cent." - notBefore="300" notAfter="349". 
+                            "Late 4th cent." - notBefore="350" notAfter="399".
+                            "Mid-4th cent." - notBefore="325" notAfter="374". 
+                            Etc.</p>
+                </interpretation>
+            </editorialDecl>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="syriaca-headword">
+                        <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. 
+                                These names have been created according to the Syriac.org guidelines for headwords: 
+                                <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+                    </category>
+                    <category xml:id="syriaca-anglicized">
+                        <catDesc>An anglicized version of a name, included to facilitate searching.</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="syr">Unvocalized Syriac of any variety or period</language>
+                <language ident="syr-Syrj">Vocalized West Syriac</language>
+                <language ident="syr-Syrn">Vocalized East Syriac</language>
+                <language ident="en">English</language>
+                <language ident="en-x-gedsh">Names or terms Romanized into English according to the standards 
+                        adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
+                <language ident="ar">Arabic</language>
+                <language ident="fr">French</language>
+                <language ident="de">German</language>
+                <language ident="la">Latin</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change who="http://syriaca.org/editors.xml#ngibson" n="1.0" when="2013-08-12-04:00"> CREATED: person </change>
+            <change type="planned">Does http://viaf.org/viaf/70834963 include conflations with Athanasius of Alexandria?</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listPerson>
+                <person xml:id="person-354">
+                    <persName xml:id="name354-1" xml:lang="en-x-gedsh" source="#bib354-1 #bib354-10" syriaca-tags="#syriaca-headword">
+                        <forename sort="1">Athanasius</forename>
+                        <addName type="untagged-title" sort="2">of Alexandria</addName>
+                    </persName>
+                    <persName xml:id="name354-2" corresp="#name354-3 #name354-4" xml:lang="ar" source="#bib354-3">
+                        <forename sort="1">اثناسيوس</forename>
+                        <addName type="untagged-title" sort="2">الاسكندري</addName>
+                    </persName>
+                    <persName xml:id="name354-3" corresp="#name354-2 #name354-4" xml:lang="syr" source="#bib354-4">
+                        <forename sort="1">ܐܬܢܐܣܝܘܣ</forename>
+                        <addName type="untagged-title" sort="2">ܕܐܠܟܣܢܕܪܝܐ</addName>
+                    </persName>
+                    <persName xml:id="name354-4" corresp="#name354-2 #name354-3" xml:lang="syr-Syrj" source="#bib354-4">
+                        <forename sort="1">ܐܰܬܰܢܰܐܣܺܝܘܣ</forename>
+                        <addName type="untagged-title" sort="2">ܕܰܐܠܟܣܰܢܕܪܝܰܐ</addName>
+                    </persName>
+                    <persName xml:id="name354-5" corresp="#name354-6 #name354-7 #name354-8" xml:lang="syr" source="#bib354-6" syriaca-tags="#syriaca-headword">
+                        <forename sort="1">ܐܬܢܣܝܣ</forename>
+                        <addName type="untagged-title" sort="2">ܕܐܠܟܣܢܕܪܝܐ</addName>
+                    </persName>
+                    <persName xml:id="name354-6" corresp="#name354-5 #name354-7 #name354-8" xml:lang="syr-Syrn" source="#bib354-6">
+                        <forename sort="1">ܐܵܬܵܢܵܣܝܼܣ</forename>
+                        <addName type="untagged-title" sort="2">ܕܐܵܠܸܟܣܲܢܕܪܝܼܵܐ</addName>
+                    </persName>
+                    <persName xml:id="name354-7" corresp="#name354-5 #name354-6 #name354-8" xml:lang="syr" source="#bib354-7">
+                        <forename sort="1">ܐܬܐܢܣܝܘܣ</forename>
+                        <addName type="untagged-title" sort="2">ܕܐܠܟܣܢܕܪܝܐ</addName>
+                    </persName>
+                    <persName xml:id="name354-8" corresp="#name354-5 #name354-6 #name354-7" xml:lang="syr-Syrn" source="#bib354-7">
+                        <forename sort="1">ܐܰܬܰܐܢܰܣܝܳܘܣ</forename>
+                        <addName type="untagged-title" sort="2">ܕܰܐܠܟܶܣܰܢܕܪܺܝܰܐ</addName>
+                    </persName>
+                    <idno type="URI">http://syriaca.org/person/354</idno>
+                    <idno type="URI">http://viaf.org/viaf/sourceID/SRP|354</idno>
+                    <idno type="URI">http://viaf.org/viaf/105155222</idno>
+                    <idno type="URI">http://worldcat.org/identities/lccn-n79-145591</idno>
+                    <idno type="URI">http://viaf.org/viaf/101363898</idno>
+                    <idno type="URI">http://viaf.org/viaf/90113505</idno>
+                    <idno type="URI">http://worldcat.org/identities/viaf-90113505</idno>
+                    <idno type="URI">http://viaf.org/viaf/230181193</idno>
+                    <idno type="URI">http://viaf.org/viaf/192470376</idno>
+                    <idno type="URI">http://viaf.org/viaf/105155233</idno>
+                    <idno type="URI">http://viaf.org/viaf/89790373</idno>
+                    <idno type="URI">http://viaf.org/viaf/90152004</idno>
+                    <idno type="URI">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=A&amp;sK=Athanasius of Alexandria&amp;sT=keywords</idno>
+                    <birth when="0296" source="#bib354-1">ca. 296</birth>
+                    <death when="0373" source="#bib354-1">373</death>
+                    <bibl xml:id="bib354-1">
+                        <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                        <ptr target="http://syriaca.org/bibl/1"/>
+                        <citedRange unit="entry">61</citedRange>
+                        <citedRange unit="pp">46</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib354-3">
+                        <title level="m" xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
+                        <ptr target="http://syriaca.org/bibl/2"/>
+                        <citedRange unit="pp">145</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib354-4">
+                        <title level="m" xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
+                        <ptr target="http://syriaca.org/bibl/3"/>
+                    </bibl>
+                    <bibl xml:id="bib354-6">
+                        <title level="m" xml:lang="syr-Syrn">ܟܬ̣ܵܒ̣ܵܐ ܕܡܸܬ̣ܩܪܸܐ ܡܪܓܢܝܬ̣ܐ ܕܥܲܠ ܫܪܵܪܵܐ ܕܲܟ̣ܪܸܣܛܝܵܢܘܼܬ̣ܵܐ</title>
+                        <ptr target="http://syriaca.org/bibl/6"/>
+                        <citedRange unit="pp">64</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib354-7">
+                        <title level="m" xml:lang="la">Bibliotheca Orientalis Clementino-Vaticana</title>
+                        <ptr target="http://syriaca.org/bibl/7"/>
+                        <citedRange unit="pp">
+                        III:19</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib354-10">
+                        <title level="m" xml:lang="en">A Comprehensive Bibliography on Syriac Christianity</title>
+                        <ptr target="http://syriaca.org/bibl/5"/>
+                        <citedRange unit="entry" target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=A&amp;sK=Athanasius of Alexandria&amp;sT=keywords">Athanasius of Alexandria</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib354-11">
+                        <title xml:lang="en">Virtual International Authority File</title>
+                        <abbr>VIAF</abbr>
+                        <ptr target="http://viaf.org"/>
+                        <span xml:lang="en">Information cited from VIAF may come from any library or agency participating
+                    with VIAF.</span>
+                    </bibl>
+                </person>
+            </listPerson>
+        </body>
+    </text>
+</TEI>

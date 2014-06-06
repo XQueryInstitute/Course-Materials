@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/" xmlns:functx="http://www.functx.com" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="en">Severus of Antioch</title>
+                <title level="m" xml:lang="en">The Syriac Prosopography</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+                <funder>The Andrew W. Mellon Foundation</funder>
+                <funder>The National Endowment for the Humanities</funder>
+                <funder>The International Balzan Prize Foundation</funder>
+                <principal>David A. Michelson</principal>
+                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="general" ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</editor>
+                <editor role="general" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#jwalters">James E. Walters</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</editor>
+                <respStmt>
+                    <resp>Editing, document design, proofreading, data entry by</resp>
+                    <name type="person" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Editing, proofreading, data entry by</resp>
+                    <name type="person" ref="http://syriaca.org/editors.xml#jnsaint-laurent">Jeanne-Nicole Saint-Laurent</name>
+                </respStmt>
+                <respStmt>
+                    <resp>English name entry, matching with viaf.org records by</resp>
+                    <name type="person" ref="http://syriaca.org/editors.xml#jwalters">James E. Walters</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Matching with viaf.org records, data entry, data transformation, conversion to XML by</resp>
+                    <name type="person" ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Editing, Syriac name entry, disambiguation research by</resp>
+                    <name type="person" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Syriac name entry by</resp>
+                    <name type="person" ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Arabic name entry by</resp>
+                    <name type="person" ref="http://syriaca.org/editors.xml#pkirlles">Philemon Kirlles</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Arabic name entry by</resp>
+                    <name type="person" ref="http://syriaca.org/editors.xml#jkaado">Jad Kaado</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Normalization, matching with viaf.org records by</resp>
+                    <name type="person" ref="http://syriaca.org/editors.xml#avawter">Alex Vawter</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Date entry by</resp>
+                    <name type="person" ref="http://syriaca.org/editors.xml#rsingh-bischofberger">Ralf Singh-Bischofberger</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Project managament, English text entry, and proofreading by</resp>
+                    <name type="person" ref="http://syriaca.org/editors.xml#cjohnson">Christopher Johnson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>English text entry and proofreading by</resp>
+                    <name type="org" ref="http://syriaca.org/editors.xml#uasyriacresearchgroup">the Syriac Research Group, University of Alabama</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/person/51/source</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                        <p>This entry incorporates copyrighted material from the following work(s):
+                                    <listBibl>
+                                <bibl>
+                                    <ptr target="#bib51-4"/>
+                                </bibl>
+                                <bibl>
+                                    <ptr target="#bib51-3"/>
+                                </bibl>
+                            </listBibl>
+                            <note>used under a Creative Commons Attribution license <ref target="http://creativecommons.org/licenses/by/3.0/"/>
+                            </note>
+                        </p>
+                    </licence>
+                </availability>
+                <date>2013-08-12-04:00</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>This record created following the Syriaca.org guidelines. 
+                        Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+                <interpretation>
+                    <p>Approximate dates described in terms of centuries or partial centuries
+                            have been interpreted as in the following example: 
+                            "4th cent." - notBefore="300" notAfter="399". 
+                            "Early 4th cent." - notBefore="300" notAfter="349". 
+                            "Late 4th cent." - notBefore="350" notAfter="399".
+                            "Mid-4th cent." - notBefore="325" notAfter="374". 
+                            Etc.</p>
+                </interpretation>
+            </editorialDecl>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="syriaca-headword">
+                        <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. 
+                                These names have been created according to the Syriac.org guidelines for headwords: 
+                                <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+                    </category>
+                    <category xml:id="syriaca-anglicized">
+                        <catDesc>An anglicized version of a name, included to facilitate searching.</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="syr">Unvocalized Syriac of any variety or period</language>
+                <language ident="syr-Syrj">Vocalized West Syriac</language>
+                <language ident="syr-Syrn">Vocalized East Syriac</language>
+                <language ident="en">English</language>
+                <language ident="en-x-gedsh">Names or terms Romanized into English according to the standards 
+                        adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
+                <language ident="ar">Arabic</language>
+                <language ident="fr">French</language>
+                <language ident="de">German</language>
+                <language ident="la">Latin</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change who="http://syriaca.org/editors.xml#ngibson" n="1.0" when="2013-08-12-04:00"> CREATED: person </change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listPerson>
+                <person xml:id="person-51">
+                    <persName xml:id="name51-1" xml:lang="en-x-gedsh" source="#bib51-1 #bib51-10" syriaca-tags="#syriaca-headword">
+                        <forename sort="1">Severus</forename>
+                        <addName type="untagged-title" sort="2">of <placeName ref="http://syriaca.org/place/10">Antioch</placeName>
+                        </addName>
+                    </persName>
+                    <persName xml:id="name51-2" corresp="#name51-3 #name51-4 #name51-5" xml:lang="en" source="#bib51-2">
+                        <roleName type="saint" sort="2">St.</roleName>
+                        <forename sort="1">Severus</forename>
+                        <roleName type="saint" sort="2">of <placeName ref="http://syriaca.org/place/10">Antioch</placeName>
+                        </roleName>
+                    </persName>
+                    <persName xml:id="name51-3" corresp="#name51-2 #name51-4 #name51-5" xml:lang="ar" source="#bib51-3">
+                        <addName type="untagged-title" sort="2">القديس</addName>
+                        <forename sort="1">سويريوس</forename>
+                        <addName type="untagged-title" sort="2">الانطاكي</addName>
+                    </persName>
+                    <persName xml:id="name51-4" corresp="#name51-2 #name51-3 #name51-5" xml:lang="syr" source="#bib51-4">
+                        <addName type="untagged-title" sort="2">ܡܪܝ</addName>
+                        <forename sort="1">ܣܘܝܪܝܘܣ</forename>
+                        <addName type="untagged-title" sort="2">ܕܐܢܛܝܘܟܝܐ</addName>
+                    </persName>
+                    <persName xml:id="name51-5" corresp="#name51-2 #name51-3 #name51-4" xml:lang="syr-Syrj" source="#bib51-4">
+                        <addName type="untagged-title" sort="2">ܡܳܪܝ</addName>
+                        <forename sort="1">ܣܶܘܝܪܝܘܣ</forename>
+                        <addName type="untagged-title" sort="2">ܕܐܰܢܛܝܘܟܺܝܰܐ</addName>
+                    </persName>
+                    <persName xml:id="name51-6" xml:lang="syr" syriaca-tags="#syriaca-headword">
+                        <forename sort="1">ܣܘܝܪܝܘܣ</forename>
+                        <addName type="untagged-title" sort="2">ܕܐܢܛܝܘܟܝܐ</addName>
+                    </persName>
+                    <idno type="URI">http://syriaca.org/person/51</idno>
+                    <idno type="URI">http://viaf.org/viaf/sourceID/SRP|51</idno>
+                    <idno type="URI">http://viaf.org/viaf/31142837</idno>
+                    <idno type="URI">http://worldcat.org/identities/lccn-n89-630595</idno>
+                    <idno type="URI">http://worldcat.org/identities/np-severus$patriarch of antioch$465 536</idno>
+                    <idno type="URI">http://worldcat.org/identities/np-severus$van antiochie$ca465 538</idno>
+                    <idno type="URI">http://viaf.org/viaf/172982610</idno>
+                    <idno type="URI">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=S&amp;sK=Severus of Antioch&amp;sT=keywords</idno>
+                    <birth when="0465" source="#bib51-11">0465</birth>
+                    <death when="0538" source="#bib51-2">538</death>
+                    <state type="saint" role="saint" source="#bib51-2">
+                        <desc xml:lang="en">St.</desc>
+                    </state>
+                    <bibl xml:id="bib51-1">
+                        <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                        <ptr target="http://syriaca.org/bibl/1"/>
+                        <citedRange unit="pp">368</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib51-2">
+                        <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                        <ptr target="http://syriaca.org/bibl/4"/>
+                        <citedRange unit="entry">47</citedRange>
+                        <citedRange unit="pp">276</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib51-3">
+                        <title level="m" xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
+                        <ptr target="http://syriaca.org/bibl/2"/>
+                        <citedRange unit="pp">238</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib51-4">
+                        <title level="m" xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
+                        <ptr target="http://syriaca.org/bibl/3"/>
+                        <citedRange unit="pp">265</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib51-10">
+                        <title level="m" xml:lang="en">A Comprehensive Bibliography on Syriac Christianity</title>
+                        <ptr target="http://syriaca.org/bibl/5"/>
+                        <citedRange unit="entry" target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=S&amp;sK=Severus of Antioch&amp;sT=keywords">Severus of Antioch</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib51-11">
+                        <title xml:lang="en">Virtual International Authority File</title>
+                        <abbr>VIAF</abbr>
+                        <ptr target="http://viaf.org"/>
+                        <span xml:lang="en">Information cited from VIAF may come from any library or agency participating
+                    with VIAF.</span>
+                    </bibl>
+                </person>
+                <relation type="disambiguation" name="different-from" mutual="#person-51 http://syriaca.org/person/164">
+                    <desc>Not the same as Severos (http://syriaca.org/person/164)</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/586" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/1468" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/180" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/118" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/174" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/11" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/1469" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/343" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/9" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/10" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/196" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/75" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/1457" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/151" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/663" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/1471" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/40" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/122" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/1472" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/215" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/1473" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/1474" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/1475" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/233" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/130" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/65" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/185" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/195" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/1476" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/146" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/211" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/219" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/1477" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/60" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/69" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-literary-connection-to-place" active="#person-51" passive="http://syriaca.org/place/89" source="#bib51-2">
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                <relation name="has-relation-to-place" active="#person-51" passive="http://syriaca.org/place/525" source="#bib51-2">
+                    <desc xml:lang="en">This author has an unspecified connection to a place.</desc>
+                </relation>
+                <relation name="has-relation-to-place" active="#person-51" passive="http://syriaca.org/place/572" source="#bib51-2">
+                    <desc xml:lang="en">This author has an unspecified connection to a place.</desc>
+                </relation>
+                <relation name="has-relation-to-place" active="#person-51" passive="http://syriaca.org/place/46" source="#bib51-2">
+                    <desc xml:lang="en">This author has an unspecified connection to a place.</desc>
+                </relation>
+                <relation name="has-relation-to-place" active="#person-51" passive="http://syriaca.org/place/203" source="#bib51-2">
+                    <desc xml:lang="en">This author has an unspecified connection to a place.</desc>
+                </relation>
+                <relation name="has-relation-to-place" active="#person-51" passive="http://syriaca.org/place/1466" source="#bib51-2">
+                    <desc xml:lang="en">This author has an unspecified connection to a place.</desc>
+                </relation>
+                <relation name="has-relation-to-place" active="#person-51" passive="http://syriaca.org/place/456" source="#bib51-2">
+                    <desc xml:lang="en">This author has an unspecified connection to a place.</desc>
+                </relation>
+                <relation name="has-relation-to-place" active="#person-51" passive="http://syriaca.org/place/698" source="#bib51-2">
+                    <desc xml:lang="en">This author has an unspecified connection to a place.</desc>
+                </relation>
+                <relation name="has-relation-to-place" active="#person-51" passive="http://syriaca.org/place/586" source="#bib51-2">
+                    <desc xml:lang="en">This author has an unspecified connection to a place.</desc>
+                </relation>
+                <relation name="has-relation-to-place" active="#person-51" passive="http://syriaca.org/place/7" source="#bib51-2">
+                    <desc xml:lang="en">This author has an unspecified connection to a place.</desc>
+                </relation>
+                <relation name="has-relation-to-place" active="#person-51" passive="http://syriaca.org/place/715" source="#bib51-2">
+                    <desc xml:lang="en">This author has an unspecified connection to a place.</desc>
+                </relation>
+                <relation name="has-relation-to-place" active="#person-51" passive="http://syriaca.org/place/162" source="#bib51-2">
+                    <desc xml:lang="en">This author has an unspecified connection to a place.</desc>
+                </relation>
+            </listPerson>
+        </body>
+    </text>
+</TEI>
