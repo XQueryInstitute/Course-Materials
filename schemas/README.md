@@ -1,14 +1,15 @@
 #Schemas
 
-Our goal in this session is to review the various means to validate an XML document. We'll look at DTDs and XML Schema first and then briefly try out RELAX NG and Schematron. We're not aiming to teach you how to use these technologies--trust me, there are whole books on the subject. Rather, we want you to be aware of the similarities and differences as well as how the technologies compliment one another.
+Our goal in this session is to review the various means to validate an XML document. We'll look at DTDs and XML Schema first and then briefly try out RELAX NG and Schematron. We're not aiming to teach you how to use these technologies--trust me, there are whole books on the subject. Rather, we want you to be aware of the similarities and differences as well as how the technologies complement one another.
 
 ##Validation
 
-We recall from our XML fundamentals the difference between checking whether any given XML document is well-formed and whether it is valid. The first asks whether the document is XML. If a document is not well-formed, then it isn't actually XML--even if it appears to have lots of angle brackets.
+We recall from our XML fundamentals the difference between checking whether any given XML document is well-formed and whether it is valid. The first asks whether the document is XML. If a document is not well-formed, then it isn't actually XML--even if it appears to have lots of angle brackets. The second... (insert definition of validation as you did for well formed).
 
 There are multiple ways to validate XML documents:
+
 * [DTDs](http://www.w3.org/TR/REC-xml/#dt-doctype)
-* [XML Schema](http://www.w3.org/TR/REC-xml/#dt-doctype)
+* [XML Schema](http://www.w3.org/TR/xmlschema11-1/)
 * [RELAX NG](http://relaxng.org/)
 * [Schematron](http://www.schematron.com/)
 
@@ -16,11 +17,11 @@ as well as technologies like Namespace-based Validation Dispatching Language ([N
 
 ##Sample Document
 
-So let's imagine we're seeking a standardized way of describing books in a bookstore. We'd like to create a standard that contains all the information we need along with some option information that we might have in certain circumstances. We'll use this standard for a few things. It will help to make sure that our employees are all entering information in the same manner. It will flag cases where someone has left out important information. It will also help us to send information about our inventory to publishers and others.
+So let's imagine we're seeking a standardized way of describing books in a bookstore. We'd like to create a standard that contains all the information we need along with some optional information that we might have in certain circumstances. We'll use this standard for a few things. It will help to make sure that our employees are all entering information in the same manner. It will flag cases where someone has left out important information. It will also help us to send information about our inventory to publishers and others.
 
-Here's a sketch of what such a document might look like:
+Here's a sketch of what such a document based on this standard might look like:
 
-*N.B. These examples are modified and expanded versions of the corresponding examples in [Beginning XML](http://www.amazon.com/Beginning-XML-5th-Edition-Fawcett/dp/1118162137). Of course, if you were really needed a schema for exchanging information about retail books, you'd probably want to consider [ONIX](http://www.editeur.org/93/Release-3.0-Downloads/#Schema defs).*
+*N.B. These examples are modified and expanded versions of the corresponding examples in [Beginning XML](http://www.amazon.com/Beginning-XML-5th-Edition-Fawcett/dp/1118162137). Of course, if you really needed a schema for exchanging information about retail books, you'd probably want to consider [ONIX](http://www.editeur.org/93/Release-3.0-Downloads/#Schema defs).*
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -30,8 +31,8 @@ Here's a sketch of what such a document might look like:
     <date type="publication">2003</date>
     <genre/>
     <publisher>
-        <name>Doubleday </name>
-        <city>New York </city>
+        <name>Doubleday</name>
+        <city>New York</city>
     </publisher>
     <price>$14.95</price>
 </book>
@@ -46,7 +47,6 @@ The benefits of using a Document Type Definition include its simplicity and rela
 ###Example DTD for Book.xml
 
 Here is a possible DTD for our sample document:
-
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!ELEMENT book (author*, title, date, genre?, publisher?, price?)>
@@ -143,13 +143,11 @@ XML Schema has a reputation for being complex and difficult to understand. This 
 </xs:schema>
 ```
 
-You add a reference to an XML Schema by inserting attributes into the document element as follows:
+To add a reference to an XML Schema, insert attributes into the document element as follows:
 
 ```xml
-
 <book xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:noNamespaceSchemaLocation="book.xsd" isbn="0099470438" oclc="50604879">
- 
+ xsi:noNamespaceSchemaLocation="book.xsd" isbn="0099470438" oclc="50604879"> 
 ```
 
 * N.B. that there is no namespace for this schema. We might have defined our schema in a namespace like 'http://xqueryinstitute/book' and targeted this namespace using the ```targetNamespace``` attribute in our XSD. Of course, our document would also have to declare this namespace. In such cases, we would use the attribute ```xsi:schemaLocation``` to identify our namespace and its location. 
@@ -205,7 +203,7 @@ start =
 
 ```
 
-To associate this RELAX NG compact schema with an XML document, use the ```xml-model``` processing instruction as follows: ```<?xml-model href="book.rnc" type="application/relax-ng-compact-syntax"?>
+To associate this RELAX NG compact schema with an XML document, use the ```xml-model``` processing instruction as follows: ```<?xml-model href="book.rnc" type="application/relax-ng-compact-syntax"?>```
 
 ##Schematron
 
@@ -242,8 +240,7 @@ Here's a Schematron file to perform additional validation on the contents
 </schema>
 ```
 
-To associate a set of Schematron rules with an XML document, use the ```xml-model``` processing instruction like this ``` 
-<?xml-model href="book.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?> ```. Schematron may be used in conjunction with grammar-based schemas; it's perfectly valid to have two ```xml-model``` instructions–for example,
+To associate a set of Schematron rules with an XML document, use the ```xml-model``` processing instruction like this ```<?xml-model href="book.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?> ```. Schematron may be used in conjunction with grammar-based schemas; it's perfectly valid to have two ```xml-model``` instructions – for example,
 ```
 <?xml-model href="book.rnc" type="application/relax-ng-compact-syntax"?>
 <?xml-model href="book.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
