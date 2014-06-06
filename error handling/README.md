@@ -6,23 +6,23 @@ Learning how to diagnose, interpret, and prevent errors constitutes a major part
 
 There are essentially three kinds of error in XQuery: static errors, dynamic errors, and type errors. The [XQuery Recommendation](http://www.w3.org/TR/2014/REC-xquery-30-20140408/#id-kinds-of-errors) defines and discusses the differences between these errors.
 
-* Static Errors
+###Static Errors
 
 >[Definition: An error that can be detected during the static analysis phase, and is not a type error, is a static error.] A syntax error is an example of a static error.
 
 Static errors are the most common form of mistakes, especially when you are beginning to program. If you make a syntax mistake, such as using ```=``` for assignment rather than ```:=``` or forgetting to include a matching parenthesis/bracket, you have committed a static error. This is a static error because an XQuery interpreter will catch it before your program even runs (technically, it gets caught during the static analysis phase).  
 
-* Dynamic Errors
+###Dynamic Errors
 
 >[Definition: A dynamic error is an error that must be detected during the dynamic evaluation phase and may be detected during the static analysis phase.] Numeric overflow is an example of a dynamic error.
 
-A dynamic error, by contrast, may not be caught before your program runs. You may have gotten the syntax right but still have gone awry with your program logic. For example, you may have written a recursive function that does not specify properly a base case. If so, the function will continue to call itself until it runs out of space on the stack, resulting in a [stack overflow](http://en.wikipedia.org/wiki/Stack_overflow). This error may not be detectable until the program executes (technically, the dynamic evaluation phase). This is the kind of "bug" that crashes your program after it begins running. In general, these kinds of "bugs" are harder to diagnose and resolve.
+A dynamic error, by contrast, may not be caught before your program runs. You may have gotten the syntax right but still have gone awry with your program logic. For example, you may have written a recursive function that does not specify properly a base case. If so, the function will continue to call itself until it runs out of space on the stack, resulting in a [stack overflow](http://en.wikipedia.org/wiki/Stack_overflow). This error may not be detectable until the program executes (technically, during the dynamic evaluation phase). This is the kind of "bug" that crashes your program after it begins running. In general, these kinds of "bugs" are harder to diagnose and resolve.
 
-* Type Errors
+###Type Errors
 
 >[Definition: A type error may be raised during the static analysis phase or the dynamic evaluation phase. During the static analysis phase, a type error occurs when the static type of an expression does not match the expected type of the context in which the expression occurs. During the dynamic evaluation phase, a type error occurs when the dynamic type of a value does not match the expected type of the context in which the value occurs.]
 
-A common source of errors arises from type mismatches. We've already seen how to write functions that check the types of their inputs and outputs. Sending an argument of the wrong type to a function results in type error. A good example of this mistake is when your code produces a "number" that is actually a xs:string and you send that "number" to a function requiring an xs:integer as input. In order to avoid such an error, you will need first to cast the string to an integer first.
+A common source of errors arises from type mismatches. We've already seen how to write functions that check the types of their inputs and outputs. Sending an argument of the wrong type to a function results in type error. A good example of this mistake is when your code produces a "number" that is actually a xs:string and you send that "number" to a function requiring an xs:integer as input. In order to avoid such an error, you will first need to cast the string to an integer.
 
 For example, this expression checks if a variable can be cast as an xs:integer and, if not, throws an error.
 
@@ -34,11 +34,11 @@ return $int
 
 [Try it!](http://try.zorba.io/queries/xquery/meFXr1HHu%2BGBe7O3l1aj40GxStk%3D)
 
-This style of defensive programing helps to surface type mismatches which might otherwise produce hard-to-diagnose bugs in your code.
+This style of defensive programming helps to surface type mismatches which might otherwise produce hard-to-diagnose bugs in your code.
 
 ##Reading Errors
 
-Reading error messages takes a little practice.When you encounter an error, you will receive what many perceive as a cryptic message identifying the kind of error along with an indication of where that error occurred in your code.
+Reading error messages takes a little practice. When you encounter an error, you will receive what many perceive as a cryptic message identifying the kind of error along with an indication of where that error occurred in your code.
 
 For example, evaluating this expression
 
@@ -62,8 +62,9 @@ Let's see if we can understand what the interpreter is telling us about what wen
 
 First, notice the code inside the square brackets. The code identifies the error according to the following formula from the [XQuery recommendation](http://www.w3.org/TR/2014/REC-xquery-30-20140408/#id-identifying-errors):
 
+>* [XXYYnnnn]
 >* XX denotes the language in which the error is defined, using the following encoding:
-	* XP denotes an error defined by XPath. Such an error may also occur XQuery since XQuery includes XPath as a subset.
+	* XP denotes an error defined by XPath. Such an error may also occur in XQuery since XQuery includes XPath as a subset.
 	* XQ denotes an error defined by XQuery (or an error originally defined by XQuery and later added to XPath).
 > * YY denotes the error category, using the following encoding:
 	* ST denotes a static error.
@@ -73,19 +74,19 @@ First, notice the code inside the square brackets. The code identifies the error
 
 *N.B. You will also see FO (functions and operators) and SE (serialization errors) as two digit language codes*
 
-Using this information, we can decode some of the error identifier. The first two characters ```XP``` indicate that we have incurred an error in XPath. The second two characters ```TY``` tells us that we have caused a type error. But what about our four digit code ````0004````?
+Using this information, we can decode some of the error identifier. The first two characters ```XP``` indicate that we have incurred an error in XPath. The second two characters ```TY``` tell us that we have caused a type error. But what about our four digit code ````0004````?
 
 Here we need to read another W3C Document called the [XQuery and XPath Functions and Operators Error Codes Namespace Document](http://www.w3.org/2005/xqt-errors/). If we go to that document, we can look up the identifier of our error. It turns out that [XPTY0004](http://www.w3.org/TR/xpath-30/#ERRXPTY0004) is a pretty generic type mismatch error. 
 
-The implementation tells us a little more about why this error occurred. We see that the implementation tells us that we cannot add an xs:integer and an xs:string together. 
+The implementation tells us a little more about why this error occurred. We see that we cannot add an xs:integer and an xs:string together. 
 
-The implementation also provides a line and column number for the error. This may not always accurately reflect where the error needs to be remedied. For example, in this case, the implementation identifies column 1 or ```3``` as the source of the problem. This is, of course, the xs:integer we tried to add to an xs:string. To fix this problem, we'd probably want to change the xs:string in column 6 to an xs:integer.
+The implementation also provides a line and column number for the error. This may not always accurately reflect where the error needs to be remedied. For example, in this case, the implementation identifies ```Line 3, column 1``` as the source of the problem. This is, of course, the xs:integer we tried to add to an xs:string. To fix this problem, we'd probably want to change the xs:string in column 6 to an xs:integer.
 
 ##Defensive Programming
 
 A leading idea of [defensive programming](http://en.wikipedia.org/wiki/Defensive_programming) is to make as few implicit assumptions about your code and data as practically possible. For instance, it is better not to assume that the input to a function will always have the expected type. Rather, try to make your assumptions explicit by checking the types of your function arguments and return values. Also, write code to test for and handle common error conditions.
 
-compare the difference between
+Compare the difference between
 
 ```xquery
 xquery version "3.0";
@@ -150,7 +151,7 @@ catch XPTY0004 {
 }
 ```
 
-This try/catch expression only handles type errors. If we attempt to 3 by zero, we'll get a ```[FOAR0001] division by zero``` error, which won't be caught and which will halt our program.
+This try/catch expression only handles type errors. If we attempt to divide 3 by zero, we'll get a ```[FOAR0001] division by zero``` error, which won't be caught and will halt our program.
 
 Deciding when to use try/catch expressions can be tricky. Obviously, try/catch expressions can be useful when you don't want your program to crash in the event of an error. For example, you might include a try/catch expression in your controller when writing a web application to handle unexpected errors in a graceful way rather than displaying cryptic error messages to your user. On the other hand, try/catch expressions can themselves become sources of "bugs," especially if you handle errors in logic which should have been fixed prior to the execution of your program.
 
@@ -158,7 +159,7 @@ The art of using try/catch expressions is [much debated](http://programmers.stac
 
 ##XQSuite
 
-XQuery 3.0 introduced the concept of [annotations](http://www.w3.org/TR/2014/REC-xquery-30-20140408/#id-annotations) to the language. Annotations offer a mechanism for associating metadata with functions. For example, an annotation might indicate that a function is private–i.e., cannot be called from a function external to its module. Annotations provide an adaptable means to implement functionality orthogonal to functions.
+XQuery 3.0 introduced the concept of [annotations](http://www.w3.org/TR/2014/REC-xquery-30-20140408/#id-annotations) to the language. Annotations offer a mechanism for associating metadata with functions. For example, an annotation might indicate that a function is private – i.e., cannot be called from a function external to its module. Annotations provide an adaptable means to implement functionality orthogonal to functions.
 
 [XQSuite](http://exist-db.org/exist/apps/doc/xqsuite.xml) provides the ability to conduct unit tests within XQuery.
 
@@ -276,6 +277,6 @@ Applying XQDoc to this module produces a nicely-formatted documentation page in 
 
 ##Conclusion
 
-We now understand how to interpret XQuery error codes, to throw errors, and to catch errors gracefully. We've also seen a range of tools that can help to prevent errors such as XQSuite, XQDoc, and XQLint. In the end, avoiding and diagnosing errors is as much an art as a science. You'll inevitably make many mistakes when you begin coding in any language. Tracking down the sources of your errors generally turns you into a better program over time. The tools can aid you in this process but you'll also develop your own "intuition"–experienced programmers claim to detect "code smells"–about where things may have gone wrong in your code and why.
+We now understand how to interpret XQuery error codes, to throw errors, and to catch errors gracefully. We've also seen a range of tools that can help to prevent errors such as XQSuite, XQDoc, and XQLint. In the end, avoiding and diagnosing errors is as much an art as a science. You'll inevitably make many mistakes when you begin coding in any language. Tracking down the sources of your errors generally turns you into a better programmer over time. The tools can aid you in this process but you'll also develop your own "intuition" – experienced programmers claim to detect "code smells" – about where things may have gone wrong in your code and why.
 
 
