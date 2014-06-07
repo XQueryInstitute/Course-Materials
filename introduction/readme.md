@@ -1,22 +1,18 @@
 #XQuery Summer Institute
 ##Introductory Session
 
-Welcome to the XQuery Summer Institute at Vanderbilt University!
-
-###Keywords
-
-* Collaborative
-* Creative
-* Critical
-* Emergent
+Welcome to the XQuery Summer Institute at Vanderbilt University! We'll be meeting in Room 418a of the Central Library.
 
 ###Housekeeping
 
+* Meals and Lodging
+* Bathroom Locations
 * Wifi instructions
 * Twitter hashtag
 	* #XQueryInstitute
 	* #xqy14
 	* *something else?*
+* [FERPA](https://gist.github.com/CliffordAnderson/8393947)
 
 ###Introductions
 
@@ -27,10 +23,9 @@ Welcome to the XQuery Summer Institute at Vanderbilt University!
 	
 * Participants
 
-###Review of the Syllabus
+###Review of the [Syllabus](../syllabus.md)
 
-
-###Pair Programming Partnerships
+###[Pair Programming](http://en.wikipedia.org/wiki/Pair_programming) Partnerships
 
 *Monday, June 9*
 
@@ -47,6 +42,8 @@ Pair #5:
 Pair #6:
 
 ###Participants' Datasets
+
+Let's briefly introduce any datasets that we may be bringing to the 
 
 ###Participant Presentations
 
@@ -85,5 +82,12 @@ Presentation #10:
 Presentation #11:
 
 Presentation #12:
+
+###Hopes and Goals
+
+* Collaboration
+* Creativity
+* Critical
+* Emergent
 
 ###Survey
