@@ -36,7 +36,9 @@ Importance of the "XML Prolog" and "TEI Header" (data before the data)
 
 **XML Declaration:** "Specification of what version of XML is being used" - [W3C](http://www.w3.org/TR/2008/REC-xml-20081126/#sec-prolog-dtd)
 
-```<?xml version="1.0" encoding="utf-8"?>```
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+```
 
 **Encoding Declaration:** The XML Declaration also includes a declaration of the character encoding used: ```…encoding="utf-8"?>```
 
