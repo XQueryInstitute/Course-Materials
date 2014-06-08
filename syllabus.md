@@ -26,6 +26,9 @@ Instructor: David A. Michelson
  
 - Review of XML essentials, including namespaces, character entities, and CDATA sections
 
+- [Session Notes](https://github.com/XQueryInstitute/Course-Materials/blob/master/xml-essentials/README.md)
+
+
 Readings: 
 
 - Joe Fawcett, Liam Quin, and Danny Ayers, *Beginning XML*, Chapter 1: What is XML?, Chapter 2: Well-Formed XML, and Chapter 3: XML Namespaces
