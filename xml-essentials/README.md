@@ -64,10 +64,13 @@ Importance of the "XML Prolog" and "TEI Header" (data before the data)
 
 ##Three Core XML Structures:
 ---
-**Elements** (also informally called "tags"): Logical structure marked with start ```<``` and end ```>``` tags, e.g. 
-```<name>Flavius</name>```
+**Elements** (also informally called "tags"): Logical structure marked with start ```<``` and end ```>``` tags, e.g.
 
-**Attributes:** Additional information about an element
+```xml 
+<name>Flavius</name>
+```
+
+**Attributes:** Additional information about an element or data in an element
 
 ```<person xml:id="Flavius_JC"><persName><name>Flavius</name></persName></person>```
 
@@ -103,8 +106,7 @@ Datatype References:
 *  Fawcett, et al., [*Beginning XML*](http://site.ebrary.com/lib/vanderbilt/Doc?id=10575466), p. 148ff.
  
 ##Working within the XML Document
-____
-
+---
 **XML Parsers:** An XML parser breaksdown an XML document into an its constituent parts - which can then be manipulated. A common parser is included in the Saxon Library of XML processing tools. See Fawcett, et al., [*Beginning XML*](http://site.ebrary.com/lib/vanderbilt/Doc?id=10575466), p. 16ff.
 
 **Entity Reference:** ""Some characters have a special meaning in XML. If you place a character like ```<``` inside an XML element, it will generate an error because the parser interprets it as the start of a new element. To avoid this error, replace the ```<``` character with an entity reference. There are 5 predefined entity references in XML:
@@ -119,13 +121,13 @@ ____
 
 ```' = &apos;```
 
-Working with **CDATA:** CDATA can be parsed or unparsed. ""The term CDATA is often used about text data that should not be parsed by the XML parser. Some text, like JavaScript code, contains a lot of "<" or "&" characters. To avoid errors script code can be defined as CDATA. Everything inside a CDATA section is ignored by the parser. A CDATA section starts with ```<![CDATA[``` and ends with ```]]>``` - [W3Schools.com](http://www.w3schools.com/xml/xml_cdata.asp)
+Working with **CDATA:** CDATA can be parsed or unparsed. "The term CDATA is often used about text data that should not be parsed by the XML parser. Some text, like JavaScript code, contains a lot of "<" or "&" characters. To avoid errors script code can be defined as CDATA. Everything inside a CDATA section is ignored by the parser. A CDATA section starts with ```<![CDATA[``` and ends with ```]]>``` - [W3Schools.com](http://www.w3schools.com/xml/xml_cdata.asp)
 
 See the additional tutorial here: [https://gist.github.com/CliffordAnderson/53c178665b277b5371cd](https://gist.github.com/CliffordAnderson/53c178665b277b5371cd)
 
-XPath
+**XPath**
 
-XML Namespaces
+**XML Namespaces**
 Name spaces…
  XML Namespaces provide a method to avoid element name conflicts.
  Solving the Name Conflict Using a Prefix
@@ -133,15 +135,14 @@ XML Namespaces - The xmlns Attribute (not really an attribute!)
 Namespaces can be declared in the elements where they are used or in the XML root element
 Default Namespace
 
-THE XML Namespace
-<xml:lang>
+**The XML Namespace**
+```<xml:lang>```
 
-*URI, URL, URN
+*URI, URL, URN**
 
 ##Minding Your XML Manners
 ---
- 
- *Well-Formed XML
+**Well-Formed XML:**
  	* All true XML is well-formed
  		1. Content separated from metadata (mark up)
  		An XML document with correct syntax is "Well Formed".
@@ -154,10 +155,10 @@ An XML document with correct syntax is called "Well Formed".
     XML attribute values must be quoted
 -http://www.w3schools.com/xml/xml_doctypes.asp
  	
-  Whitespace (To Preserve or Not to Preserve)
+**Whitespace** (To Preserve or Not to Preserve)
  camelCasing for spacing...
  
- Elements for Complex Structures, Attributes for Atomic Values
+**Elements or Attributes** for Complex Structures, Attributes for Atomic Values
  Gap Problem in XML
  
  XML Infoset
