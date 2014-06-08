@@ -118,7 +118,7 @@ Datatype References:
 * [W3Schools.com](http://www.w3schools.com/schema/schema_dtypes_string.asp)
 *  Fawcett, et al., [*Beginning XML*](http://site.ebrary.com/lib/vanderbilt/Doc?id=10575466), p. 148ff.
  
-##Working within the XML Document
+#IV. Working within the XML Document
 ---
 **XML Parsers:** An XML parser breaksdown an XML document into an its constituent parts - which can then be manipulated. A common parser is included in the Saxon Library of XML processing tools. See Fawcett, et al., [*Beginning XML*](http://site.ebrary.com/lib/vanderbilt/Doc?id=10575466), p. 16ff.
 
@@ -194,7 +194,7 @@ node() 	Matches any node of any kind
 ```
 -[W3Schools.com](http://www.w3schools.com/xpath/xpath_syntax.asp)
 
-##What's in a Name?
+# V. What's in a Name?
 ---
 **Well-Formed XML:** All true XML must be well-formed (follow the syntax rules of XML). The main principle is that the markup must successfully separate the content from the metadata. An XML document with correct syntax is "Well Formed".
 
@@ -246,7 +246,7 @@ The namespace declaration must be a **URI: Uniform Resource Identifier**. A URI 
 
 **The XML Namespace:** is a default namespace that relies upon the XML schema and thus is built-in in addition to any other schemas used. It's elements are universally available. For example: ```xml <xml:lang>```
 
-##Mistakes and Best Guesses 
+#VI. Mistakes and Best Guesses 
 ---
  
 **Elements or Attributes?** This is a bit of a editorial decision, though Fawcett, et al., [*Beginning XML*](http://site.ebrary.com/lib/vanderbilt/Doc?id=10575466) recommend elements for complex structures and attributes for atomic values
