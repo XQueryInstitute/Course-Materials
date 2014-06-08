@@ -165,7 +165,19 @@ In its most simple form XPath is literally the path to information in the docume
 /TEI/teiHeader[1]/fileDesc[1]/titleStmt[1]/title[1]
 ```
 
-The following are common expressions in XPath which allow one to select nodes:
+The tree relationships between the nodes are expressed with the following terminology:
+
+* Root
+* Parent
+* Child 
+* Sibling
+* Ancestors
+* Descendants
+* Atomic Value: nodes with no children or parent
+	
+	-[W3Schools.com](http://www.w3schools.com/xpath/xpath_nodes.asp), see also Fawcett, et al., [*Beginning XML*](http://site.ebrary.com/lib/vanderbilt/Doc?id=10575466), p. 47ff. on "The XML Infoset"
+
+The following are common expressions in XPath which allow one to select nodes, specific values, or relationships:
 
 ```
 nodename 	Selects all nodes with the name "nodename"
@@ -174,58 +186,66 @@ nodename 	Selects all nodes with the name "nodename"
 . 	Selects the current node
 .. 	Selects the parent of the current node
 @ 	Selects attributes
+[ ]	Predicates [in square brackets] are used to find a specific node or a node that contains a specific value
+* 	Matches any element node
+@* 	Matches any attribute node
+node() 	Matches any node of any kind
+|	operator allowing one to select several paths
 ```
 -[W3Schools.com](http://www.w3schools.com/xpath/xpath_syntax.asp)
 
-**XML Namespaces**
-Name spaces…
- XML Namespaces provide a method to avoid element name conflicts.
- Solving the Name Conflict Using a Prefix
-XML Namespaces - The xmlns Attribute (not really an attribute!)
-Namespaces can be declared in the elements where they are used or in the XML root element
-Default Namespace
-
-**The XML Namespace**
-```<xml:lang>```
-
-*URI, URL, URN**
-
-##Minding Your XML Manners
+##What's in a Name?
 ---
-**Well-Formed XML:**
- 	* All true XML is well-formed
- 		1. Content separated from metadata (mark up)
- 		An XML document with correct syntax is "Well Formed".
+**Well-Formed XML:** All true XML must be well-formed (follow the syntax rules of XML). The main principle is that the markup must successfully separate the content from the metadata. An XML document with correct syntax is "Well Formed".
 
-An XML document with correct syntax is called "Well Formed". 
-    XML documents must have a root element
-    XML elements must have a closing tag
-    XML tags are case sensitive
-    XML elements must be properly nested
-    XML attribute values must be quoted
--http://www.w3schools.com/xml/xml_doctypes.asp
+6 Rules for "well-formedness":
+*     XML documents must have a root element
+*     XML elements must have a closing tag
+*     XML tags are case sensitive
+*     XML elements must be properly nested
+*     XML attribute values must be quoted
+-[W3Schools.com](http://www.w3schools.com/xml/xml_syntax.asp)
  	
-**Whitespace** (To Preserve or Not to Preserve)
- camelCasing for spacing...
+**Whitespace**
+"In XML documents, some whitespace is significant, some is not. For example, inside the brackets that mark XML elements extra whitespace is not significant. For any program processing these as pieces of XML, ```xml <title type="main">``` and ```xml <title     type = "main" >``` are the same. There is no significance to the extra space. By XML rules, no application that processes the data in this XML file (processing it as XML and not just as text) is allowed to treat these two representations differently. A person or computer editing this file is free to use either one, based merely on readability and aesthetics. The fact that there is whitespace between title and type is significant, but how much or of what kind (space characters, tabs, carriage returns, new lines) is not significant. The space between type and = is not significant.
+
+Whitespace can be significant, however, in the content of an element. For example, ```xml <name>JoAnn</name>``` and ```xml <name>Jo Ann</name>``` are different because of that space between Jo and Ann, and any program reading this element in an XML file is obliged to maintain the distinction.
+
+But things can get complicated. Consider this:
+```xml
+<persName>    
+    <forename>Jo</forename>
+    <forename>Ann</forename>
+</persName>
+``` -[TEI Wiki](http://wiki.tei-c.org/index.php/XML_Whitespace)
+
+A similar case is found in Julius Caesar:
+```xml
+              <foreign xml:id="for-0001" xml:lang="la">
+                <w xml:id="w0198350" n="3.1.85">Et</w>
+                <c xml:id="c0198360" n="3.1.85"> </c>
+                <w xml:id="w0198370" n="3.1.85">tu</w>
+                <pc xml:id="p0198380" n="3.1.85">,</pc>
+                <c xml:id="c0198390" n="3.1.85"> </c>
+                <w xml:id="w0198400" n="3.1.85">Brutè</w>
+              </foreign>
+```
+            
+**XML Namespaces:** XML Namespaces provide a method to avoid element name conflicts. Name conflicts in XML can easily be avoided using a name prefix. Namespaces can be declared in the elements where they are used or in the XML root element using the xmlns Attribute (not really an attribute!). -[W3Schools.com](http://www.w3schools.com/xml/xml_namespaces.asp)
+
+```xml
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+```
+The namespace declaration must be a **URI: Uniform Resource Identifier**. A URI does not have to be a resolvable URL even thought it may take the same form.
+
+**The XML Namespace:** is a default namespace that relies upon the XML schema and thus is built-in in addition to any other schemas used. It's elements are universally available. For example: ```xml <xml:lang>```
+
+##Mistakes and Best Guesses 
+---
  
-**Elements or Attributes** for Complex Structures, Attributes for Atomic Values
- Gap Problem in XML
- 
- XML Infoset
- 	Document Information Item
- 	Root Element
- 		Local Name
- 		Children/Parent
- 		Attributes
- 			Local Name
- 			Normalized Value
- 			Owner Element
- 	Processing Instruction Information Items
- 	Character Information Item
- 	Comment Information Item
- 	Namespace Information Item
- 	Document Type Declaration Information Item
+**Elements or Attributes?** This is a bit of a editorial decision, though Fawcett, et al., [*Beginning XML*](http://site.ebrary.com/lib/vanderbilt/Doc?id=10575466) recommend elements for complex structures and attributes for atomic values
+
+**Overlap Problem in XML:** Because element tags cannot overlap this excludes certain kinds of markup. In those cases a standoff markup may be needed.
  	
- 
- Errors!
+**Errors and Validation:** The current generation of XML tools offer many ways to evaluate your content, learn to harness the power of your XML editor.
  
