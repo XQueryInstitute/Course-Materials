@@ -50,9 +50,13 @@ Importance of the "XML Prolog" and "TEI Header" (data before the data)
 
 **Processing Instructions:** Instructions for applications which will process the XML document (for example a Web browser or an XML editor). In many cases these instructions may associate an external stylesheet or a schema with an XML document.
 
-```<?xml-stylesheet type="text/xsl" href="fdt.xsl"?>```
+```xml
+<?xml-stylesheet type="text/xsl" href="fdt.xsl"?>
+```
 
-```<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>```
+```xml
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+```
 
 **Schema:** "An XML Schema is a language for expressing constraints about XML documents. There are several different schema languages in widespread use, but the main ones are Document Type Definitions (DTDs), Relax-NG, Schematron and W3C XSD (XML Schema Definitions)." - [W3C](http://www.w3.org/standards/xml/schema)
 
@@ -62,7 +66,9 @@ Importance of the "XML Prolog" and "TEI Header" (data before the data)
 
 **Root Element:** "XML documents must contain one element that is the parent of all other elements. XML documents form a tree structure that starts at 'the root' and branches to 'the leaves'." - [W3Schools.com](http://www.w3schools.com/xml/xml_tree.asp)
 
-```<TEI xmlns="http://www.tei-c.org/ns/1.0">```
+```xml
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+```
 
 ##Three Core XML Structures:
 ---
@@ -74,10 +80,14 @@ Importance of the "XML Prolog" and "TEI Header" (data before the data)
 
 **Attributes:** Additional information about an element or data in an element
 
-```<person xml:id="Flavius_JC"><persName><name>Flavius</name></persName></person>```
+```xml
+<person xml:id="Flavius_JC"><persName><name>Flavius</name></persName></person>
+```
 
 **Character Data (CDATA):** Data contained by elements and attributes (informally known as "text")
-```<persName><name>Flavius</name></persName>```
+```xml
+<persName><name>Flavius</name></persName>
+```
 
 **XML Schema built-in primitive datatypes for Character Data:**
 
