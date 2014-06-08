@@ -1,9 +1,9 @@
 # I. Bibliography
 W3C, "[XML Essentials](http://www.w3.org/standards/xml/core)"
 
-w3schools.com, "[XML Tutorial](http://www.w3schools.com/xml/default.asp)"
-
 **W3C (World Wide Web Consortium):** international body which sets standards for the Web including HTML and XML 
+
+w3schools.com, "[XML Tutorial](http://www.w3schools.com/xml/default.asp)"
 
 Fawcett, Joe, Danny Ayers, and Liam R. E. Quin. [*Beginning XML,*](http://site.ebrary.com/lib/vanderbilt/Doc?id=10575466) 5th edition. Indianapolis: Wrox, 2012. *NB: This link is accessible only from within the VU campus network.*
 
