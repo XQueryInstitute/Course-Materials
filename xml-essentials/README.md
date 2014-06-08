@@ -65,6 +65,8 @@ Importance of the "XML Prolog" and "TEI Header" (data before the data)
 ##Three Core XML Structures:
 ---
 **Elements** (also informally called "tags"): Logical structure marked with start ```<``` and end ```>``` tags, e.g. 
+```<name>Flavius</name>```
+
 
 **Attributes:** Additional information about an element
 
@@ -73,6 +75,7 @@ Importance of the "XML Prolog" and "TEI Header" (data before the data)
 
 **Character Data (CDATA):** Data contained by elements and attributes (informally known as "text")
 ```<persName><name>Flavius</name></persName>```
+
 
 **XML Schema built-in primitive datatypes for Character Data:**
 
