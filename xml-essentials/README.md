@@ -67,15 +67,12 @@ Importance of the "XML Prolog" and "TEI Header" (data before the data)
 **Elements** (also informally called "tags"): Logical structure marked with start ```<``` and end ```>``` tags, e.g. 
 ```<name>Flavius</name>```
 
-
 **Attributes:** Additional information about an element
 
 ```<person xml:id="Flavius_JC"><persName><name>Flavius</name></persName></person>```
 
-
 **Character Data (CDATA):** Data contained by elements and attributes (informally known as "text")
 ```<persName><name>Flavius</name></persName>```
-
 
 **XML Schema built-in primitive datatypes for Character Data:**
 
