@@ -63,7 +63,7 @@ Importance of the "XML Prolog" and "TEI Header" (data before the data)
 ```<TEI xmlns="http://www.tei-c.org/ns/1.0">```
 
 ##Three Core XML Structures:
-***
+---
 **Elements** (also informally called "tags"): Logical structure marked with start ```<``` and end ```>``` tags, e.g. 
 ```<name>Flavius</name>```
 
