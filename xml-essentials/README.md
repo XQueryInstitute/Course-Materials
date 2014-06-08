@@ -236,6 +236,12 @@ A similar case is found in Julius Caesar:
 ```xml
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 ```
+
+```xml
+        <tei:title xmlns:tei="http://www.tei-c.org/ns/1.0">Julius Caesar</title>
+        <tei:author>William Shakespeare</author>
+```
+
 The namespace declaration must be a **URI: Uniform Resource Identifier**. A URI does not have to be a resolvable URL even thought it may take the same form.
 
 **The XML Namespace:** is a default namespace that relies upon the XML schema and thus is built-in in addition to any other schemas used. It's elements are universally available. For example: ```xml <xml:lang>```
