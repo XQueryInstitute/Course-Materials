@@ -21,7 +21,7 @@ Facilitates interoperability and exchange of data, yet is also "extensible" to f
 
 The XML DOM (Document Object Model) is document-centric and thus similar in some ways to humanists' interest in "*texts*""
 
-**DOM Document Object Model:** a tree-like hierarchical representation of the data.- [*Beginning XML*](http://site.ebrary.com/lib/vanderbilt/Doc?id=10575466)
+**DOM Document Object Model:** a tree-like hierarchical representation of the data.- [*Beginning XML*](http://site.ebrary.com/lib/vanderbilt/Doc?id=10575466) *NB: See XPath below.*
 
 Timeline of the development of XML: SGML (Standard Generalized Markup Language, 1986), HTML (an application of SGML, 1991), XML (a subset of SGML, 1998).
 
@@ -85,8 +85,9 @@ Importance of the "XML Prolog" and "TEI Header" (data before the data)
 ```
 
 **Character Data (CDATA):** Data contained by elements and attributes (informally known as "text")
+
 ```xml
-<persName><name>Flavius</name></persName>
+<person xml:id="Flavius_JC"><persName><name>Flavius</name></persName></person>
 ```
 
 **XML Schema built-in primitive datatypes for Character Data:**
@@ -122,8 +123,6 @@ Datatype References:
 **XML Parsers:** An XML parser breaksdown an XML document into an its constituent parts - which can then be manipulated. A common parser is included in the Saxon Library of XML processing tools. See Fawcett, et al., [*Beginning XML*](http://site.ebrary.com/lib/vanderbilt/Doc?id=10575466), p. 16ff.
 
 **Entity Reference:** ""Some characters have a special meaning in XML. If you place a character like ```<``` inside an XML element, it will generate an error because the parser interprets it as the start of a new element. To avoid this error, replace the ```<``` character with an entity reference. There are 5 predefined entity references in XML:
- 
-```& = &amp;```
  	
 ```< = &lt;```
  	
@@ -133,11 +132,32 @@ Datatype References:
 
 ```' = &apos;```
 
-Working with **CDATA:** CDATA can be parsed or unparsed. "The term CDATA is often used about text data that should not be parsed by the XML parser. Some text, like JavaScript code, contains a lot of "<" or "&" characters. To avoid errors script code can be defined as CDATA. Everything inside a CDATA section is ignored by the parser. A CDATA section starts with ```<![CDATA[``` and ends with ```]]>``` - [W3Schools.com](http://www.w3schools.com/xml/xml_cdata.asp)
+```& = &amp;```
+
+**Unparsed CDATA:** CDATA can be parsed or unparsed. "The term CDATA is often used about text data that should not be parsed by the XML parser. Some text, like JavaScript code, contains a lot of "<" or "&" characters. To avoid errors script code can be defined as CDATA. Everything inside a CDATA section is ignored by the parser. A CDATA section starts with ```<![CDATA[``` and ends with ```]]>``` - [W3Schools.com](http://www.w3schools.com/xml/xml_cdata.asp)
 
 See the additional tutorial here: [https://gist.github.com/CliffordAnderson/53c178665b277b5371cd](https://gist.github.com/CliffordAnderson/53c178665b277b5371cd)
 
-**XPath**
+**XPath:** "XPath (the XML Path language) is a language for finding information in an XML document." -[W3Schools.com](http://www.w3schools.com/xml/xml_xpath.asp)
+
+See [XML Path Language (XPath)](http://www.w3.org/TR/xpath/) a W3C recommendation.
+
+**Nodes:** "In XPath, there are seven kinds of nodes: element, attribute, text, namespace, processing-instruction, comment, and document nodes. XML documents are treated as trees of nodes. The topmost element of the tree is called the root element." - [W3Schools.com](http://www.w3schools.com/xpath/xpath_nodes.asp)
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="fdt.xsl"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Julius Caesar</title>
+        <author>William Shakespeare</author>
+        <editor xml:id="BAM">Barbara A. Mowat</editor>
+        <editor xml:id="PW">Paul Werstine</editor>
+```
+        
 
 **XML Namespaces**
 Name spaces…
