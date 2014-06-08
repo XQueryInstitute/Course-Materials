@@ -140,11 +140,12 @@ See the additional tutorial here: [https://gist.github.com/CliffordAnderson/53c1
 
 **XPath:** "XPath (the XML Path language) is a language for finding information in an XML document." -[W3Schools.com](http://www.w3schools.com/xml/xml_xpath.asp)
 
-See [XML Path Language (XPath)](http://www.w3.org/TR/xpath/) a W3C recommendation.
+See [XML Path Language (XPath)](http://www.w3.org/TR/xpath20/) a W3C recommendation.
 
 **Nodes:** "In XPath, there are seven kinds of nodes: element, attribute, text, namespace, processing-instruction, comment, and document nodes. XML documents are treated as trees of nodes. The topmost element of the tree is called the root element." - [W3Schools.com](http://www.w3schools.com/xpath/xpath_nodes.asp)
 
 ```xml
+<!-- This code is from the document jc.xml, thus jc.xml is the document node. -->
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="fdt.xsl"?>
 <?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
