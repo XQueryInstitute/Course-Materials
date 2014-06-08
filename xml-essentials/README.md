@@ -158,7 +158,24 @@ See [XML Path Language (XPath)](http://www.w3.org/TR/xpath20/) a W3C recommendat
         <editor xml:id="BAM">Barbara A. Mowat</editor>
         <editor xml:id="PW">Paul Werstine</editor>
 ```
-        
+
+In its most simple form XPath is literally the path to information in the document. In the example above the path for the text "Julius Caesar" is:
+
+```xpath
+/TEI/teiHeader[1]/fileDesc[1]/titleStmt[1]/title[1]
+```
+
+The following are common expressions in XPath which allow one to select nodes:
+
+```
+nodename 	Selects all nodes with the name "nodename"
+/ 	Selects from the root node
+// 	Selects nodes in the document from the current node that match the selection no matter where they are
+. 	Selects the current node
+.. 	Selects the parent of the current node
+@ 	Selects attributes
+```
+-[W3Schools.com](http://www.w3schools.com/xpath/xpath_syntax.asp)
 
 **XML Namespaces**
 Name spaces…
