@@ -65,6 +65,7 @@ Importance of the "XML Prolog" and "TEI Header" (data before the data)
 ##Three Core XML Structures:
 ***
 **Elements** (also informally called "tags"): Logical structure marked with start ```<``` and end ```>``` tags, e.g. ```<element>```
+
 ```<persName><name>Flavius</name></persName>```
 
 **Attributes:** Additional information about an element
@@ -147,8 +148,7 @@ THE XML Namespace
  		1. Content separated from metadata (mark up)
  		An XML document with correct syntax is "Well Formed".
 
-An XML document with correct syntax is called "Well Formed".
-    
+An XML document with correct syntax is called "Well Formed". 
     XML documents must have a root element
     XML elements must have a closing tag
     XML tags are case sensitive
