@@ -77,6 +77,22 @@ To associate this DTD with our sample XML document, add the following line to th
 <!DOCTYPE book SYSTEM "book.dtd">
 ```
 
+Another common use of DTDs is to declare character entities. This allows you to substitute a unicode character, for example, for an entity reference. For example, let's see how you might declare a character entity for the Greek letter Alpha in an XML document
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE example 
+    [
+        <!ENTITY Alpha "&#913;">
+    ]
+>
+<example>
+    The first letter of the Greek alphabet is &Alpha;.
+</example>
+```
+
+The downside to this approach is that your XML documents may become more difficult to read and, if you use external entity declarations, slower to parse. 
+
 ##XML Schema (XSD)
 
 XML Schema 1.0 is a W3C standard approved in 2001. The current recommendation for [XML Schema 1.1](http://www.w3.org/TR/xmlschema11-1/) dates from 2012.
