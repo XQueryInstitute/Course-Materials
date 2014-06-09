@@ -8,10 +8,7 @@ Welcome to the XQuery Summer Institute at Vanderbilt University! We'll be meetin
 * Meals and Lodging
 * Bathroom Locations
 * Wifi instructions
-* Twitter hashtag
-	* #XQueryInstitute
-	* #xqy14
-	* *something else?*
+* Twitter hashtag #xqy14
 * [FERPA](https://gist.github.com/CliffordAnderson/8393947)
 
 ###Introductions
