@@ -168,6 +168,8 @@ To add a reference to an XML Schema, insert attributes into the document element
 
 * N.B. that there is no namespace for this schema. We might have defined our schema in a namespace like 'http://xqueryinstitute/book' and targeted this namespace using the ```targetNamespace``` attribute in our XSD. Of course, our document would also have to declare this namespace. In such cases, we would use the attribute ```xsi:schemaLocation``` to identify our namespace and its location. 
 
+A last thing to note about XML Schemas is that it provides primitive datatypes used in XQuery and XSLT. See the list of [Built-in Datatypes](http://www.w3.org/TR/xmlschema-2/#built-in-datatypes) in the [XML Schema Part 2: Datatypes Second Edition](http://www.w3.org/TR/xmlschema-2/) recommendation. 
+
 ##RELAX NG
 
 RELAX NG stands for "REgular LAnguage for XML Next Generation". James Clark, a major figure in the XML world, promoted the development of RELAX NG as a more streamlined alternative to XML Schema. The [RELAX NG](https://www.oasis-open.org/committees/relax-ng/compact-20021121.html) standard is maintained by [OASIS](https://www.oasis-open.org/org). 
