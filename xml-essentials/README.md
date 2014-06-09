@@ -126,7 +126,7 @@ Datatype References:
  	
 ```< = &lt;```
  	
-```> = &rt;```
+```> = &gt;```
 
 ```" = &quot;```
 
