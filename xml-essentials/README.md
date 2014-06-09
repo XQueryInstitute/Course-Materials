@@ -84,7 +84,7 @@ Importance of the "XML Prolog" and "TEI Header" (data before the data)
 <person xml:id="Flavius_JC"><persName><name>Flavius</name></persName></person>
 ```
 
-**Character Data (CDATA):** Data contained by elements and attributes (informally known as "text")
+**(Parsed) Character Data (PCDATA):** Data contained by elements and attributes (informally known as "text"). Usually character data in XML documents is "parsed," but in some cases it may be intentionally unparsed. See CDATA below.
 
 ```xml
 <person xml:id="Flavius_JC"><persName><name>Flavius</name></persName></person>
