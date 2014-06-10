@@ -36,7 +36,7 @@ Oxygen XML Editor supports eXist database server versions 1.3, 1.4 and 1.5.
 
 10. [http://www.oxygenxml.com/demo/eXist_Database.html](http://www.oxygenxml.com/demo/eXist_Database.html).
 
-WebDav access in Windows
+**WebDav access in Windows**
 
-	Windows requires a webdav client for full integration.  Two options are[ netdrive](http://www.netdrive.net/download.html) which is excellent but requires a license.  It does have a free 30 day trial though.  The other option is [carotdav](http://rei.to/carotdav_en.html) which is not as good but is free.
+Windows requires a webdav client for full integration.  Two options are[ netdrive](http://www.netdrive.net/download.html) which is excellent but requires a license.  It does have a free 30 day trial though.  The other option is [carotdav](http://rei.to/carotdav_en.html) which is not as good but is free.
 
