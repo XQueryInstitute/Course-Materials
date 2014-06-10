@@ -2,15 +2,17 @@
 ---
 #I. Case Study: [Syriaca.org](http://syriaca.org/)
 
-Syriaca.org is a born-digital reference work compsed of TEI XML data which is processed using XQuery & eXistDB. 
+Syriaca.org is a born-digital reference work composed of TEI XML data which is processed using XQuery & eXistDB. 
 
 ##A. Project Design
 Data (TEI, Github, oXygen) > App (eXistDB, XQuery, XSL) > Front-end ([Bootstrap](getbootstrap.com/), HTML, CSS, Javascript)
 
+#*NB: ALL CREDIT IS DUE TO WINONA SALESKY ```&amp;``` TOM ELLIOTT, SENIOR PROGRAMMERS*
+
 ##B. Front-end
 
 Model publication: [The Syriac Gazetteer
-](http://syriaca.org/geo/index.html) (A Dictionary of Historical Geography)
+](http://syriaca.org/geo/index.html) (A Dictionary of Historical Geography), additional modules in process and will reside inside the samel eXistDB instance (we anticipate about 20K TEI files when the project is finished).
 
 * Sample entry: [Edessa](http://syriaca.org/place/78.html)
 * Table of contents: [All entries sorted alphabetically](http://syriaca.org/geo/browse.html)
@@ -24,7 +26,7 @@ Model publication: [The Syriac Gazetteer
 * Sample Entry in TEI: [Inside eXist](http://syriaca.org/place/78/tei)
 * Data Repositories: Master Copy on [Github](https://github.com/srophe/srophe-eXist-app/tree/master/srophe-app/data). A copy for you to play with is also in our [course-materials](https://github.com/XQueryInstitute/Course-Materials/tree/master/participant-datasets).
 
-```<!-- Note: At present the data on Github is inside the code for the eXist app, in the final design of the app the data will reside in its own mirrored repository -->``` 
+```<!-- Note: At present the data on Github is inside the code for the eXist app, in the final design of the app a public version of data will reside in its own mirrored repository -->``` 
 
 Different Data Types:
 
@@ -46,12 +48,12 @@ Different Data Types:
 ##E. Conclusions:
 Because the entire app is downloadable as an archive, users can run the app locally and modify it as needed. Thus student research assistants built their own functions:
 
-* A Natural Language Processor that recongnized and matched Named Entities
-* A an image module that embedded related images of manuscripts
-* A quick and simple notes view that passed through as a TEXT file on data that matched a particular research parameter.
+* A Natural Language Processor that recognized and matched Named Entities
+* An image module that embedded related images of manuscripts
+* A query to quickly generate a view of only relevant date (passed through as a TEXT file) based on a particular research parameter
 
 #II. Discussion of Scholarly Editing
 
-* Open up your App to the scholarly community, not just your data. 
+* Open up your app to the scholarly community, not just your data. 
 * Design your data structure around the sorts of search possible.
 * What can TEI do and what can't it do?
