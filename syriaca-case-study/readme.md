@@ -45,11 +45,13 @@ Different Data Types:
 
 ##E. Conclusions:
 Because the entire app is downloadable as an archive, users can run the app locally and modify it as needed. Thus student research assistants built their own functions:
-1. A Natural Language Processor that recongnized and matched Named Entities
-2. A an image module that embedded related images of manuscripts
-3. A quick and simple notes view that passed through as a TEXT file on data that matched a particular research parameter.
+
+* A Natural Language Processor that recongnized and matched Named Entities
+* A an image module that embedded related images of manuscripts
+* A quick and simple notes view that passed through as a TEXT file on data that matched a particular research parameter.
 
 #II. Discussion of Scholarly Editing
-##A. Open up your App to the scholarly community, not just your data. 
-##B. Design your data structure around the sorts of search possible.
-## C. What can TEI do and what can't it do?
+
+* Open up your App to the scholarly community, not just your data. 
+* Design your data structure around the sorts of search possible.
+* What can TEI do and what can't it do?
