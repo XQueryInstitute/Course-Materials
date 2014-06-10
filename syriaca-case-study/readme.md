@@ -7,7 +7,7 @@ Syriaca.org is a born-digital reference work composed of TEI XML data which is p
 ##A. Project Design
 Data (TEI, Github, oXygen) > App (eXistDB, XQuery, XSL) > Front-end ([Bootstrap](getbootstrap.com/), HTML, CSS, Javascript)
 
-#*NB: ALL CREDIT IS DUE TO WINONA SALESKY ```&amp;``` TOM ELLIOTT, SENIOR PROGRAMMERS*
+#*NB: ALL CREDIT IS DUE TO WINONA SALESKY ```&amp;``` TOM ELLIOTT, SENIOR PROGRAMMERS and DALE POULTER, SYS ADMIN.*
 
 ##B. Front-end
 
