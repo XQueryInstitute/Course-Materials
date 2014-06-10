@@ -64,6 +64,7 @@ The University Library will host a reception for our Institute in the 2nd Floor 
 Instructor: David A. Michelson
  
 - The challenges of scholarly editing in XML
+- [Session notes](https://github.com/XQueryInstitute/Course-Materials/tree/master/syriaca-case-study)
 
 Readings: 
 
@@ -73,6 +74,7 @@ Readings:
 Instructor: David A. Michelson 
  
 - Introduction to the TEI P5 specification
+- [Session notes](https://github.com/XQueryInstitute/Course-Materials/tree/master/introduction_to_TEI)
 
 Readings: 
 

@@ -10,7 +10,7 @@
 * [TEI Conference](http://tei.northwestern.edu/)
 * [TEI @ Oxford Teaching Pages](http://tei.oucs.ox.ac.uk/Talks/)
 * [Brown University's Resources for Teaching and Learning Text Encoding](http://www.wwp.brown.edu/outreach/resources.html)
-* [Lou Burnard, What is the Text Encoding Initiative?](http://books.openedition.org/oep/426)
+* [Lou Burnard, *What is the Text Encoding Initiative?*](http://books.openedition.org/oep/426)
 
 ##What is the TEI?
 
@@ -24,13 +24,14 @@
 Like many standardization efforts, the TEI faces the challenges inherent in such a project. How can the many disciplines and communities within the humanities domain find common ground in a single encoding language? How do we agree on the level of detail that is necessary or appropriate in describing our textual materials? How do we reconcile the advantages to be gained by consistency and agreement with the need for individual specialization? How do we handle the truly idiosyncratic and unexpected?" -[http://www.wwp.brown.edu/outreach/seminars/tei.html](http://www.wwp.brown.edu/outreach/seminars/tei.html)
 
 ##History and User Base
-* Established in 1987 (before XML!)
-* Over 50 supporting institutions
-* Over 800 users on the e-mail list
+* Established in 1987 (before XML!).
+* Over 50 supporting institutions.
+* Over 800 users on the e-mail list.
 * Approximately 550 tags and numerous attributes defined by a community.
-* Well represented across a variety of disciplines, such as Literature, Linguistics Classics, Medieval Studies. Fewer historians, however.
+* Well represented across a variety of disciplines, such as Literature, Linguistics Classics, Medieval Studies. Fewer historians, however!
 * Originally created for marking up digital editions of existing print texts, but now widely expanded to create born-digital texts, finding aids (for manuscripts), and even databases (composite documents containting multiple texts).
-* Single purpose is not possible (different thus from EAD for example). The flexibility of the TEI makes it robust for use by humanists. In fact the TEI makes provisions for [customization](http://www.tei-c.org/Guidelines/Customization/).
+* There is no single purpose for TEI (different thus from EAD for example). The flexibility of the TEI makes it robust for use by humanists. In fact the TEI makes provisions for [customization](http://www.tei-c.org/Guidelines/Customization/).
+* Similarly, each TEI user is likely to be familiar with their particular corners of the TEI. Start with your *ad hoc* research needs in learning TEI, there is little reason to learn the entire guidelines before starting.
 
 ```
 Group Exercise: Old Fashioned Encoding & Discussion
