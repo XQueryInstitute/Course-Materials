@@ -1,4 +1,5 @@
 # I. Bibliography
+---
 W3C, "[XML Essentials](http://www.w3.org/standards/xml/core)"
 
 **W3C (World Wide Web Consortium):** international body which sets standards for the Web including HTML and XML 
@@ -10,7 +11,7 @@ Fawcett, Joe, Danny Ayers, and Liam R. E. Quin. [*Beginning XML,*](http://site.e
 David J. Birnbaum, ["What is XML and why should humanists care? An even gentler introduction to XML."](http://dh.obdurodon.org/what-is-xml.xhtml) 
 
 # II. Wherefore XML?
-
+---
 "**XML The eXtensible Markup Language (XML)** is a simple text-based format for representing structured information: documents, data, configuration, books, transactions, invoices, and much more."" - [W3C](http://www.w3.org/standards/xml/core)
 
 Enables data to be both human and machine readable
