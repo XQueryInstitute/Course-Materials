@@ -1,4 +1,4 @@
-#Handling & Preventing Erros
+#Handling & Preventing Errors
 
 Learning how to diagnose, interpret, and prevent errors constitutes a major part of learning to program in any language. What follows is a whirlwind tour of errors in XQuery as well as some tools to prevent them from cropping up in the first place.
 
