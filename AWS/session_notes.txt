@@ -1,0 +1,10 @@
+Session Notes:
+
+Change key permissions on MAC to 400 (chmod 400 /Path/to/key/keyname)
+
+ssh -i/Path/to/key/keyname ec2-user@IP ADDRESS
+
+
+ssh
+yum
+
