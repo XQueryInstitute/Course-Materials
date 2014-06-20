@@ -14,9 +14,24 @@ http://testpilot.library.vanderbilt.edu/dale/jdk-8u5-linux-x64.rpm
 http://testpilot.library.vanderbilt.edu/dale/jdk-8u5-linux-i586.rpm
 rpm -iv jdk-8u5-linux-x64.rpm
 
-/usr/bin/alternatives --install /usr/bin/java java /usr/java/jdk1.8.0_05/bin/java 20000
+/usr/sbin/alternatives --install /usr/bin/java java /usr/java/jdk1.8.0_05/bin/java 20000
 
 alternatives --config java
+
+
+---------------------------------------------------
+
+ANT: Another Neat Tool   --http://ant.apache.org/
+
+yum: 	Yellowdog Updater Modified  --http://www.thegeekstuff.com/2011/08/yum-command-examples/
+
+
+
+ssh: Secure SHell --http://www.linux-magazine.com/content/download/62419/484880/version/1/file/087-089_command.pdf+
+
+
+
+
 
 
 
