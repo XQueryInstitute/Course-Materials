@@ -24,7 +24,7 @@ Ready to compare your expression? [Here's my go at it.](http://try.zorba.io/quer
 
 ###Exercise #3
 
-I mentioned that other dialectics of Pig Latin exist. In fact, this is the version we speak at home. In this version, all the consonants preceeding the vowel must be moved to the end of the word before adding "ay". So "there" becomes "erethay." If the word starts with a consonant, then the rules remain the same as previously.
+I mentioned that other dialectics of Pig Latin exist. In fact, this is the version we speak at home. In this version, all the consonants preceeding the vowel must be moved to the end of the word before adding "ay". So "there" becomes "erethay." If the word starts with a consonant, then the rules remain the same as previously.Your function should turn "I speak Pig Latin" into "Iay eakspay igpay atinlay"
 
 *Hint: A good way to approach this problem without relying on regular expressions is to write a recursive function to handle moving the leading consonants to the end of each word.*
 
@@ -32,4 +32,4 @@ Ready to check your work? [Here's how I did it.](http://try.zorba.io/queries/xqu
 
 *Bonus Credit: Remember that recursion always requires a base case. In my example, the base case works most of the time but will not always work. Can you create an example where it will fail?*
 
-Please feel free to improve on these examples and to share your work with everyone else. The easiest way to do that is to write your expression in [Zorba](try.zorba.io) and then tweet out the permanlink to [#xqy14](https://twitter.com/hashtag/xqy14). I look forward to seeing how you improve on my work! :)
+Please feel free to improve on these examples and to share your work with everyone else. The easiest way to do that is to write your expression in [Zorba](try.zorba.io) and then tweet out the permalink to [#xqy14](https://twitter.com/hashtag/xqy14). I look forward to seeing how you improve on my work! :)
