@@ -2,9 +2,9 @@
 
 ##August Practice Exercises
 
-My son Theodore loves to speak Pig Latin. He can speak it really fast, making it difficult for my wife and I to follow him. Wouldn't it be helpful to have a Pig Latin interpreter, I thought? So let's write a basic parser in XQuery this month.
+My son Theodore loves to speak Pig Latin. He can speak it really fast, making it difficult for my wife and I to follow him. Wouldn't it be helpful to have a Pig Latin interpreter, I thought? So let's write a basic parser for Pig Latin in XQuery this month.
 
-The rules for [Pig Latin](https://en.wikipedia.org/wiki/Pig_Latin) are relatively simple, though different dialects exist, as we shall see. Let's take the simplest dialect first. Basically, to turn an English word into an equivalent word in Pig Latin you take the first consonant off the front of the word, and it to the end, and then add "ay." If your word already starts with a consonant, then just add "ay" to the end. Thus, "Hello" becomes "Ellohay." "I" becomes "Iay."
+The rules for [Pig Latin](https://en.wikipedia.org/wiki/Pig_Latin) are relatively simple though different dialects exist, as we shall see. Let's take the simplest dialect first. Basically, to turn any English word into an equivalent word in Pig Latin you take the first consonant off the front of the word, add it to the end, and then add "ay." If your word already starts with a vowel, then just add "ay" to the end. Thus, "Hello" becomes "Ellohay." "I" becomes "Iay."
 
 ###Exercise #1
 
@@ -24,7 +24,7 @@ Ready to compare your expression? [Here's my go at it.](http://try.zorba.io/quer
 
 ###Exercise #3
 
-I mentioned that other dialectics of Pig Latin exists. In fact, this is the version we speak at home. In this version, all the consonants preceeding the vowel must be moved to the end of the word before adding "ay". So "there" becomes "erethay." If the word starts with a consonant, then the rules remain the same as previously.
+I mentioned that other dialectics of Pig Latin exist. In fact, this is the version we speak at home. In this version, all the consonants preceeding the vowel must be moved to the end of the word before adding "ay". So "there" becomes "erethay." If the word starts with a consonant, then the rules remain the same as previously.
 
 *Hint: A good way to approach this problem without relying on regular expressions is to write a recursive function to handle moving the leading consonants to the end of each word.*
 
