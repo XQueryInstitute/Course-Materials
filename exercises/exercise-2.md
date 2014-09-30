@@ -2,7 +2,7 @@
 
 ##September Practice Exercise
 
-A good use case for XQuery is developing word frequency lists for digital texts. Among the first poems I learned as a child was "Eldorado" by Edgar Allen Poe. I recall being struck by the repetition of the word "shadow" in the poem. Why did Poe repeat the word so many times in such few lines? While this month's XQuery exercise won't answer that question, it will help us find out how many time he used the phrase.
+A good use case for XQuery is developing word frequency lists for digital texts. Among the first poems I learned as a child was "Eldorado" by Edgar Allen Poe. I recall being struck by the repetition of the word "shadow" in the poem. Why did Poe repeat the word so many times in so few lines? While this month's XQuery exercise won't sort out the answer to that question, it will help us find out how many time he used the phrase.
 
 Let's start with a TEI edition of the poem:
 
@@ -66,7 +66,9 @@ Let's start with a TEI edition of the poem:
 
 I've also provided [a gist with the poem](https://gist.github.com/CliffordAnderson/2045cefaf2a687e5d078/), in case you'd like to use it.
 
-Obviously, we could simply count the words with such a short poem. But our goal is to write an XQuery expression to do the counting for us. The output should look like this:
+Obviously, we could simply count the words with such a short poem. But our goal is to write an XQuery expression to do the counting for us. Your mission, should you choose to accept it, is to write an XQuery expression that takes the text nodes from the l elements of the source poem and produces a dictionary of the uniqure words along with their frequency.
+
+The output should look like this:
 
 ```xml
 <dictionary>
@@ -83,8 +85,8 @@ Obviously, we could simply count the words with such a short poem. But our goal 
 </dictionary>
 ```
 
-Hint: You'll probably need to use regular expressions to clean up the strings. If so, this function ```fn:replace($words, "[!?.',/-]", "")``` should do the trick.
+Hint: You'll probably need to use regular expressions to clean up the strings. If so, this function ```fn:replace($words, "[!?.',/-]", "")``` should do the trick nicely.
 
-Give it a try before check out [what I came up with](http://try.zorba.io/queries/xquery/ZZf2fGYOwtkBvN8sbzI4cX4plYw%3D). I'm sure you can do better, right? If you've found a simpler solution, tweet it out to #XQY14.
+Give it a try yourself before checking out [what I came up with](http://try.zorba.io/queries/xquery/ZZf2fGYOwtkBvN8sbzI4cX4plYw%3D). I'm sure you can do better, right? If you've found a simpler solution, tweet it out to #XQY14.
 
-Extra Credit: Add an subexpression to the query that eliminates common stop-words–i.e. "of," "the," etc.–from your dictionary.
+Extra Credit: Add an expression to the query to eliminate common stop-words–i.e. "of," "the," etc.–from your dictionary.
