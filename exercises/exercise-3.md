@@ -25,4 +25,6 @@ Let's start by checking out the World Bank's API. The World Bank has a handy [qu
         <wb:decimal>0</wb:decimal>
     </wb:data>
 </wb:data>
+```
 
+How do you go about querying this API with XQuery? The [XQuery Recommendation](http://www.w3.org/TR/xquery-30/) does not define how to send an HTTP request. Such matters are deemed implementation-dependent. In other words, every XQuery processor is free to define its own functions for making HTTP requests. In the past few years, a community of XQuery developers has formed [ExPath.org](http://expath.org/) to develop shared standards for commonly-implemented functionality. Among these is a standard for [making HTTP requests](http://expath.org/modules/http-client/). 
