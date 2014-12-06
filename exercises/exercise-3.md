@@ -10,7 +10,7 @@ As I celebrated the Thanksiving holiday last month, I began wondering whether ou
 
 ###Querying an API
 
-Let's start by checking out the World Bank's API. The World Bank has a handy [query builder](http://data.worldbank.org/querybuilder) for its API, which allows you to fine tune your request. In that case, we'll build a query for the annual cereal production in the United States from 1961 to 2013. The [resulting query](http://data.worldbank.org/querybuilder) looks (in part) like this:
+Let's start by checking out the World Bank's API. The World Bank has a handy [query builder](http://data.worldbank.org/querybuilder) for its API, which allows you to fine tune your request. In this case, we'll build a query for the annual cereal production in the United States from 1961 to 2013. The [resulting query](http://data.worldbank.org/querybuilder) looks (in part) like this:
 
 ```xml
 <wb:data xmlns:wb="http://www.worldbank.org" page="1" pages="1" per_page="100" total="55">
@@ -53,7 +53,7 @@ Remember when adding the URL as the value of the href attribute to change any am
 
 ###Getting Data into the Right Format
 
-So the next step is to extract the data we'll need. But what *do* we need, exactly? To answer this question, we'll need to peek ahead a little at the [Google Charts API](https://developers.google.com/chart/interactive/docs/reference). We're going to be displaying our data using a [Column Chart](https://developers.google.com/chart/interactive/docs/gallery/columnchart) so let's see how we pass information into that chart in particular. We want to pass a year to the X-axis and the harvested amount to the Y-axis. It seems we need an array that looks something like this:
+So the next step is to extract the data we'll need. But what *do* we need, exactly? To answer this question, we'll need to peek ahead a little at the [Google Charts API](https://developers.google.com/chart/interactive/docs/reference). We're going to be displaying our data using a [Column Chart](https://developers.google.com/chart/interactive/docs/gallery/columnchart) so let's see how we pass information into that chart in particular. We want to pass a year to the X-axis and the amount harvested to the Y-axis. It seems we need an array that looks something like this:
 ```js
     [
         [1961, 163619978],
@@ -63,7 +63,9 @@ So the next step is to extract the data we'll need. But what *do* we need, exact
     ]
 ```
 
-OK, that's clearly [JSON](http://www.json.org/) rather than XML. We'll need to extract the information we need from the World Bank API and then write it back out as JSON or, perhaps more more correctly, into a syntax that can be evaluated as a Javascript array. Just to complicate things a bit, we'll actually need to pass our years into a JavaScript data constructor because we want the X-Axis to be continous rather than discrete (i.e. not just discrete strings indicating years, but a continuous series of dates). The importance of having continuous variables will become apparent when we draw a trendline in a moment.
+OK, that's clearly [JSON](http://www.json.org/) rather than XML. We'll need to extract the information as XML from the World Bank API and then write it back out as JSON or, perhaps more more correctly, into a syntax that can be evaluated as a Javascript array. 
+
+*Just to complicate things a bit, we'll actually need to pass our years into a JavaScript data constructor because we want the X-Axis to be continous rather than discrete (i.e. not just discrete strings indicating years, but a continuous series of dates). The importance of having continuous variables will become apparent when we draw a trendline in a moment.*
 
 Our JSON should really look like this
 ```js
@@ -102,7 +104,7 @@ A tricky thing is to make sure that the last member of the sequence terminates w
 ]
 ```
 
-To get rid of this comma, we need to remove it from the last item in our sequence. Note how we achieve that effect below using position to filter our sequence appropriately. The regular expression ```,$``` in the ```fn:replace``` function finds any comma immediately preceeding an end of life and replaces it with an empty string, effectively eliminating our trailing comma.
+To get rid of this comma, we need to remove it from the last item in our sequence. Note how we achieve that effect below using position to filter our sequence appropriately. The regular expression ```,$``` in the ```fn:replace``` function finds any comma immediately preceeding an end-of-line and replaces it with an empty string, effectively eliminating our trailing comma.
 
 ```xquery
 let $json-data := (
@@ -114,9 +116,9 @@ return $json-data
 
 ###Using XQuery and JavaScript together
 
-Now we have our transformed our World Bank information from XML [into the JSON-like format required by our Google Chart](http://tryzorba.28.io/query.jq?id=3LOuzI5W8SAl1YFAvc82dQu%2FSsA%3D&format=text). Our next step will be to mix together a bit of XQuery and JavaScript.
+Now we have transformed our World Bank information from XML [into the JSON-like format required by our Google Chart](http://tryzorba.28.io/query.jq?id=3LOuzI5W8SAl1YFAvc82dQu%2FSsA%3D&format=text). Our next step will be to mix together a bit of XQuery and JavaScript.
 
-The JavaScript for our Google Chart (gently modified from [the source code on Google's website](https://developers.google.com/chart/interactive/docs/gallery/columnchart)) looks like this:
+The relevsnt JavaScript for our Google Chart (slightly modified from [the source code on Google's website](https://developers.google.com/chart/interactive/docs/gallery/columnchart)) looks like this:
 
 ```JavaScript
 // Where's the data? We need to supply it from our XQuery expression.
@@ -158,7 +160,9 @@ function drawChart() {
   chart.draw(data, options);
 }
 ```
-As our goal is not to learn JavaScript, I'll skip over most of this code (though note the comment about our trend line). The main thing is that we need to provide an array of arrays to populate our data rows. Note the statement ```var data_json = [];```. This statement defines a Javascript variable called ```data_json``` and assigns it an empty array. We need to pass in our JSON-like arrays into this statement. The trick to achieving this goal is to remember the difference between server-side and client-side processing. In this case, our XQuery executes on the server while our JavaScript executes on the client. So we can write an XQuery expression on the server to edit our JavaScript file before it's provided to the client. 
+As our goal is not to learn JavaScript, I'll skip over most of this code (though note the comment about our trendline). The main thing is that we need to provide an array of arrays to populate our data rows. Note the statement ```var data_json = [];```. This statement defines a Javascript variable called ```data_json``` and assigns it an empty array. We need to pass in our JSON-like arrays into this statement. 
+
+The trick to achieving this goal is to remember the difference between server-side and client-side processing. In this case, our XQuery executes on the server while our JavaScript executes on the client. So we can write an XQuery expression on the server to edit our JavaScript file before it's provided to the client. 
 
 The technique is actually very simple. We just insert an XQuery expression into the relevant JavaScript variable definition. ```var json_data = [ { $json-data } ];``` In fact, that's pretty much all we need to do. Our XQuery expression above will provide the arrays the Google Chart needs to populate its rows. From the client perspective, it will just look like a plain old Javascript array of arrays.
 
@@ -179,7 +183,8 @@ Now let's package everything together. Instead of returning data from the World 
 ```js
 <script type="text/javascript">
           // Instantiate array of arrays 
-          var json_data = [ { $json-data } ];
+          var json_data = [ { $json-data } ];   // This deceptively like a JavaScript object inside an array,
+                                                // but it's actually an interpolated XQuery expression.
         <![CDATA[
           //... the rest of the Javascript goes here.
         ]]>
@@ -189,8 +194,10 @@ That should do it! You can see the full code [here](http://try.zorba.io/queries/
 
 ###Summing Up
 
-So, to review, you've learned how to use XQuery to connect with an online data source, select and transform the data into a JSON-like format, and then pass that data into a JavaScript variable to render an nice chart in a client's web browser. By using these techniques, you can create many kinds of mashups–potentially aggretating data from many sources into a unified display.
+So, to review, you've learned how to use XQuery to connect with an online data source, select and transform the XML data into a JSON-like format, and then pass that data into a JavaScript variable to render a nice chart in a client's web browser. By using these techniques, you can create many kinds of mashups–potentially aggretating data from many sources into a unified display.
 
 ###Extra Credit
 
-If you'd like to try something a litte more complicated, you can add another column to our chart. For instance, it would be interesting to know whether and how much the quantity of arable land has been decreasing in the United States even while our cereal output has been increasing. Here's the [API call](http://api.worldbank.org/countries/USA/indicators/AG.LND.ARBL.ZS?per_page=10&date=1961:2013) to get you started. As always, please share your results (especially if you improve my code) on Twitter with the hashtag #XQY14.
+If you'd like to try something a litte more complicated, you can add another column to our chart. For instance, it would be interesting to know whether and to what extent the quantity of arable land has been decreasing in the United States even as cereal output has been increasing. Here's the [API call](http://api.worldbank.org/countries/USA/indicators/AG.LND.ARBL.ZS?per_page=10&date=1961:2013) to get you started. 
+
+As always, please share your results (especially if you improve on my code) on Twitter with the hashtag #XQY14.
