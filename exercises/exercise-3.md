@@ -1,10 +1,14 @@
 #XQuery Summer Institute
 
-##Thanksgiving Practice Exercise
+##December Practice Exercise
 
-Among other things, XQuery is a fantastic language for connecting different sources of data on the Internet. If you find a web service with an XML endpoint, you can write an XQuery expression to extract data and present it as a nicely-formated webpage. 
+Among other things, XQuery is a fantastic language for connecting different sources of data on the Internet. If you find a web service with an XML endpoint, you can write an XQuery expression to extract data and present it as a nicely-formated webpage.
+
+###The Problem
 
 As I celebrated the Thanksiving holiday last month, I began wondering whether our agricultural production in the United States is trending upward or downward. So I decided to write an expression to query the [World Bank](http://data.worldbank.org/) to chart the annual cereal production in the United States. The following exercise demonstrates how to use XQuery to gather data from the [World Bank's API](http://data.worldbank.org/node/9) and to render that data using [Google Charts](https://developers.google.com/chart/). 
+
+###Querying an API
 
 Let's start by checking out the World Bank's API. The World Bank has a handy [query builder](http://data.worldbank.org/querybuilder) for its API, which allows you to fine tune your request. In that case, we'll build a query for the annual cereal production in the United States from 1961 to 2013. The [resulting query](http://data.worldbank.org/querybuilder) looks (in part) like this:
 
@@ -46,6 +50,8 @@ http:send-request(<http:request href="http://api.worldbank.org/countries/USA/ind
 ```
 
 Remember when adding the URL as the value of the href attribute to change any ampersands from '&' to '&amp;' in order to avoid parsing errors. If you [try out this expression](http://try.zorba.io/queries/xquery/KNZpFFTpUW%2FI1NxeEevZBBzrino%3D), you'll find that you've connected to the World Bank API.
+
+###Getting Data into the Right Format
 
 So the next step is to extract the data we'll need. But what *do* we need, exactly? To answer this question, we'll need to peek ahead a little at the [Google Charts API](https://developers.google.com/chart/interactive/docs/reference). We're going to be displaying our data using a [Column Chart](https://developers.google.com/chart/interactive/docs/gallery/columnchart) so let's see how we pass information into that chart in particular. We want to pass a year to the X-axis and the harvested amount to the Y-axis. It seems we need an array that looks something like this:
 ```js
@@ -105,6 +111,9 @@ let $json-data := (
   )
 return $json-data
 ```
+
+###Using XQuery and JavaScript together
+
 Now we have our transformed our World Bank information from XML [into the JSON-like format required by our Google Chart](http://tryzorba.28.io/query.jq?id=3LOuzI5W8SAl1YFAvc82dQu%2FSsA%3D&format=text). Our next step will be to mix together a bit of XQuery and JavaScript.
 
 The JavaScript for our Google Chart (gently modified from [the source code on Google's website](https://developers.google.com/chart/interactive/docs/gallery/columnchart)) looks like this:
@@ -135,7 +144,11 @@ function drawChart() {
   var options = {
     title: 'Cereal Production in the United States',
     width: 1200,
-    height: 800
+    height: 800,
+    trendlines: { 0: {
+                    labelInLegend: 'Annual Production',
+                    visibleInLegend: true
+               } }  // We will be able to add this trend line because we converted our data from discrete strings into                             // continuous values (i.e. dates).
   };
   // Instantiate and draw our chart, passing in some options.
   var chart = new google.visualization.ColumnChart(document.getElementById(
@@ -143,7 +156,7 @@ function drawChart() {
   chart.draw(data, options);
 }
 ```
-As our goal is not to learn JavaScript, I'll skip over most of this code. The main thing is that we need to provide an array of arrays to populate our data rows. Note the statement ```var data_json = [];```. This statement defines a Javascript variable called ```data_json``` and assigns it an empty array. We need to pass in our JSON-like arrays into this statement. The trick to achieving this goal is to remember the difference between server-side and client-side processing. In this case, our XQuery executes on the server while our JavaScript executes on the client. So we can write an XQuery expression on the server to edit our JavaScript file before it's provided to the client. 
+As our goal is not to learn JavaScript, I'll skip over most of this code (though note the comment about our trend line). The main thing is that we need to provide an array of arrays to populate our data rows. Note the statement ```var data_json = [];```. This statement defines a Javascript variable called ```data_json``` and assigns it an empty array. We need to pass in our JSON-like arrays into this statement. The trick to achieving this goal is to remember the difference between server-side and client-side processing. In this case, our XQuery executes on the server while our JavaScript executes on the client. So we can write an XQuery expression on the server to edit our JavaScript file before it's provided to the client. 
 
 The technique is actually very simple. We just insert an XQuery expression into the relevant JavaScript variable definition. ```var json_data = [ { $json-data } ];``` In fact, that's pretty much all we need to do. Our XQuery expression above will provide the arrays the Google Chart needs to populate its rows. From the client perspective, it will just look like a plain old Javascript array of arrays.
 
@@ -156,6 +169,9 @@ var json_data = [
   [new Date(2013, 0, 1), 436553678]
 ];
 ```
+
+###Rendering Our Chart
+
 Now let's package everything together. Instead of returning data from the World Bank API directly from our XQuery expression, we'll return HTML with JavaScript (including the data from our XQuery expression) in script elements. To avoid having to re-write the JavaScript to conform with XML rules (like substituting ```&amp;``` for '&' characters, we'll wrap all the JavaScript apart from our variable definition in a [CDATA](https://en.wikipedia.org/wiki/CDATA) section.
 
 ```js
@@ -167,4 +183,12 @@ Now let's package everything together. Instead of returning data from the World 
         ]]>
 </script>
 ```
-That should do it! You can see the full code [here](grain.xqy) or try it out [here](). The result should look like this chart: ![Grain Production in the United States](http://i.imgur.com/C4ZNGfY.png)
+That should do it! You can see the full code [here](http://try.zorba.io/queries/xquery/5LMJ3uKtjSCVZ%2FJDh0cUAgUn20Q%3D) or try it out [here](http://tryzorba.28.io/query.jq?id=5LMJ3uKtjSCVZ%2FJDh0cUAgUn20Q%3D&format=html). The result should look like this chart: ![Grain Production in the United States](http://i.imgur.com/C4ZNGfY.png)
+
+###Summing Up
+
+So, to review, you've learned how to use XQuery to connect with an online data source, select and transform the data into a JSON-like format, and then pass that data into a JavaScript variable to render an nice chart in a client's web browser. By using these techniques, you can create many kinds of mashups–potentially aggretating data from many sources into a unified display.
+
+###Extra Credit
+
+If you'd like to try something a litte more complicated, you can add another column to our chart. For instance, it would be interesting to know whether and how much the quantity of arable land has been decreasing in the United States even while our cereal output has been increasing. Here's the [API call](http://api.worldbank.org/countries/USA/indicators/AG.LND.ARBL.ZS?per_page=10&date=1961:2013) to get you started. As always, please share your results (especially if you improve my coding) on Twitter with the hashtag #XQY14.
