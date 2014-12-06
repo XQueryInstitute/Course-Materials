@@ -148,7 +148,9 @@ function drawChart() {
     trendlines: { 0: {
                     labelInLegend: 'Annual Production',
                     visibleInLegend: true
-               } }  // We will be able to add this trend line because we converted our data from discrete strings into                             // continuous values (i.e. dates).
+               } }  // We will be able to add this trendline (or regression line)  
+                    // because we converted our data from discrete strings into
+                    // continuous values (i.e. dates).
   };
   // Instantiate and draw our chart, passing in some options.
   var chart = new google.visualization.ColumnChart(document.getElementById(
@@ -191,4 +193,4 @@ So, to review, you've learned how to use XQuery to connect with an online data s
 
 ###Extra Credit
 
-If you'd like to try something a litte more complicated, you can add another column to our chart. For instance, it would be interesting to know whether and how much the quantity of arable land has been decreasing in the United States even while our cereal output has been increasing. Here's the [API call](http://api.worldbank.org/countries/USA/indicators/AG.LND.ARBL.ZS?per_page=10&date=1961:2013) to get you started. As always, please share your results (especially if you improve my coding) on Twitter with the hashtag #XQY14.
+If you'd like to try something a litte more complicated, you can add another column to our chart. For instance, it would be interesting to know whether and how much the quantity of arable land has been decreasing in the United States even while our cereal output has been increasing. Here's the [API call](http://api.worldbank.org/countries/USA/indicators/AG.LND.ARBL.ZS?per_page=10&date=1961:2013) to get you started. As always, please share your results (especially if you improve my code) on Twitter with the hashtag #XQY14.
