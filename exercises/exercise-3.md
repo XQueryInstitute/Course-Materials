@@ -69,7 +69,7 @@ Our JSON should really look like this
     ]
 ```
 
-Granted, [XQuery 3.1](http://www.w3.org/TR/xquery-31/) will provide an output method for [JSON serialization](http://docs.basex.org/wiki/XQuery_3.1#JSON_Serialization). Still, it's not difficult to write an XQuery 3.0 expression that evaluates to a sequence of strings with JSON syntax. 
+Granted, [XQuery 3.1](http://www.w3.org/TR/xquery-31/) will provide an output method for [JSON serialization](http://docs.basex.org/wiki/XQuery_3.1#JSON_Serialization). Still, it's not difficult to write an XQuery 3.0 expression that evaluates to a sequence of strings with JSON-like syntax. 
 
 ```xquery
 xquery version "3.0";
@@ -86,20 +86,62 @@ let $data :=
   return fn:concat("[ new Date(", $value/wb:date/text(), ", 0, 1), ", $value/wb:value/text(), "],")
 return $data
 ```
-A tricky thing is to make sure that the last member of the sequence terminates without a comma. The expression above will cause problems in our JavaScript code because it leaves a dangling comma at the end of our array.
+A tricky thing is to make sure that the last member of the sequence terminates without a comma. The expression above will cause problems in our JavaScript code because it leaves a dangling comma at the end of our array of arrays.
 
 ```js
 [ new Date(2012, 0, 1), 356932761],
 [ new Date(2013, 0, 1), 436553678], // Bad comma
 ```
 
-To get rid of this comma, we need to remove it from the last item in our sequence. Note how we achieve that effect below using position to filter our sequence appropriately.
+To get rid of this comma, we need to remove it from the last item in our sequence. Note how we achieve that effect below using position to filter our sequence appropriately. The regular expression ```,$``` in the ```fn:replace``` function finds any comma immediately preceeding an end of life and replaces it with an empty string, effectively eliminating our trailing comma.
 
 ```xquery
 let $json-data := (
   $data[position() = (1 to last()-1)], 
-  fn:replace($data[last()], ",$", "")
+  fn:replace($data[last()], ",$", "") 
   )
 return $json-data
 ```
+Now we have our transformed our World Bank information from XML [into the JSON-like format required by our Google Chart](http://tryzorba.28.io/query.jq?id=3LOuzI5W8SAl1YFAvc82dQu%2FSsA%3D&format=text). Our next step will be to mix together a bit of XQuery and JavaScript.
 
+The HTML for our Google Chart (gently modified from [the source code on Google's website](https://developers.google.com/chart/interactive/docs/gallery/columnchart) looks like this:
+
+```html
+<html>
+        <head>
+        <!--Load the AJAX API-->
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+          // Load the Visualization API and the piechart package.
+          google.load('visualization', '1.0', {'packages':['corechart']});
+    
+          // Set a callback to run when the Google Visualization API is loaded.
+          google.setOnLoadCallback(drawChart);
+    
+          // Callback that creates and populates a data table,
+          // instantiates the pie chart, passes in the data and
+          // draws it.
+          function drawChart() {
+              
+            // Create the data table.
+            var data = new google.visualization.DataTable();
+            data.addColumn('date', 'Year');
+            data.addColumn('number', 'Metric Tons');
+            data.addRows(json_data);
+            // Set chart options
+            var options = {title: 'Cereal Production in the United States',
+                           width: 1200,
+                           height: 800
+            };
+            // Instantiate and draw our chart, passing in some options.
+            var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+          }
+        </script>
+      </head>
+      <body>
+        <!--Div that will hold the pie chart-->
+        <div id="chart_div"></div>
+      </body>
+    </html>
+```
