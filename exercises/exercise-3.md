@@ -156,4 +156,14 @@ var json_data = [
   [new Date(2013, 0, 1), 436553678]
 ];
 ```
-Now let's package everything together. Instead of returning data from the World Bank API from our XQuery expression, we'll return HTML with JavaScript (including JSON-like data). 
+Now let's package everything together. Instead of returning data from the World Bank API directly from our XQuery expression, we'll return HTML with JavaScript (including the data from our XQuery expression) in script elements. To avoid having to re-write the JavaScript to conform with XML rules (like substituting ```&amp;``` for '&' characters, we'll wrap all the JavaScript apart from our variable definition in a CData section.
+
+```js
+<script type="text/javascript">
+          // Instantiate array of arrays 
+          var json_data = [ { $json-data } ];
+        <![CDATA[
+          //... the rest of the Javascript goes here.
+        ]]>
+</script>
+```
