@@ -89,8 +89,11 @@ return $data
 A tricky thing is to make sure that the last member of the sequence terminates without a comma. The expression above will cause problems in our JavaScript code because it leaves a dangling comma at the end of our array of arrays.
 
 ```js
-[ new Date(2012, 0, 1), 356932761],
-[ new Date(2013, 0, 1), 436553678], // Bad comma
+[
+    // ...
+    [ new Date(2012, 0, 1), 356932761],
+    [ new Date(2013, 0, 1), 436553678], // Bad comma
+]
 ```
 
 To get rid of this comma, we need to remove it from the last item in our sequence. Note how we achieve that effect below using position to filter our sequence appropriately. The regular expression ```,$``` in the ```fn:replace``` function finds any comma immediately preceeding an end of life and replaces it with an empty string, effectively eliminating our trailing comma.
@@ -140,3 +143,4 @@ function drawChart() {
   chart.draw(data, options);
 }
 ```
+As our goal is not to learn JavaScript, I'll skip over most of this code. The main thing is that we need to provide an array of arrays to populate our data rows. Note the statement ```var data_json = [];```. This statement defines a Javascript variable called ```data_json``` and assigns it an empty array. We need to pass in our JSON-like arrays into this statement. The trick to achieving this goal is to remember the difference between server-side and client-side processing.
