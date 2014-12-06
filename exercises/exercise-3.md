@@ -69,7 +69,7 @@ Our JSON should really look like this
     ]
 ```
 
-Granted, [XQuery 3.1](http://www.w3.org/TR/xquery-31/) will provide an output method for [JSON serialization](http://docs.basex.org/wiki/XQuery_3.1#JSON_Serialization). Still, it's not difficult to write an XQuery 3.0 expression that evaluates to a sequence of strings with JSON syntax. A tricky thing is to make sure that the last member of the sequence terminates without a comma. Note how we achieve that effect below.
+Granted, [XQuery 3.1](http://www.w3.org/TR/xquery-31/) will provide an output method for [JSON serialization](http://docs.basex.org/wiki/XQuery_3.1#JSON_Serialization). Still, it's not difficult to write an XQuery 3.0 expression that evaluates to a sequence of strings with JSON syntax. 
 
 ```xquery
 xquery version "3.0";
@@ -84,9 +84,22 @@ let $data :=
   where $value/wb:value
   order by $value/wb:date
   return fn:concat("[ new Date(", $value/wb:date/text(), ", 0, 1), ", $value/wb:value/text(), "],")
+return $data
+```
+A tricky thing is to make sure that the last member of the sequence terminates without a comma. The expression above will cause problems in our JavaScript code because it leaves a dangling comma at the end of our array.
+
+```js
+[ new Date(2012, 0, 1), 356932761],
+[ new Date(2013, 0, 1), 436553678], // Bad comma
+```
+
+To get rid of this comma, we need to remove it from the last item in our sequence. Note how we achieve that effect below using position to filter our sequence appropriately.
+
+```xquery
 let $json-data := (
   $data[position() = (1 to last()-1)], 
   fn:replace($data[last()], ",$", "")
   )
 return $json-data
 ```
+
