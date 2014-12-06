@@ -10,7 +10,7 @@ As I celebrated the Thanksiving holiday last month, I began wondering whether ou
 
 ###Querying an API
 
-Let's start by checking out the World Bank's API. The World Bank has a handy [query builder](http://data.worldbank.org/querybuilder) for its API, which allows you to fine tune your request. In this case, we'll build a query for the annual cereal production in the United States from 1961 to 2013. The [resulting query](http://data.worldbank.org/querybuilder) looks (in part) like this:
+Let's start by checking out the World Bank's API. The World Bank has a handy [query builder](http://data.worldbank.org/querybuilder) for its API, which allows you to fine tune your request. In this case, we'll build a query for the annual cereal production in the United States from 1961 to 2013. The [resulting query](hhttp://api.worldbank.org/countries/USA/indicators/AG.PRD.CREL.MT?per_page=100&date=1961:2013) looks (in part) like this:
 
 ```xml
 <wb:data xmlns:wb="http://www.worldbank.org" page="1" pages="1" per_page="100" total="55">
