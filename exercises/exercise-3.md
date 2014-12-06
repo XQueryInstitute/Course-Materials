@@ -104,45 +104,38 @@ return $json-data
 ```
 Now we have our transformed our World Bank information from XML [into the JSON-like format required by our Google Chart](http://tryzorba.28.io/query.jq?id=3LOuzI5W8SAl1YFAvc82dQu%2FSsA%3D&format=text). Our next step will be to mix together a bit of XQuery and JavaScript.
 
-The HTML (plus JavaScript) for our Google Chart (gently modified from [the source code on Google's website](https://developers.google.com/chart/interactive/docs/gallery/columnchart) looks like this:
+The JavaScript for our Google Chart (gently modified from [the source code on Google's website](https://developers.google.com/chart/interactive/docs/gallery/columnchart) looks like this:
 
-```html
-<html>
-    <head>
-        <!--Load the AJAX API-->
-        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-        <script type="text/javascript">
-          // Load the Visualization API and the piechart package.
-          google.load('visualization', '1.0', {'packages':['corechart']});
+```JavaScript
+// Load the Visualization API and the piechart package.
+google.load('visualization', '1.0', {
+  'packages': ['corechart']
+});
+// Where's the data? We need to supply it from our XQuery expression.
+var data_jason = [];
 
-          // Set a callback to run when the Google Visualization API is loaded.
-          google.setOnLoadCallback(drawChart);
+// Set a callback to run when the Google Visualization API is loaded.
+google.setOnLoadCallback(drawChart);
 
-          // Callback that creates and populates a data table,
-          // instantiates the pie chart, passes in the data and
-          // draws it.
-          function drawChart() {
+// Callback that creates and populates a data table,
+// instantiates the pie chart, passes in the data and
+// draws it.
+function drawChart() {
 
-            // Create the data table.
-            var data = new google.visualization.DataTable();
-            data.addColumn('date', 'Year');
-            data.addColumn('number', 'Metric Tons');
-            data.addRows(json_data);
-            // Set chart options
-            var options = {title: 'Cereal Production in the United States',
-                           width: 1200,
-                           height: 800
-            };
-            // Instantiate and draw our chart, passing in some options.
-            var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
-            chart.draw(data, options);
-          }
-        </script>
-    </head>
-    <body>
-        <!--Div that will hold the pie chart-->
-        <div id="chart_div"></div>
-    </body>
-</html>
-
+  // Create the data table.
+  var data = new google.visualization.DataTable();
+  data.addColumn('date', 'Year');
+  data.addColumn('number', 'Metric Tons');
+  data.addRows(json_data); // Where's the data? We need to supply it from our XQuery expression.
+  // Set chart options
+  var options = {
+    title: 'Cereal Production in the United States',
+    width: 1200,
+    height: 800
+  };
+  // Instantiate and draw our chart, passing in some options.
+  var chart = new google.visualization.ColumnChart(document.getElementById(
+    'chart_div'));
+  chart.draw(data, options);
+}
 ```
