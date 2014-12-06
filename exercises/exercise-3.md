@@ -156,7 +156,7 @@ var json_data = [
   [new Date(2013, 0, 1), 436553678]
 ];
 ```
-Now let's package everything together. Instead of returning data from the World Bank API directly from our XQuery expression, we'll return HTML with JavaScript (including the data from our XQuery expression) in script elements. To avoid having to re-write the JavaScript to conform with XML rules (like substituting ```&amp;``` for '&' characters, we'll wrap all the JavaScript apart from our variable definition in a CData section.
+Now let's package everything together. Instead of returning data from the World Bank API directly from our XQuery expression, we'll return HTML with JavaScript (including the data from our XQuery expression) in script elements. To avoid having to re-write the JavaScript to conform with XML rules (like substituting ```&amp;``` for '&' characters, we'll wrap all the JavaScript apart from our variable definition in a [CDATA](https://en.wikipedia.org/wiki/CDATA) section.
 
 ```js
 <script type="text/javascript">
@@ -167,3 +167,4 @@ Now let's package everything together. Instead of returning data from the World 
         ]]>
 </script>
 ```
+That should do it! You can see the full code [here](grain.xqy) or try it out [here](). The result should look like this chart: ![Grain Production in the United States](http://imgur.com/C4ZNGfY)
