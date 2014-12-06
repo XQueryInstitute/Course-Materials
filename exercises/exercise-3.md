@@ -167,4 +167,4 @@ Now let's package everything together. Instead of returning data from the World 
         ]]>
 </script>
 ```
-That should do it! You can see the full code [here](grain.xqy) or try it out [here](). The result should look like this chart: ![Grain Production in the United States](http://imgur.com/C4ZNGfY)
+That should do it! You can see the full code [here](grain.xqy) or try it out [here](). The result should look like this chart: ![Grain Production in the United States](http://i.imgur.com/C4ZNGfY.png)
