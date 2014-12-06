@@ -104,15 +104,16 @@ return $json-data
 ```
 Now we have our transformed our World Bank information from XML [into the JSON-like format required by our Google Chart](http://tryzorba.28.io/query.jq?id=3LOuzI5W8SAl1YFAvc82dQu%2FSsA%3D&format=text). Our next step will be to mix together a bit of XQuery and JavaScript.
 
-The JavaScript for our Google Chart (gently modified from [the source code on Google's website](https://developers.google.com/chart/interactive/docs/gallery/columnchart) looks like this:
+The JavaScript for our Google Chart (gently modified from [the source code on Google's website](https://developers.google.com/chart/interactive/docs/gallery/columnchart)) looks like this:
 
 ```JavaScript
+// Where's the data? We need to supply it from our XQuery expression.
+var data_jason = []; // just an empty array for now
+
 // Load the Visualization API and the piechart package.
 google.load('visualization', '1.0', {
   'packages': ['corechart']
 });
-// Where's the data? We need to supply it from our XQuery expression.
-var data_jason = [];
 
 // Set a callback to run when the Google Visualization API is loaded.
 google.setOnLoadCallback(drawChart);
