@@ -147,7 +147,7 @@ As our goal is not to learn JavaScript, I'll skip over most of this code. The ma
 
 The technique is actually very simple. We just insert an XQuery expression into the relevant JavaScript variable definition. ```var json_data = [ { $json-data } ];``` In fact, that's pretty much all we need to do. Our XQuery expression above will provide the arrays the Google Chart needs to populate its rows. From the client perspective, it will just look like a plain old Javascript array of arrays.
 
-```
+```js
 var json_data = [
   [new Date(1961, 0, 1), 163619978],
   [new Date(1962, 0, 1), 162455780],
