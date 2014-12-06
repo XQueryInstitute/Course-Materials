@@ -143,4 +143,6 @@ function drawChart() {
   chart.draw(data, options);
 }
 ```
-As our goal is not to learn JavaScript, I'll skip over most of this code. The main thing is that we need to provide an array of arrays to populate our data rows. Note the statement ```var data_json = [];```. This statement defines a Javascript variable called ```data_json``` and assigns it an empty array. We need to pass in our JSON-like arrays into this statement. The trick to achieving this goal is to remember the difference between server-side and client-side processing.
+As our goal is not to learn JavaScript, I'll skip over most of this code. The main thing is that we need to provide an array of arrays to populate our data rows. Note the statement ```var data_json = [];```. This statement defines a Javascript variable called ```data_json``` and assigns it an empty array. We need to pass in our JSON-like arrays into this statement. The trick to achieving this goal is to remember the difference between server-side and client-side processing. In this case, our XQuery executes on the server while our JavaScript executes on the client. So we can write an XQuery expression on the server to edit our JavaScript file before it's provided to the client. 
+
+The technique is actually very simple. We just insert an expression expression into the relevant JavaScript variable definition. ```var json_data = [ { $json-data } ];```
