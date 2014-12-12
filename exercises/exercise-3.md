@@ -65,7 +65,7 @@ So the next step is to extract the data we'll need. But what *do* we need, exact
 
 OK, that's clearly [JSON](http://www.json.org/) rather than XML. We'll need to extract the information as XML from the World Bank API and then write it back out as JSON or, perhaps more more correctly, into a syntax that can be evaluated as a Javascript array. 
 
-*Just to complicate things a bit, we'll actually need to pass our years into a JavaScript data constructor because we want the X-Axis to be continous rather than discrete (i.e. not just discrete strings indicating years, but a continuous series of dates). The importance of having continuous variables will become apparent when we draw a trendline in a moment.*
+*Just to complicate things a bit, we'll actually need to pass our years into a JavaScript date constructor because we want the X-Axis to be continous rather than discrete (i.e. not just discrete strings indicating years, but a continuous series of dates). The importance of having continuous variables will become apparent when we draw a trendline in a moment.*
 
 Our JSON should really look like this
 ```js
