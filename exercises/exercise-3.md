@@ -46,10 +46,10 @@ Since we're sending a GET request to the World Bank API, we only need to pass in
 ```xquery
 import module namespace http = "http://expath.org/ns/http-client";
 
-http:send-request(<http:request href="http://api.worldbank.org/countries/USA/indicators/AG.PRD.CREL.MT?per_page=100&amp;date=1961:2013" method="get"/>)
+http:send-request(<http:request href="http://api.worldbank.org/countries/USA/indicators/AG.PRD.CREL.MT?date=1961:2013" method="get"/>)
 ```
 
-Remember when adding the URL as the value of the href attribute to change any ampersands from '&' to '&amp;' in order to avoid parsing errors. If you [try out this expression](http://try.zorba.io/queries/xquery/KNZpFFTpUW%2FI1NxeEevZBBzrino%3D), you'll find that you've connected to the World Bank API.
+Remember when adding the URL as the value of the href attribute to change any ampersands from '&' to '&amp;' in order to avoid parsing errors. If you [try out this expression](http://try.zorba.io/queries/xquery/aBWsLvbbpTeb97y6Z348+1GoXNo=), you'll find that you've connected to the World Bank API.
 
 ###Getting Data into the Right Format
 
@@ -85,7 +85,7 @@ xquery version "3.0";
 import module namespace http = "http://expath.org/ns/http-client";
 
 declare namespace wb = "http://www.worldbank.org";
-let $url := "http://api.worldbank.org/countries/USA/indicators/AG.PRD.CREL.MT?per_page=100&amp;date=1961:2013"
+let $url := "http://api.worldbank.org/countries/USA/indicators/AG.PRD.CREL.MT?date=1961:2013"
 let $raw-data := http:send-request(<http:request href="{$url}" method="get"/>)/wb:data
 let $data :=
   for $value in $raw-data/wb:data
@@ -116,7 +116,7 @@ return $json-data
 
 ###Using XQuery and JavaScript together
 
-Now we have transformed our World Bank information from XML [into the JSON-like format required by our Google Chart](http://tryzorba.28.io/query.jq?id=3LOuzI5W8SAl1YFAvc82dQu%2FSsA%3D&format=text). Our next step will be to mix together a bit of XQuery and JavaScript.
+Now we have transformed our World Bank information from XML [into the JSON-like format required by our Google Chart](http://tryzorba.28.io/query.jq?id=FH8wpFaGmdtA0077FnZkF9DwzQs%3D&format=text). Our next step will be to mix together a bit of XQuery and JavaScript.
 
 The relevsnt JavaScript for our Google Chart (slightly modified from [the source code on Google's website](https://developers.google.com/chart/interactive/docs/gallery/columnchart)) looks like this:
 
@@ -190,7 +190,7 @@ Now let's package everything together. Instead of returning data from the World 
         ]]>
 </script>
 ```
-That should do it! You can see the full code [here](http://try.zorba.io/queries/xquery/5LMJ3uKtjSCVZ%2FJDh0cUAgUn20Q%3D) or try it out [here](http://tryzorba.28.io/query.jq?id=5LMJ3uKtjSCVZ%2FJDh0cUAgUn20Q%3D&format=html). The result should look like this chart: ![Grain Production in the United States](http://i.imgur.com/C4ZNGfY.png)
+That should do it! You can see the full code [here](http://try.zorba.io/queries/xquery/InJRDOGf4Z8slN9alfKVR2CZ8uE%3D) or try it out [here](http://tryzorba.28.io/query.jq?id=InJRDOGf4Z8slN9alfKVR2CZ8uE%3D&format=html). The result should look like this chart: ![Grain Production in the United States](http://i.imgur.com/C4ZNGfY.png)
 
 ###Summing Up
 
@@ -198,6 +198,6 @@ So, to review, you've learned how to use XQuery to connect with an online data s
 
 ###Extra Credit
 
-If you'd like to try something a litte more complicated, you can add another column to our chart. For instance, it would be interesting to know whether and to what extent the quantity of arable land has been decreasing in the United States even as cereal output has been increasing. Here's the [API call](http://api.worldbank.org/countries/USA/indicators/AG.LND.ARBL.ZS?per_page=10&date=1961:2013) to get you started. 
+If you'd like to try something a litte more complicated, you can add another column to our chart. For instance, it would be interesting to know whether and to what extent the quantity of arable land has been decreasing in the United States even as cereal output has been increasing. Here's the [API call](http://api.worldbank.org/countries/USA/indicators/AG.LND.ARBL.ZS?date=1961:2013) to get you started. 
 
 As always, please share your results (especially if you improve on my code) on Twitter with the hashtag #XQY14.
