@@ -100,7 +100,7 @@ Note that we constructed a sequence of strings in `$data` above:
 ("[ new Date(1961, 0, 1), 163619978]", "[ new Date(1962, 0, 1), 162455780]") (: XQuery sequence :)
 ```
 
-This is useful, as we can now join those array litereals using XQuery’s `string-join` function and make sure to construct a valid Javascript array declaration:
+This is useful, as we can now join those array literals using XQuery’s `string-join` function and make sure to construct a valid Javascript array declaration:
 
 ```js
 [
