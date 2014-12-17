@@ -91,27 +91,22 @@ let $data :=
   for $value in $raw-data/wb:data
   where $value/wb:value
   order by $value/wb:date
-  return fn:concat("[ new Date(", $value/wb:date/text(), ", 0, 1), ", $value/wb:value/text(), "],")
-return $data
+  return fn:concat("[ new Date(", $value/wb:date/text(), ", 0, 1), ", $value/wb:value/text(), "]")
+return concat("[ ", string-join($data, ", "), " ]")
 ```
-A tricky thing is to make sure that the last member of the sequence terminates without a comma. The expression above will cause problems in our JavaScript code because it leaves a dangling comma at the end of our array of arrays.
+Note that we constructed a sequence of strings in `$data` above:
+
+```xquery
+("[ new Date(1961, 0, 1), 163619978]", "[ new Date(1962, 0, 1), 162455780]") (: XQuery sequence :)
+```
+
+This is useful, as we can now join those array literals using XQuery’s `string-join` function and make sure to construct a valid Javascript array declaration:
 
 ```js
 [
-    // ...
-    [ new Date(2012, 0, 1), 356932761],
-    [ new Date(2013, 0, 1), 436553678], // Bad comma
+  [ new Date(1961, 0, 1), 163619978],
+  [ new Date(1962, 0, 1), 162455780]
 ]
-```
-
-To get rid of this comma, we need to remove it from the last item in our sequence. Note how we achieve that effect below using position to filter our sequence appropriately. The regular expression ```,$``` in the ```fn:replace``` function finds any comma immediately preceeding an end-of-line and replaces it with an empty string, effectively eliminating our trailing comma.
-
-```xquery
-let $json-data := (
-  $data[position() = (1 to last()-1)], 
-  fn:replace($data[last()], ",$", "") 
-  )
-return $json-data
 ```
 
 ###Using XQuery and JavaScript together
