@@ -12,7 +12,7 @@ So, for our first exercise, let's write a basic XQuery expression that takes a w
 
 *Hint: If you need help getting started, try using these functions: [fn:substring](http://www.xqueryfunctions.com/xq/fn_substring.html) and [fn:lower-case](http://www.xqueryfunctions.com/xq/fn_lower-case.html).*
 
-Ready to compare your expression? [Here's what I came up with...](http://try-zorba.28.io/queries/xquery/QK5qu0xXmoe16U2ruUvUJMyf768%3D)
+Ready to compare your expression? [Here's what I came up with...](http://try-zorba.28.io/queries/xquery/QK5qu0xXmoe16U2ruUvUJMyf768%3D) [Gist](https://gist.github.com/CliffordAnderson/076b5e82f1d7e22e05ca)
 
 ###Exercise #2
 
@@ -20,7 +20,7 @@ Now that we can convert individual words to Pig Latin, let's move on to sentence
 
 *Hint: You'll probably want to use the functions [fn:tokenize](http://www.xqueryfunctions.com/xq/fn_tokenize.html) to split up your sentence into words and [fn:string-join](http://www.xqueryfunctions.com/xq/fn_string-join.html) to recompose your words into a sentence.*
 
-Ready to compare your expression? [Here's my go at it.](http://try-zorba.28.io/queries/xquery/viIDlwPueygREld7%2FOCE3n9AYEE%3D)
+Ready to compare your expression? [Here's my go at it.](http://try-zorba.28.io/queries/xquery/viIDlwPueygREld7%2FOCE3n9AYEE%3D) [Gist](https://gist.github.com/CliffordAnderson/e75fd3e4e3e569a661cf)
 
 ###Exercise #3
 
@@ -28,7 +28,7 @@ I mentioned that other dialectics of Pig Latin exist. In fact, we speak a differ
 
 *Hint: A good way to approach this problem without relying on regular expressions is to write a recursive function to handle moving the leading consonants to the end of each word.*
 
-Ready to check your work? [Here's how I did it.](http://try-zorba.28.io/queries/xquery/htyppNcHns5R%2BLIHC%2FJz%2BmlQGDU%3D)
+Ready to check your work? [Here's how I did it.](http://try-zorba.28.io/queries/xquery/htyppNcHns5R%2BLIHC%2FJz%2BmlQGDU%3D) [Gist](https://gist.github.com/CliffordAnderson/6ed7e1f9a32abf15d9fd)
 
 *Bonus Credit: Remember that recursion always requires a base case. In my example, the base case works most of the time but will not always work. Can you create an example where it will fail?*
 
