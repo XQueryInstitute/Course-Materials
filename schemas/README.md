@@ -21,7 +21,7 @@ So let's imagine we're seeking a standardized way of describing books in a books
 
 Here's a sketch of what such a document based on this standard might look like:
 
-*N.B. These examples are modified and expanded versions of the corresponding examples in [Beginning XML](http://www.amazon.com/Beginning-XML-5th-Edition-Fawcett/dp/1118162137). Of course, if you really needed a schema for exchanging information about retail books, you'd probably want to consider [ONIX](http://www.editeur.org/93/Release-3.0-Downloads/#Schema defs).*
+* N.B. These examples are modified and expanded versions of the corresponding examples in [Beginning XML](http://www.amazon.com/Beginning-XML-5th-Edition-Fawcett/dp/1118162137). Of course, if you really needed a schema for exchanging information about retail books, you'd probably want to consider [ONIX](http://www.editeur.org/93/Release-3.0-Downloads/#Schema defs).
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -229,30 +229,30 @@ Schematron allows you to specify more specific and complex rules for validating 
 
 A key difference between DTDs, XML Schema, and RelaxNG on the one hand, and Schematron on the other is that the former are grammar-based whereas Schematron is rule-based. (See Priscilla Walmsley, [Definitive XML Schema](http://www.worldcat.org/title/definitive-xml-schema/oclc/48362767), second edition, p. 13)
 
-###Example Schematron document for Book.xml
+### Example Schematron document for Book.xml
 
-Here's a Schematron file to perform additional validation on the contents
+Here's a Schematron file to perform additional validation on the contents of our book document, including checking to make certain that the price of the book is $10.00 or higher.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<schema schemaVersion="1.5" xmlns="http://www.ascc.net/xml/schematron">
-    <ns uri="http://www.w3.org/2001/XMLSchema" prefix="xs"/>
-    <pattern name="author attributes">
-        <rule context="author">
-            <assert test="@authorized" diagnostics="authorized">The authorized form of the name must
-                appear in an authorized attribute of the <name path="."/> element.</assert>
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2"
+    xmlns:sqf="http://www.schematron-quickfix.com/validator/process">
+    <pattern id="author-attributes">
+        <rule context="price">
+            <assert test="xs:decimal(translate(./text(), '$', '')) gt 10" diagnostics="low-price"
+                >The prics is too low.</assert>
         </rule>
     </pattern>
-    <pattern name="publicationDate">
+    <pattern id="publicationDate">
         <rule context="date">
-            <assert test="text() castable as xs:gYear" diagnostics="publicationDate">The publication
-                date must contain a valid year.</assert>
+            <assert test="./text() castable as xs:gYear" diagnostics="invalid-pubdate">The
+                publication date must contain a valid year.</assert>
         </rule>
     </pattern>
     <diagnostics>
-        <diagnostic id="authorized">The "authorized" attribute is missing for this book: <value-of
-                select="../title/text()"/></diagnostic>
-        <diagnostic id="publicationDate">The publication date is missing or invalid for this book:
+        <diagnostic id="low-price">The current price is 
+                <value-of select="../price/text()"/>, but the price must be at least $10.00.</diagnostic>
+        <diagnostic id="invalid-pubdate">The publication date is missing or invalid for this book:
                 <value-of select="./text()"/></diagnostic>
     </diagnostics>
 </schema>
