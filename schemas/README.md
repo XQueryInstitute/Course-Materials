@@ -240,7 +240,7 @@ Here's a Schematron file to perform additional validation on the contents of our
     <pattern id="author-attributes">
         <rule context="price">
             <assert test="xs:decimal(translate(./text(), '$', '')) gt 10" diagnostics="low-price"
-                >The prics is too low.</assert>
+                >The price is too low.</assert>
         </rule>
     </pattern>
     <pattern id="publicationDate">
