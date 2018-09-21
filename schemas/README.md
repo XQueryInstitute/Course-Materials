@@ -21,7 +21,7 @@ So let's imagine we're seeking a standardized way of describing books in a books
 
 Here's a sketch of what such a document based on this standard might look like:
 
-* N.B. These examples are modified and expanded versions of the corresponding examples in [Beginning XML](http://www.amazon.com/Beginning-XML-5th-Edition-Fawcett/dp/1118162137). Of course, if you really needed a schema for exchanging information about retail books, you'd probably want to consider [ONIX](http://www.editeur.org/93/Release-3.0-Downloads/#Schema defs).
+* N.B. These examples are modified and expanded versions of the corresponding examples in [Beginning XML](http://www.amazon.com/Beginning-XML-5th-Edition-Fawcett/dp/1118162137). Of course, if you really needed a schema for exchanging information about retail books, you'd probably want to consider [ONIX](http://www.editeur.org/93/Release-3.0-Downloads/#Schema).
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
