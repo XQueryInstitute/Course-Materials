@@ -239,21 +239,22 @@ Here's a Schematron file to perform additional validation on the contents of our
     xmlns:sqf="http://www.schematron-quickfix.com/validator/process">
     <pattern id="author-attributes">
         <rule context="price">
-            <assert test="xs:decimal(translate(./text(), '$', '')) gt 10" diagnostics="low-price"
-                >The price is too low.</assert>
+            <assert test="xs:decimal(translate(text(), '$', '')) gt 10" diagnostics="low-price">The
+                price of <value-of select="/book/title/text()"/> is too low.</assert>
         </rule>
     </pattern>
     <pattern id="publicationDate">
         <rule context="date">
-            <assert test="./text() castable as xs:gYear" diagnostics="invalid-pubdate">The
-                publication date must contain a valid year.</assert>
+            <assert test="(text() castable as xs:gYear) and (xs:int(text()) lt 2020)"
+                diagnostics="invalid-pubdate">The publication date must be a valid year.</assert>
         </rule>
     </pattern>
     <diagnostics>
-        <diagnostic id="low-price">The current price is 
-                <value-of select="../price/text()"/>, but the price must be at least $10.00.</diagnostic>
-        <diagnostic id="invalid-pubdate">The publication date is missing or invalid for this book:
-                <value-of select="./text()"/></diagnostic>
+        <diagnostic id="low-price">The current price is <value-of select="/book/price/text()"/>, but
+            the price must be at least $10.00.</diagnostic>
+        <diagnostic id="invalid-pubdate">The publication date (<value-of select="text()"/>) is
+            missing or invalid for this book: <value-of select="/book/title/text()"/>
+        </diagnostic>
     </diagnostics>
 </schema>
 ```
